@@ -1,0 +1,12 @@
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Neo.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Neo.VM.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\plugin_template.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\plugin_template.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_trinity.Form01.resources
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_template.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_template.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache

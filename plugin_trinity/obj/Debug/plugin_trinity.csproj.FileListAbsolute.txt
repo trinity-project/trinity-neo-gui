@@ -1,0 +1,138 @@
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\plugin_trinity.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\plugin_trinity.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ValueTuple.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Microsoft.Win32.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\netstandard.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.AppContext.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.Concurrent.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.NonGeneric.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.Specialized.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.TypeConverter.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Console.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Data.Common.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Contracts.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Debug.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Process.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.StackTrace.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Tools.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.TraceSource.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Tracing.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Drawing.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Dynamic.Runtime.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.Calendars.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Compression.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Compression.ZipFile.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.Watcher.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.IsolatedStorage.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.MemoryMappedFiles.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Pipes.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Expressions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Parallel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Queryable.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Http.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.NameResolution.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.NetworkInformation.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Ping.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Requests.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Security.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Sockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebHeaderCollection.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebSockets.Client.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebSockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ObjectModel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.Reader.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.ResourceManager.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.Writer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Handles.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.InteropServices.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Numerics.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Formatters.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Json.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Xml.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Claims.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Csp.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Encoding.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Principal.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.SecureString.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.Encoding.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.Encoding.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.RegularExpressions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Overlapped.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Tasks.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Tasks.Parallel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Thread.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.ThreadPool.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Timer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.ReaderWriter.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XmlDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XmlSerializer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XPath.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XPath.XDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.VM.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\llvm.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\neo-gui_pluginframework.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.VM.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\llvm.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.dll
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Downloads\plugin_trinity\bin\Debug\plugin_trinity.dll
+\\Mac\Home\Downloads\plugin_trinity\bin\Debug\plugin_trinity.pdb
+\\Mac\Home\Downloads\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete

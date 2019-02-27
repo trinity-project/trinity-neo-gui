@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Trinity.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Trinity.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Neo.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\bin\Debug\Neo.VM.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\Trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\Trinity.csproj.CopyComplete
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\Trinity.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\Trinity\obj\Debug\Trinity.pdb
