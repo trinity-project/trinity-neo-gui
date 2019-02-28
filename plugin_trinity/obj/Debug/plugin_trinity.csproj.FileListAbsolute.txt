@@ -138,7 +138,6 @@ Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.pdb
 \\Mac\Home\Downloads\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
 \\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\bin\Debug\plugin_trinity.dll
 \\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\bin\Debug\plugin_trinity.pdb
-\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
 \\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
 \\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
 \\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources

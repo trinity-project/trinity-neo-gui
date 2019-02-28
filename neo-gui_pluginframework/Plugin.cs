@@ -55,14 +55,14 @@ namespace Neo.GUIPlugin
                 {
                     System.Windows.Forms.ToolStripMenuItem pitem = new System.Windows.Forms.ToolStripMenuItem();
                     pitem.Text = plugin.Key;
-                    string menuPosition =  plugin.Value.GetMenuPosition();
+                    string menuPosition = plugin.Value.GetMenuPosition();
                     int index = plugin.Value.GetMenuIndex();
                     bool f = false;
                     foreach (ToolStripMenuItem rootmenu in menuStrip.Items)
                     {
                         if (rootmenu.Name == menuPosition)
                         {
-                            if(index < 0){ rootmenu.DropDownItems.Add(pitem); }
+                            if (index < 0) { rootmenu.DropDownItems.Add(pitem); }
                             else { rootmenu.DropDownItems.Insert(index, pitem); }
                             f = true;
                         }
@@ -72,7 +72,7 @@ namespace Neo.GUIPlugin
                         ToolStripMenuItem newMenu = new ToolStripMenuItem(menuPosition);
                         newMenu.Name = menuPosition;
                         menuStrip.Items.Add(newMenu);
-                        if (index < 0){ newMenu.DropDownItems.Add(pitem); }
+                        if (index < 0) { newMenu.DropDownItems.Add(pitem); }
                         else { newMenu.DropDownItems.Insert(index, pitem); }
                     }
 
@@ -103,16 +103,14 @@ namespace Neo.GUIPlugin
                               {
                                   __plugin.ChildrenMenuClick(__menu);
                               }
-                              catch(Exception err)
+                              catch (Exception err)
                               {
                                   MessageBox.Show("error:" + err.Message);
                               }
                           };
                     }
                 }
-                catch (Exception err)
-                {
-                }
+                finally { }
             }
         }
     }
