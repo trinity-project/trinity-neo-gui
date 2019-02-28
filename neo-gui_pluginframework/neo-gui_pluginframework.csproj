@@ -34,6 +34,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Neo, Version=2.7.4.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Neo.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -47,16 +51,6 @@
   <ItemGroup>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\neo-vm\neo-vm.csproj">
-      <Project>{779622d1-c4dc-4b7c-ba3c-0f08cba07b07}</Project>
-      <Name>neo-vm</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\neo\neo.csproj">
-      <Project>{6c7a8a35-58ba-45be-a0d6-8f220b3ff2df}</Project>
-      <Name>neo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

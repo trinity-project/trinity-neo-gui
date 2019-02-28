@@ -138,3 +138,10 @@
 \\Mac\Home\Downloads\master\neo-gui-nel-master\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CopyComplete
 \\Mac\Home\Downloads\master\neo-gui-nel-master\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
 \\Mac\Home\Downloads\master\neo-gui-nel-master\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CopyComplete
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb

@@ -10,3 +10,12 @@
 \\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\plugin_template\obj\Debug\plugin_template.dll
 \\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\plugin_template\obj\Debug\plugin_template.pdb
 \\Mac\Home\Documents\工作\Trinity\NEO\neo-gui-2.9.0\plugin_template\obj\Debug\plugin_template.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\bin\Debug\plugin_template.dll
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\bin\Debug\plugin_template.pdb
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_trinity.Form01.resources
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.csproj.CopyComplete
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.dll
+\\Mac\Home\Downloads\master\Plugin\guiPlugin\plugin_template\obj\Debug\plugin_template.pdb
