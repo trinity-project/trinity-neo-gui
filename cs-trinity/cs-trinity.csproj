@@ -44,7 +44,7 @@
     <Compile Include="Channel\Channel.cs" />
     <Compile Include="Channel\TradeHistory.cs" />
     <Compile Include="DB\LevelDB.cs" />
-    <Compile Include="Transaction\Trade.cs" />
+    <Compile Include="Transaction\Transaction.cs" />
     <Compile Include="Transaction\Type\Founder.cs" />
     <Compile Include="Transaction\Type\Htlc.cs" />
     <Compile Include="Transaction\Type\Rsmc.cs" />
@@ -55,6 +55,7 @@
   <ItemGroup>
     <Folder Include="Network\RPC\" />
     <Folder Include="Network\TCP\" />
+    <Folder Include="Transaction\Signature\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Trinity.json" />
