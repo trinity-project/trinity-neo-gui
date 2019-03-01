@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_template", "plugin_t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_trinity", "plugin_trinity\plugin_trinity.csproj", "{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-trinity", "cs-trinity\cs-trinity.csproj", "{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
