@@ -1,3 +1,149 @@
-2019/03/12-14:15:31.960 5b38 Recovering log #11
-2019/03/12-14:15:31.971 5b38 Delete type=0 #11
-2019/03/12-14:15:31.974 5b38 Delete type=3 #10
+2019/03/12-14:53:25.488 561c Recovering log #5107
+2019/03/12-14:53:25.495 561c Level-0 table #5150: started
+2019/03/12-14:53:25.552 561c Level-0 table #5150: 1040985 bytes OK
+2019/03/12-14:53:25.564 561c Delete type=3 #5105
+2019/03/12-14:53:25.566 561c Delete type=0 #5107
+2019/03/12-14:53:31.206 60bc Compacting 1@0 + 2@1 files
+2019/03/12-14:53:31.255 60bc Generated table #5152@0: 754 keys, 579171 bytes
+2019/03/12-14:53:31.342 60bc Generated table #5153@0: 1440 keys, 1106557 bytes
+2019/03/12-14:53:31.372 60bc Generated table #5154@0: 257 keys, 197493 bytes
+2019/03/12-14:53:31.385 60bc Generated table #5155@0: 389 keys, 88229 bytes
+2019/03/12-14:53:31.440 60bc Generated table #5156@0: 7930 keys, 413431 bytes
+2019/03/12-14:53:31.441 60bc Compacted 1@0 + 2@1 files => 2384881 bytes
+2019/03/12-14:53:31.441 60bc compacted to: files[ 0 5 56 50 0 0 0 ]
+2019/03/12-14:53:31.444 60bc Delete type=2 #5109
+2019/03/12-14:53:31.447 60bc Delete type=2 #5150
+2019/03/12-14:53:31.449 60bc Delete type=2 #5112
+2019/03/12-14:53:31.472 60bc Compacting 1@1 + 13@2 files
+2019/03/12-14:53:31.501 60bc Generated table #5157@1: 527 keys, 404658 bytes
+2019/03/12-14:53:31.576 60bc Generated table #5158@1: 1451 keys, 1114354 bytes
+2019/03/12-14:53:31.638 60bc Generated table #5159@1: 1006 keys, 772638 bytes
+2019/03/12-14:53:31.709 60bc Generated table #5160@1: 1102 keys, 846403 bytes
+2019/03/12-14:53:31.879 60bc Generated table #5161@1: 2778 keys, 2114827 bytes
+2019/03/12-14:53:32.082 60bc Generated table #5162@1: 2778 keys, 2114694 bytes
+2019/03/12-14:53:32.251 60bc Generated table #5163@1: 2778 keys, 2112828 bytes
+2019/03/12-14:53:32.401 60bc Generated table #5164@1: 2778 keys, 2113249 bytes
+2019/03/12-14:53:32.582 60bc Generated table #5165@1: 2778 keys, 2112253 bytes
+2019/03/12-14:53:32.782 60bc Generated table #5166@1: 2778 keys, 2112903 bytes
+2019/03/12-14:53:32.964 60bc Generated table #5167@1: 2778 keys, 2113594 bytes
+2019/03/12-14:53:33.196 60bc Generated table #5168@1: 2778 keys, 2113009 bytes
+2019/03/12-14:53:33.415 60bc Generated table #5169@1: 2778 keys, 2112717 bytes
+2019/03/12-14:53:33.428 60bc Generated table #5170@1: 104 keys, 78959 bytes
+2019/03/12-14:53:33.428 60bc Compacted 1@1 + 13@2 files => 22237086 bytes
+2019/03/12-14:53:33.428 60bc compacted to: files[ 0 4 57 50 0 0 0 ]
+2019/03/12-14:53:33.433 60bc Delete type=2 #5125
+2019/03/12-14:53:33.436 60bc Delete type=2 #5119
+2019/03/12-14:53:33.440 60bc Delete type=2 #5118
+2019/03/12-14:53:33.444 60bc Delete type=2 #5124
+2019/03/12-14:53:33.447 60bc Delete type=2 #5120
+2019/03/12-14:53:33.451 60bc Delete type=2 #5121
+2019/03/12-14:53:33.455 60bc Delete type=2 #5123
+2019/03/12-14:53:33.459 60bc Delete type=2 #5122
+2019/03/12-14:53:33.463 60bc Delete type=2 #5152
+2019/03/12-14:53:33.466 60bc Delete type=2 #5113
+2019/03/12-14:53:33.469 60bc Delete type=2 #5115
+2019/03/12-14:53:33.472 60bc Delete type=2 #5114
+2019/03/12-14:53:33.474 60bc Delete type=2 #5116
+2019/03/12-14:53:33.477 60bc Delete type=2 #5117
+2019/03/12-14:53:38.093 60bc Compacting 1@1 + 11@2 files
+2019/03/12-14:53:38.293 60bc Generated table #5171@1: 2778 keys, 2113241 bytes
+2019/03/12-14:53:38.517 60bc Generated table #5172@1: 2778 keys, 2113712 bytes
+2019/03/12-14:53:38.732 60bc Generated table #5173@1: 2778 keys, 2114081 bytes
+2019/03/12-14:53:38.955 60bc Generated table #5174@1: 2778 keys, 2112617 bytes
+2019/03/12-14:53:39.170 60bc Generated table #5175@1: 2778 keys, 2112313 bytes
+2019/03/12-14:53:39.324 60bc Generated table #5176@1: 2778 keys, 2113564 bytes
+2019/03/12-14:53:39.483 60bc Generated table #5177@1: 2779 keys, 2113059 bytes
+2019/03/12-14:53:39.630 60bc Generated table #5178@1: 2784 keys, 2116639 bytes
+2019/03/12-14:53:39.785 60bc Generated table #5179@1: 2784 keys, 2115958 bytes
+2019/03/12-14:53:39.937 60bc Generated table #5180@1: 2778 keys, 2113233 bytes
+2019/03/12-14:53:39.967 60bc Generated table #5181@1: 590 keys, 449024 bytes
+2019/03/12-14:53:39.968 60bc Compacted 1@1 + 11@2 files => 21587441 bytes
+2019/03/12-14:53:39.968 60bc compacted to: files[ 0 3 57 50 0 0 0 ]
+2019/03/12-14:53:39.971 60bc Delete type=2 #5126
+2019/03/12-14:53:39.973 60bc Delete type=2 #5153
+2019/03/12-14:53:39.976 60bc Delete type=2 #4909
+2019/03/12-14:53:39.978 60bc Delete type=2 #4908
+2019/03/12-14:53:39.981 60bc Delete type=2 #4911
+2019/03/12-14:53:39.983 60bc Delete type=2 #4910
+2019/03/12-14:53:39.986 60bc Delete type=2 #4912
+2019/03/12-14:53:39.988 60bc Delete type=2 #4913
+2019/03/12-14:53:39.990 60bc Delete type=2 #4917
+2019/03/12-14:53:39.992 60bc Delete type=2 #4916
+2019/03/12-14:53:39.995 60bc Delete type=2 #4914
+2019/03/12-14:53:39.997 60bc Delete type=2 #4915
+2019/03/12-14:53:40.697 60bc Compacting 1@1 + 11@2 files
+2019/03/12-14:53:40.883 60bc Generated table #5182@1: 28341 keys, 2118008 bytes
+2019/03/12-14:53:41.052 60bc Generated table #5183@1: 28119 keys, 2115843 bytes
+2019/03/12-14:53:41.233 60bc Generated table #5184@1: 27051 keys, 2116417 bytes
+2019/03/12-14:53:41.400 60bc Generated table #5185@1: 27767 keys, 2116711 bytes
+2019/03/12-14:53:41.529 60bc Generated table #5186@1: 28882 keys, 2113834 bytes
+2019/03/12-14:53:41.604 60bc Generated table #5187@1: 2416 keys, 2139443 bytes
+2019/03/12-14:53:41.671 60bc Generated table #5188@1: 33 keys, 2114009 bytes
+2019/03/12-14:53:41.732 60bc Generated table #5189@1: 33 keys, 2114009 bytes
+2019/03/12-14:53:41.784 60bc Generated table #5190@1: 25 keys, 1409512 bytes
+2019/03/12-14:53:41.785 60bc Compacted 1@1 + 11@2 files => 18357786 bytes
+2019/03/12-14:53:41.785 60bc compacted to: files[ 0 2 55 50 0 0 0 ]
+2019/03/12-14:53:41.788 60bc Delete type=2 #5086
+2019/03/12-14:53:41.791 60bc Delete type=2 #5057
+2019/03/12-14:53:41.793 60bc Delete type=2 #5137
+2019/03/12-14:53:41.796 60bc Delete type=2 #5136
+2019/03/12-14:53:41.799 60bc Delete type=2 #5156
+2019/03/12-14:53:41.801 60bc Delete type=2 #5064
+2019/03/12-14:53:41.804 60bc Delete type=2 #5058
+2019/03/12-14:53:41.807 60bc Delete type=2 #5059
+2019/03/12-14:53:41.810 60bc Delete type=2 #5061
+2019/03/12-14:53:41.813 60bc Delete type=2 #5060
+2019/03/12-14:53:41.816 60bc Delete type=2 #5062
+2019/03/12-14:53:41.819 60bc Delete type=2 #5063
+2019/03/12-14:53:42.400 60bc Compacting 1@1 + 11@2 files
+2019/03/12-14:53:42.531 60bc Generated table #5191@1: 2778 keys, 2113075 bytes
+2019/03/12-14:53:42.692 60bc Generated table #5192@1: 2778 keys, 2112851 bytes
+2019/03/12-14:53:42.835 60bc Generated table #5193@1: 2784 keys, 2115942 bytes
+2019/03/12-14:53:42.969 60bc Generated table #5194@1: 2778 keys, 2113976 bytes
+2019/03/12-14:53:43.099 60bc Generated table #5195@1: 2776 keys, 2112917 bytes
+2019/03/12-14:53:43.234 60bc Generated table #5196@1: 2784 keys, 2114909 bytes
+2019/03/12-14:53:43.381 60bc Generated table #5197@1: 2778 keys, 2113691 bytes
+2019/03/12-14:53:43.527 60bc Generated table #5198@1: 2778 keys, 2112764 bytes
+2019/03/12-14:53:43.701 60bc Generated table #5199@1: 25963 keys, 2116509 bytes
+2019/03/12-14:53:43.851 60bc Generated table #5200@1: 27742 keys, 2117138 bytes
+2019/03/12-14:53:43.858 60bc Generated table #5201@1: 511 keys, 36086 bytes
+2019/03/12-14:53:43.859 60bc Compacted 1@1 + 11@2 files => 21179858 bytes
+2019/03/12-14:53:43.859 60bc compacted to: files[ 0 1 55 50 0 0 0 ]
+2019/03/12-14:53:43.863 60bc Delete type=2 #5132
+2019/03/12-14:53:43.865 60bc Delete type=2 #5127
+2019/03/12-14:53:43.868 60bc Delete type=2 #5133
+2019/03/12-14:53:43.870 60bc Delete type=2 #5131
+2019/03/12-14:53:43.872 60bc Delete type=2 #5130
+2019/03/12-14:53:43.875 60bc Delete type=2 #5134
+2019/03/12-14:53:43.878 60bc Delete type=2 #5135
+2019/03/12-14:53:43.881 60bc Delete type=2 #5147
+2019/03/12-14:53:43.884 60bc Delete type=2 #5155
+2019/03/12-14:53:43.887 60bc Delete type=2 #5148
+2019/03/12-14:53:43.889 60bc Delete type=2 #5129
+2019/03/12-14:53:43.891 60bc Delete type=2 #5128
+2019/03/12-14:53:45.429 60bc Compacting 1@2 + 11@3 files
+2019/03/12-14:53:45.563 60bc Generated table #5202@2: 2778 keys, 2112829 bytes
+2019/03/12-14:53:45.694 60bc Generated table #5203@2: 2784 keys, 2116249 bytes
+2019/03/12-14:53:45.820 60bc Generated table #5204@2: 2778 keys, 2113593 bytes
+2019/03/12-14:53:46.050 60bc Generated table #5205@2: 2778 keys, 2113380 bytes
+2019/03/12-14:53:46.168 60bc Generated table #5206@2: 2778 keys, 2112350 bytes
+2019/03/12-14:53:46.310 60bc Generated table #5207@2: 2778 keys, 2113089 bytes
+2019/03/12-14:53:46.457 60bc Generated table #5208@2: 2778 keys, 2113287 bytes
+2019/03/12-14:53:46.593 60bc Generated table #5209@2: 2777 keys, 2112922 bytes
+2019/03/12-14:53:46.706 60bc Generated table #5210@2: 2778 keys, 2112819 bytes
+2019/03/12-14:53:46.809 60bc Generated table #5211@2: 2778 keys, 2112321 bytes
+2019/03/12-14:53:46.895 60bc Generated table #5212@2: 2262 keys, 1719397 bytes
+2019/03/12-14:53:46.896 60bc Compacted 1@2 + 11@3 files => 22852236 bytes
+2019/03/12-14:53:46.896 60bc compacted to: files[ 0 1 54 50 0 0 0 ]
+2019/03/12-14:53:46.899 60bc Delete type=2 #4978
+2019/03/12-14:53:46.902 60bc Delete type=2 #4979
+2019/03/12-14:53:46.904 60bc Delete type=2 #4982
+2019/03/12-14:53:46.907 60bc Delete type=2 #4981
+2019/03/12-14:53:46.910 60bc Delete type=2 #4980
+2019/03/12-14:53:46.912 60bc Delete type=2 #5031
+2019/03/12-14:53:46.914 60bc Delete type=2 #5160
+2019/03/12-14:53:46.917 60bc Delete type=2 #4973
+2019/03/12-14:53:46.919 60bc Delete type=2 #4974
+2019/03/12-14:53:46.922 60bc Delete type=2 #4975
+2019/03/12-14:53:46.925 60bc Delete type=2 #4977
+2019/03/12-14:53:46.927 60bc Delete type=2 #4976

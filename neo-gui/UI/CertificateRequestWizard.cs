@@ -1,5 +1,4 @@
 ﻿using CERTENROLLLib;
-using Neo.SmartContract;
 using Neo.Wallets;
 using System;
 using System.IO;
@@ -17,7 +16,7 @@ namespace Neo.UI
 
         private void CertificateRequestWizard_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly && p.Contract.Script.IsStandardContract()).Select(p => p.GetKey()).ToArray());
+            comboBox1.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly && p.Contract.IsStandard).Select(p => p.GetKey()).ToArray());
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)

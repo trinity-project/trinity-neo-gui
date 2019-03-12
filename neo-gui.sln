@@ -5,11 +5,9 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui", "neo-gui\neo-gui.csproj", "{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{DE966D9A-78B1-4A97-8FCB-060DEDBC0874}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_trinity", "plugin_trinity\plugin_trinity.csproj", "{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui_pluginframework", "..\plugin\neo-gui_pluginframework\neo-gui_pluginframework.csproj", "{F3166EDF-72D3-4301-947F-F66C211AC2FB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_trinity", "..\plugin\plugin_trinity\plugin_trinity.csproj", "{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui_pluginframework", "neo-gui_pluginframework\neo-gui_pluginframework.csproj", "{F3166EDF-72D3-4301-947F-F66C211AC2FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,23 +19,19 @@ Global
 		{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F3166EDF-72D3-4301-947F-F66C211AC2FB} = {DE966D9A-78B1-4A97-8FCB-060DEDBC0874}
-		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584} = {DE966D9A-78B1-4A97-8FCB-060DEDBC0874}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {253924C3-B287-4E63-B291-814B71A16CBE}
+		SolutionGuid = {24E208AA-B688-4AAC-A983-F81694EE67B4}
 	EndGlobalSection
 EndGlobal

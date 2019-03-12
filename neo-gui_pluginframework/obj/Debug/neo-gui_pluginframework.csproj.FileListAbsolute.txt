@@ -1,0 +1,157 @@
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\protocol.json
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\skiplogtran.txt
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Neo.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Neo.VM.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.ResponseCompression.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Data.Sqlite.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Security.Cryptography.Algorithms.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Text.Encodings.Web.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\llvm.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Security.SecureString.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Replicon.Cryptography.SCrypt.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Net.Sockets.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Options.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\netstandard.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Net.Http.Headers.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Interactive.Async.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Remotion.Linq.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.ComponentModel.Annotations.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Collections.Immutable.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Logging.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\SQLitePCLRaw.core.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Newtonsoft.Json.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Reflection.Metadata.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Numerics.Vectors.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Buffers.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Neo.VM.pdb
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\Neo.pdb
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\bin\Debug\llvm.pdb
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csprojAssemblyReference.cache
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CopyComplete
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\protocol.json
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\skiplogtran.txt
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Neo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Neo.VM.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.ResponseCompression.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Data.Sqlite.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Security.Cryptography.Algorithms.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Text.Encodings.Web.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\llvm.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Security.SecureString.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Replicon.Cryptography.SCrypt.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Net.Sockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Options.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\netstandard.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Net.Http.Headers.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Interactive.Async.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Remotion.Linq.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.ComponentModel.Annotations.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Collections.Immutable.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Logging.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\SQLitePCLRaw.core.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Newtonsoft.Json.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Reflection.Metadata.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Http.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Numerics.Vectors.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Buffers.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Neo.VM.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\Neo.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\bin\Debug\llvm.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csprojAssemblyReference.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CopyComplete
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csprojAssemblyReference.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\neo-gui_pluginframework\obj\Debug\neo-gui_pluginframework.pdb

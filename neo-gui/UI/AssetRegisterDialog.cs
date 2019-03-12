@@ -47,15 +47,14 @@ namespace Neo.UI
         private void AssetRegisterDialog_Load(object sender, EventArgs e)
         {
             comboBox1.Items.AddRange(new object[] { AssetType.Share, AssetType.Token });
-            comboBox2.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly && p.Contract.Script.IsSignatureContract()).Select(p => p.GetKey().PublicKey).ToArray());
+            comboBox2.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly && p.Contract.IsStandard).Select(p => p.GetKey().PublicKey).ToArray());
             comboBox3.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly).Select(p => p.Address).ToArray());
             comboBox4.Items.AddRange(Program.CurrentWallet.GetAccounts().Where(p => !p.WatchOnly).Select(p => p.Address).ToArray());
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!(comboBox1.SelectedItem is AssetType assetType)) return;
-            numericUpDown1.Enabled = assetType != AssetType.Share;
+            numericUpDown1.Enabled = (AssetType)comboBox1.SelectedItem != AssetType.Share;
             if (!numericUpDown1.Enabled) numericUpDown1.Value = 0;
             CheckForm(sender, e);
         }

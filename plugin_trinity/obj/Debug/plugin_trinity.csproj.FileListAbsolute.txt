@@ -1,0 +1,503 @@
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\plugin_trinity.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\plugin_trinity.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ValueTuple.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Microsoft.Win32.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\netstandard.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.AppContext.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.Concurrent.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.NonGeneric.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Collections.Specialized.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ComponentModel.TypeConverter.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Console.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Data.Common.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Contracts.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Debug.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Process.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.StackTrace.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Tools.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.TraceSource.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Diagnostics.Tracing.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Drawing.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Dynamic.Runtime.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.Calendars.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Globalization.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Compression.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Compression.ZipFile.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.FileSystem.Watcher.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.IsolatedStorage.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.MemoryMappedFiles.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.Pipes.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Expressions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Parallel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Linq.Queryable.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Http.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.NameResolution.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.NetworkInformation.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Ping.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Requests.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Security.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.Sockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebHeaderCollection.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebSockets.Client.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Net.WebSockets.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.ObjectModel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Reflection.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.Reader.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.ResourceManager.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Resources.Writer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Handles.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.InteropServices.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Numerics.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Formatters.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Json.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Runtime.Serialization.Xml.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Claims.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Csp.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Encoding.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.Primitives.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.Principal.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Security.SecureString.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.Encoding.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.Encoding.Extensions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Text.RegularExpressions.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Overlapped.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Tasks.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Tasks.Parallel.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Thread.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.ThreadPool.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Threading.Timer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.ReaderWriter.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XmlDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XmlSerializer.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XPath.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\System.Xml.XPath.XDocument.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.VM.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\llvm.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\neo-gui_pluginframework.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\Neo.VM.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\bin\Debug\llvm.pdb
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.dll
+Z:\neo-gui-nel\neo-gui-nel - 副本\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Neo.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Immutable.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ValueTuple.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Win32.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\netstandard.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.AppContext.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Concurrent.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.NonGeneric.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Specialized.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.TypeConverter.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Console.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Data.Common.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Contracts.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Debug.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Process.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.StackTrace.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Tools.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.TraceSource.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Tracing.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Drawing.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Dynamic.Runtime.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.Calendars.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.Extensions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Compression.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Compression.ZipFile.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.Watcher.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.IsolatedStorage.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.MemoryMappedFiles.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Pipes.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Expressions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Parallel.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Queryable.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Http.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.NameResolution.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.NetworkInformation.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Ping.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Requests.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Security.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Sockets.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebHeaderCollection.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebSockets.Client.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebSockets.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ObjectModel.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.Extensions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.Reader.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.ResourceManager.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.Writer.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Extensions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Handles.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.InteropServices.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Numerics.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Formatters.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Json.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Xml.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Claims.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Csp.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Encoding.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Principal.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.SecureString.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.Encoding.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.Encoding.Extensions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.RegularExpressions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Overlapped.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Tasks.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Tasks.Parallel.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Thread.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.ThreadPool.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Timer.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.ReaderWriter.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XDocument.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XmlDocument.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XmlSerializer.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XPath.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XPath.XDocument.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Akka.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Akka.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.dll.config
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.dll
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+\\Mac\Home\Desktop\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.dll.config
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\plugin_trinity.pdb
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ValueTuple.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Win32.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\netstandard.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.AppContext.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Concurrent.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.NonGeneric.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Specialized.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ComponentModel.TypeConverter.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Console.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Data.Common.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Contracts.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Debug.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Process.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.StackTrace.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Tools.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.TraceSource.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.Tracing.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Drawing.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Dynamic.Runtime.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.Calendars.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Globalization.Extensions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Compression.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Compression.ZipFile.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.FileSystem.Watcher.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.IsolatedStorage.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.MemoryMappedFiles.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.Pipes.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Expressions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Parallel.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Linq.Queryable.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Http.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.NameResolution.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.NetworkInformation.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Ping.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Requests.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Security.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.Sockets.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebHeaderCollection.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebSockets.Client.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Net.WebSockets.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.ObjectModel.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.Extensions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Reflection.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.Reader.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.ResourceManager.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Resources.Writer.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Extensions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Handles.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.InteropServices.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Numerics.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Formatters.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Json.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Runtime.Serialization.Xml.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Claims.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Csp.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Encoding.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.Principal.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Security.SecureString.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.Encoding.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.Encoding.Extensions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Text.RegularExpressions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Overlapped.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Tasks.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Tasks.Parallel.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Thread.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.ThreadPool.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Threading.Timer.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.ReaderWriter.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XDocument.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XmlDocument.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XmlSerializer.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XPath.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Xml.XPath.XDocument.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Akka.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Neo.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Collections.Immutable.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Akka.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.dll
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.pdb
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Downloads\neo-gui-2.9.0\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\plugin_trinity.dll.config
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\plugin_trinity.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\plugin_trinity.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ValueTuple.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.Win32.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\netstandard.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.AppContext.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Collections.Concurrent.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Collections.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Collections.NonGeneric.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Collections.Specialized.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ComponentModel.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ComponentModel.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ComponentModel.TypeConverter.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Console.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Data.Common.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.Contracts.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.Debug.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.Process.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.StackTrace.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.Tools.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.TraceSource.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.Tracing.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Drawing.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Dynamic.Runtime.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Globalization.Calendars.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Globalization.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Globalization.Extensions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.Compression.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.Compression.ZipFile.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.FileSystem.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.FileSystem.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.FileSystem.Watcher.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.IsolatedStorage.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.MemoryMappedFiles.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.Pipes.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Linq.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Linq.Expressions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Linq.Parallel.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Linq.Queryable.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Http.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.NameResolution.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.NetworkInformation.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Ping.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Requests.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Security.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.Sockets.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.WebHeaderCollection.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.WebSockets.Client.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Net.WebSockets.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.ObjectModel.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Reflection.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Reflection.Extensions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Reflection.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Resources.Reader.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Resources.ResourceManager.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Resources.Writer.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Extensions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Handles.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.InteropServices.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Numerics.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Serialization.Formatters.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Serialization.Json.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Serialization.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Runtime.Serialization.Xml.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Claims.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Cryptography.Csp.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Cryptography.Encoding.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Cryptography.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.Principal.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Security.SecureString.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Text.Encoding.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Text.Encoding.Extensions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Text.RegularExpressions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.Overlapped.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.Tasks.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.Tasks.Parallel.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.Thread.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.ThreadPool.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Threading.Timer.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.ReaderWriter.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.XDocument.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.XmlDocument.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.XmlSerializer.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.XPath.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Xml.XPath.XDocument.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Akka.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\neo-gui_pluginframework.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Neo.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Collections.Immutable.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Akka.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\Microsoft.Extensions.Primitives.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\neo-gui_pluginframework.pdb
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.csprojAssemblyReference.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.Form_close.resources
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.Form_create.resources
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.Form_main.resources
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.csproj.GenerateResource.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.csproj.CopyComplete
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.dll
+\\Mac\Home\Documents\工作\Trinity\NEO\trinity-neo-gui\plugin_trinity\obj\Debug\plugin_trinity.pdb
