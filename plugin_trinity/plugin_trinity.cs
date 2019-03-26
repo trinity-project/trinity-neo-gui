@@ -9,6 +9,8 @@ namespace plugin_trinity
 {
     public class Plugin_trinity : IPlugin
     {
+
+        public static IAPI api;
         /// <summary>
         /// 设置插件名称
         /// </summary>
@@ -62,6 +64,11 @@ namespace plugin_trinity
         public void ChildrenMenuClick(string menu)
         {
 
+        }
+
+        public void Init(IAPI api)
+        {
+            Plugin_trinity.api = api;
         }
     }
 }

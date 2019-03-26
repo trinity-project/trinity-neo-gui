@@ -227,11 +227,22 @@ namespace Neo.UI
             }
         }
 
+        class Api : Neo.GUIPlugin.IAPI
+        {
+            public Wallet CurrentWallet => Program.CurrentWallet;
+
+            public void SignAndShowInformation(Transaction tx)
+            {
+                Helper.SignAndShowInformation(tx);
+            }
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             //引入插件
             Neo.GUIPlugin.PluginTool plugintool = new GUIPlugin.PluginTool();
-            plugintool.LoadDlls();
+            var api = new Api();
+            plugintool.LoadDlls(api);
             plugintool.InitMenu(this.menuStrip1);
 
             actor = Program.NeoSystem.ActorSystem.ActorOf(EventWrapper<Blockchain.PersistCompleted>.Props(Blockchain_PersistCompleted));

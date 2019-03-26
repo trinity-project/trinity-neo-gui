@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Neo;
+using Neo.Network.P2P;
+using Neo.Network.P2P.Payloads;
 
 namespace Neo.GUIPlugin
 {
@@ -15,7 +18,7 @@ namespace Neo.GUIPlugin
         public List<string> errors = new List<string>();
         public List<string> failPlugin = new List<string>();
 
-        public void LoadDlls(string path = "plugins", string searchPattern = "*.dll")
+        public void LoadDlls(IAPI api, string path = "plugins", string searchPattern = "*.dll")
         {
             //loadplugin
             var files = System.IO.Directory.GetFiles(path, searchPattern);
@@ -41,7 +44,19 @@ namespace Neo.GUIPlugin
                     errors.Add(errstr);
                     Console.WriteLine(errstr);
                 }
-
+            }
+            foreach (var plugin in plugins)
+            {
+                try
+                {
+                    plugin.Value.Init(api);
+                }
+                catch (Exception err)
+                {
+                    string errstr = "error init:" + plugin.Key + "  err:" + err.Message;
+                    failPlugin.Add(plugin.Key);
+                    Console.WriteLine(errstr);
+                }
             }
         }
 
@@ -115,6 +130,22 @@ namespace Neo.GUIPlugin
         }
     }
 
+    public interface IAPI
+    {
+        void SignAndShowInformation(Transaction tx);
+
+        Neo.Wallets.Wallet CurrentWallet
+        {
+            get;
+        }
+    }
+    /*
+    public interface IAPI2 : IAPI
+    {
+        void SendRaw(Transaction tx);
+    }
+    */
+
     public interface IPlugin
     {
         string Name { get; }
@@ -123,5 +154,6 @@ namespace Neo.GUIPlugin
         string[] GetMenus();
         void MenuClick();
         void ChildrenMenuClick(string menu);
+        void Init(IAPI api);
     }
 }
