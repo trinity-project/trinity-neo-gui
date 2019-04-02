@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_trinity", "plugin_tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui_pluginframework", "neo-gui_pluginframework\neo-gui_pluginframework.csproj", "{F3166EDF-72D3-4301-947F-F66C211AC2FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallet", "Test\Wallet.csproj", "{570C34E2-A00E-4427-B73A-B6C69D0F72AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3166EDF-72D3-4301-947F-F66C211AC2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570C34E2-A00E-4427-B73A-B6C69D0F72AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570C34E2-A00E-4427-B73A-B6C69D0F72AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570C34E2-A00E-4427-B73A-B6C69D0F72AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570C34E2-A00E-4427-B73A-B6C69D0F72AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

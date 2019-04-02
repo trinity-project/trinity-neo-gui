@@ -188,8 +188,8 @@
     <Reference Include="Microsoft.Net.Http.Headers, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.Headers.2.1.1\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
     </Reference>
-    <Reference Include="Neo, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neo.2.9.0\lib\net47\Neo.dll</HintPath>
+    <Reference Include="Neo">
+      <HintPath>..\..\Neo.dll</HintPath>
     </Reference>
     <Reference Include="neo-gui_pluginframework">
       <HintPath>..\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll</HintPath>
@@ -567,6 +567,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AssetRegisterDialog.es-ES.resx">
       <DependentUpon>AssetRegisterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AssetRegisterDialog.resx">
       <DependentUpon>AssetRegisterDialog.cs</DependentUpon>
@@ -574,21 +575,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AssetRegisterDialog.zh-Hans.resx">
       <DependentUpon>AssetRegisterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BulkPayDialog.es-ES.resx">
       <DependentUpon>BulkPayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BulkPayDialog.resx">
       <DependentUpon>BulkPayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BulkPayDialog.zh-Hans.resx">
       <DependentUpon>BulkPayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CertificateRequestWizard.es-ES.resx">
       <DependentUpon>CertificateRequestWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CertificateRequestWizard.resx">
       <DependentUpon>CertificateRequestWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CertificateRequestWizard.zh-Hans.resx">
       <DependentUpon>CertificateRequestWizard.cs</DependentUpon>
@@ -596,6 +603,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ChangePasswordDialog.es-ES.resx">
       <DependentUpon>ChangePasswordDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ChangePasswordDialog.resx">
       <DependentUpon>ChangePasswordDialog.cs</DependentUpon>
@@ -607,24 +615,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ClaimForm.es-ES.resx">
       <DependentUpon>ClaimForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ClaimForm.resx">
       <DependentUpon>ClaimForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ClaimForm.zh-Hans.resx">
       <DependentUpon>ClaimForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ContractDetailsDialog.es-ES.resx">
       <DependentUpon>ContractDetailsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ContractDetailsDialog.resx">
       <DependentUpon>ContractDetailsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ContractDetailsDialog.zh-Hans.resx">
       <DependentUpon>ContractDetailsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateLockAccountDialog.es-ES.resx">
       <DependentUpon>CreateLockAccountDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateLockAccountDialog.resx">
       <DependentUpon>CreateLockAccountDialog.cs</DependentUpon>
@@ -632,15 +646,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateLockAccountDialog.zh-Hans.resx">
       <DependentUpon>CreateLockAccountDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateMultiSigContractDialog.es-ES.resx">
       <DependentUpon>CreateMultiSigContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateMultiSigContractDialog.resx">
       <DependentUpon>CreateMultiSigContractDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateMultiSigContractDialog.zh-Hans.resx">
       <DependentUpon>CreateMultiSigContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateWalletDialog.es-ES.resx">
       <DependentUpon>CreateWalletDialog.cs</DependentUpon>
@@ -648,6 +665,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateWalletDialog.zh-Hans.resx">
       <DependentUpon>CreateWalletDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeployContractDialog.es-ES.resx">
       <DependentUpon>DeployContractDialog.cs</DependentUpon>
@@ -658,9 +676,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeployContractDialog.zh-Hans.resx">
       <DependentUpon>DeployContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeveloperToolsForm.es-ES.resx">
       <DependentUpon>DeveloperToolsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeveloperToolsForm.resx">
       <DependentUpon>DeveloperToolsForm.cs</DependentUpon>
@@ -668,9 +688,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeveloperToolsForm.zh-Hans.resx">
       <DependentUpon>DeveloperToolsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ElectionDialog.es-ES.resx">
       <DependentUpon>ElectionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ElectionDialog.resx">
       <DependentUpon>ElectionDialog.cs</DependentUpon>
@@ -678,54 +700,69 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ElectionDialog.zh-Hans.resx">
       <DependentUpon>ElectionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportCustomContractDialog.es-ES.resx">
       <DependentUpon>ImportCustomContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportCustomContractDialog.resx">
       <DependentUpon>ImportCustomContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportCustomContractDialog.zh-Hans.resx">
       <DependentUpon>ImportCustomContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportPrivateKeyDialog.es-ES.resx">
       <DependentUpon>ImportPrivateKeyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportPrivateKeyDialog.resx">
       <DependentUpon>ImportPrivateKeyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportPrivateKeyDialog.zh-Hans.resx">
       <DependentUpon>ImportPrivateKeyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InformationBox.es-ES.resx">
       <DependentUpon>InformationBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InformationBox.resx">
       <DependentUpon>InformationBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InformationBox.zh-Hans.resx">
       <DependentUpon>InformationBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InputBox.es-ES.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InputBox.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InputBox.zh-Hans.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InvokeContractDialog.es-ES.resx">
       <DependentUpon>InvokeContractDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InvokeContractDialog.resx">
       <DependentUpon>InvokeContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\InvokeContractDialog.zh-Hans.resx">
       <DependentUpon>InvokeContractDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\IssueDialog.es-ES.resx">
       <DependentUpon>IssueDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\IssueDialog.resx">
       <DependentUpon>IssueDialog.cs</DependentUpon>
@@ -733,6 +770,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\IssueDialog.zh-Hans.resx">
       <DependentUpon>IssueDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.es-ES.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -754,18 +792,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\OptionsDialog.es-ES.resx">
       <DependentUpon>OptionsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\OptionsDialog.resx">
       <DependentUpon>OptionsDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\OptionsDialog.zh-Hans.resx">
       <DependentUpon>OptionsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ParametersEditor.es-ES.resx">
       <DependentUpon>ParametersEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ParametersEditor.resx">
       <DependentUpon>ParametersEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ParametersEditor.zh-Hans.resx">
       <DependentUpon>ParametersEditor.cs</DependentUpon>
@@ -775,9 +816,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PayToDialog.zh-Hans.resx">
       <DependentUpon>PayToDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SelectCertificateDialog.es-ES.resx">
       <DependentUpon>SelectCertificateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SelectCertificateDialog.zh-Hans.resx">
       <DependentUpon>SelectCertificateDialog.cs</DependentUpon>
@@ -785,6 +828,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningDialog.es-ES.resx">
       <DependentUpon>SigningDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningDialog.resx">
       <DependentUpon>SigningDialog.cs</DependentUpon>
@@ -792,9 +836,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningDialog.zh-Hans.resx">
       <DependentUpon>SigningDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningTxDialog.es-ES.resx">
       <DependentUpon>SigningTxDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningTxDialog.zh-Hans.resx">
       <DependentUpon>SigningTxDialog.cs</DependentUpon>
@@ -829,9 +875,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PayToDialog.resx">
       <DependentUpon>PayToDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SelectCertificateDialog.resx">
       <DependentUpon>SelectCertificateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SigningTxDialog.resx">
       <DependentUpon>SigningTxDialog.cs</DependentUpon>
@@ -839,6 +887,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateWalletDialog.resx">
       <DependentUpon>CreateWalletDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

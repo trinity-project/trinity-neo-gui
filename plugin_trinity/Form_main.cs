@@ -17,6 +17,10 @@ using System.Threading;
 using Neo.IO.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Settings = plugin_trinity.Properties.Settings1;
+using Neo.Ledger;
+using Neo.Network.P2P.Payloads;
+using Neo.IO;
 
 namespace plugin_trinity
 {
@@ -189,6 +193,45 @@ namespace plugin_trinity
 
             var responseString = response.Content.ReadAsStringAsync().Result;
             MessageBox.Show(responseString);
+        }
+
+        private void Form_main_Load(object sender, EventArgs e)
+        {
+            //TrinityTcpClient client = new TrinityTcpClient("47.98.228.81", "8234");
+            //client.createConnetion();
+        }
+
+        public static void showInformation(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //string hexString = Settings.Default.AssetType.NEO;
+            //Int64 num = Int64.Parse(hexString, System.Globalization.NumberStyles.HexNumber);
+            
+
+            MessageBox.Show(Settings.Default.AssetType.NEO);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Settings.Default.LastGatewayNet = textBox1.Text;
+            Settings.Default.Save();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            JObject blockInfo = new JObject();
+            JArray tx;
+            Block block;
+            uint blockHeigh = uint.Parse(转账金额textBox.Text);
+            block = Blockchain.Singleton.Store.GetBlock(blockHeigh);
+            tx = (JArray)block.ToJson()["tx"] ;
+            //blockInfo = JObject.Parse(tx[0].ToString()); 
+            //MessageBox.Show(blockInfo["txid"].ToString());
+            MessageBox.Show(block.ToJson().ToString());
         }
     }
 }

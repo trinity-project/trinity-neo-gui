@@ -590,6 +590,7 @@ namespace Neo.UI
 
         private void 转账TToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Transaction tx;
             UInt160 change_address;
             Fixed8 fee;

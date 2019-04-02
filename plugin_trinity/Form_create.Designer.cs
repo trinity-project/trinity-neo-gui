@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.网络接入点comboBox1 = new System.Windows.Forms.ComboBox();
             this.资产类型comboBox = new System.Windows.Forms.ComboBox();
             this.取消button = new System.Windows.Forms.Button();
             this.创建button = new System.Windows.Forms.Button();
             this.通道密码textBox = new System.Windows.Forms.TextBox();
             this.通道别名textBox = new System.Windows.Forms.TextBox();
             this.通道押金textBox = new System.Windows.Forms.TextBox();
-            this.网络接入点textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,13 +47,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.网络接入点comboBox1);
             this.groupBox1.Controls.Add(this.资产类型comboBox);
             this.groupBox1.Controls.Add(this.取消button);
             this.groupBox1.Controls.Add(this.创建button);
             this.groupBox1.Controls.Add(this.通道密码textBox);
             this.groupBox1.Controls.Add(this.通道别名textBox);
             this.groupBox1.Controls.Add(this.通道押金textBox);
-            this.groupBox1.Controls.Add(this.网络接入点textBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -66,6 +66,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "通道信息";
+            // 
+            // 网络接入点comboBox1
+            // 
+            this.网络接入点comboBox1.FormattingEnabled = true;
+            this.网络接入点comboBox1.Location = new System.Drawing.Point(204, 66);
+            this.网络接入点comboBox1.Name = "网络接入点comboBox1";
+            this.网络接入点comboBox1.Size = new System.Drawing.Size(624, 32);
+            this.网络接入点comboBox1.TabIndex = 13;
             // 
             // 资产类型comboBox
             // 
@@ -121,13 +129,6 @@
             this.通道押金textBox.Size = new System.Drawing.Size(146, 35);
             this.通道押金textBox.TabIndex = 6;
             // 
-            // 网络接入点textBox
-            // 
-            this.网络接入点textBox.Location = new System.Drawing.Point(204, 63);
-            this.网络接入点textBox.Name = "网络接入点textBox";
-            this.网络接入点textBox.Size = new System.Drawing.Size(512, 35);
-            this.网络接入点textBox.TabIndex = 5;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -182,6 +183,7 @@
             this.Name = "Form_create";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "创建通道";
+            this.Load += new System.EventHandler(this.Form_create_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -196,12 +198,12 @@
         private System.Windows.Forms.TextBox 通道密码textBox;
         private System.Windows.Forms.TextBox 通道别名textBox;
         private System.Windows.Forms.TextBox 通道押金textBox;
-        private System.Windows.Forms.TextBox 网络接入点textBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox 资产类型comboBox;
+        private System.Windows.Forms.ComboBox 网络接入点comboBox1;
     }
 }
