@@ -62,13 +62,13 @@ namespace Neo.GUIPlugin
 
         public void InitMenu(System.Windows.Forms.MenuStrip menuStrip)
         {
-            System.Windows.Forms.ToolStripMenuItem item = new System.Windows.Forms.ToolStripMenuItem();
+            System.Windows.Forms.ToolStripMenuItem item = new ToolStripMenuItem();
             if (plugins.Count == 0) { return; }
             foreach (var plugin in plugins)
             {
                 try
                 {
-                    System.Windows.Forms.ToolStripMenuItem pitem = new System.Windows.Forms.ToolStripMenuItem();
+                    System.Windows.Forms.ToolStripMenuItem pitem = new ToolStripMenuItem();
                     pitem.Text = plugin.Key;
                     string menuPosition = plugin.Value.GetMenuPosition();
                     int index = plugin.Value.GetMenuIndex();
@@ -106,7 +106,7 @@ namespace Neo.GUIPlugin
 
                     foreach (var childrenMenus in plugin.Value.GetMenus())
                     {
-                        System.Windows.Forms.ToolStripMenuItem childrenItem = new System.Windows.Forms.ToolStripMenuItem();
+                        System.Windows.Forms.ToolStripMenuItem childrenItem = new ToolStripMenuItem();
                         childrenItem.Text = childrenMenus;
 
                         pitem.DropDownItems.Add(childrenItem);

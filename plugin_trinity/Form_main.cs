@@ -17,7 +17,6 @@ using System.Threading;
 using Neo.IO.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Settings = plugin_trinity.Properties.Settings1;
 using Neo.Ledger;
 using Neo.Network.P2P.Payloads;
 using Neo.IO;
@@ -150,88 +149,10 @@ namespace plugin_trinity
             MessageBox.Show(this.查询类型comboBox.SelectedItem.ToString() + 查询条件comboBox.SelectedItem.ToString(), "查询条件", MessageBoxButtons.OK);
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /*
-            LevelDBStore Neostore;
-            NeoSystem Neosystem;
-            //RpcServer NeoRpcServer;
-            Neostore = new LevelDBStore("C:\\Neo");
-            Neosystem = new NeoSystem(Neostore);
-            Neosystem.StartRpc(10332);
-            //NeoRpcServer = new RpcServer(Neosystem);
-            //NeoRpcServer.Start(10320);
-
-            //system.StartRpc("127.0.0.1",);
-            */
-
-            //DB db = DB.Open("C:\\Neo", new Options { CreateIfMissing = true });
-            RpcServer RpcServer = new RpcServer();
-            //Thread RpcThread = new Thread(new ThreadStart);
-            RpcServer.Start(IPAddress.Parse("0.0.0.0"), 20338);
-            //MessageBox.Show(result);
-            //Console.WriteLine("按任意键结束:");
-            //Console.ReadLine();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            JObject json = new JObject();
-            json["jsonrpc"] = "2.0";
-            json["method"] = "test";
-            json["params"] = new JArray("this is test");
-            json["id"] = 1;
-
-            HttpContent httpContent = new StringContent(json.ToString());
-            httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-            httpContent.Headers.ContentType.CharSet = "utf-8";
-
-            HttpClient walletClient = new HttpClient();
-
-            var response = walletClient.PostAsync("http://127.0.0.1:20338", httpContent).Result;
-
-            var responseString = response.Content.ReadAsStringAsync().Result;
-            MessageBox.Show(responseString);
-        }
-
         private void Form_main_Load(object sender, EventArgs e)
         {
             //TrinityTcpClient client = new TrinityTcpClient("47.98.228.81", "8234");
             //client.createConnetion();
-        }
-
-        public static void showInformation(string message)
-        {
-            MessageBox.Show(message);
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            //string hexString = Settings.Default.AssetType.NEO;
-            //Int64 num = Int64.Parse(hexString, System.Globalization.NumberStyles.HexNumber);
-            
-
-            MessageBox.Show(Settings.Default.AssetType.NEO);
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Settings.Default.LastGatewayNet = textBox1.Text;
-            Settings.Default.Save();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            JObject blockInfo = new JObject();
-            JArray tx;
-            Block block;
-            uint blockHeigh = uint.Parse(转账金额textBox.Text);
-            block = Blockchain.Singleton.Store.GetBlock(blockHeigh);
-            tx = (JArray)block.ToJson()["tx"] ;
-            //blockInfo = JObject.Parse(tx[0].ToString()); 
-            //MessageBox.Show(blockInfo["txid"].ToString());
-            MessageBox.Show(block.ToJson().ToString());
         }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.对端账户textBox = new System.Windows.Forms.TextBox();
             this.转账金额textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,9 +36,6 @@
             this.创建通道button = new System.Windows.Forms.Button();
             this.拆除通道button = new System.Windows.Forms.Button();
             this.通道转账groupBox = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.资产类型comboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.转账button = new System.Windows.Forms.Button();
@@ -69,7 +66,6 @@
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
             this.通道转账groupBox.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -146,10 +142,6 @@
             // 
             // 通道转账groupBox
             // 
-            this.通道转账groupBox.Controls.Add(this.button3);
-            this.通道转账groupBox.Controls.Add(this.button2);
-            this.通道转账groupBox.Controls.Add(this.textBox1);
-            this.通道转账groupBox.Controls.Add(this.button1);
             this.通道转账groupBox.Controls.Add(this.资产类型comboBox);
             this.通道转账groupBox.Controls.Add(this.label3);
             this.通道转账groupBox.Controls.Add(this.转账button);
@@ -165,33 +157,6 @@
             this.通道转账groupBox.TabIndex = 10;
             this.通道转账groupBox.TabStop = false;
             this.通道转账groupBox.Text = "通道转账";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(489, 279);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(214, 42);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "更新Gateway";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(417, 224);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 35);
-            this.textBox1.TabIndex = 17;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(737, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 48);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "开启TCP";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // 资产类型comboBox
             // 
@@ -217,10 +182,10 @@
             // 
             // 转账button
             // 
-            this.转账button.Location = new System.Drawing.Point(896, 222);
+            this.转账button.Location = new System.Drawing.Point(856, 224);
             this.转账button.Margin = new System.Windows.Forms.Padding(4);
             this.转账button.Name = "转账button";
-            this.转账button.Size = new System.Drawing.Size(128, 46);
+            this.转账button.Size = new System.Drawing.Size(152, 54);
             this.转账button.TabIndex = 12;
             this.转账button.Text = "转账";
             this.转账button.UseVisualStyleBackColor = true;
@@ -327,10 +292,10 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup1";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
+            listViewGroup1});
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(4, 4);
@@ -495,16 +460,6 @@
             this.tabPage4.Text = "节点管理";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(947, 45);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 50);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "getBlock";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -569,9 +524,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }
