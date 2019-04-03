@@ -138,6 +138,10 @@ namespace Neo.GUIPlugin
         {
             get;
         }
+        Neo.NeoSystem NeoSystem
+        {
+            get;
+        }
     }
     /*
     public interface IAPI2 : IAPI

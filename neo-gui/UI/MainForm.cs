@@ -230,6 +230,7 @@ namespace Neo.UI
         class Api : Neo.GUIPlugin.IAPI
         {
             public Wallet CurrentWallet => Program.CurrentWallet;
+            public NeoSystem NeoSystem => Program.NeoSystem;
 
             public void SignAndShowInformation(Transaction tx)
             {
