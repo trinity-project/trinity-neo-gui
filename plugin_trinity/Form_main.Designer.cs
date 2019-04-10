@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.对端账户textBox = new System.Windows.Forms.TextBox();
             this.转账金额textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +36,8 @@
             this.创建通道button = new System.Windows.Forms.Button();
             this.拆除通道button = new System.Windows.Forms.Button();
             this.通道转账groupBox = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.资产类型comboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.转账button = new System.Windows.Forms.Button();
@@ -78,7 +80,7 @@
             // 
             // 对端账户textBox
             // 
-            this.对端账户textBox.Location = new System.Drawing.Point(190, 72);
+            this.对端账户textBox.Location = new System.Drawing.Point(190, 115);
             this.对端账户textBox.Margin = new System.Windows.Forms.Padding(4);
             this.对端账户textBox.Name = "对端账户textBox";
             this.对端账户textBox.Size = new System.Drawing.Size(662, 35);
@@ -86,7 +88,7 @@
             // 
             // 转账金额textBox
             // 
-            this.转账金额textBox.Location = new System.Drawing.Point(190, 152);
+            this.转账金额textBox.Location = new System.Drawing.Point(190, 183);
             this.转账金额textBox.Margin = new System.Windows.Forms.Padding(4);
             this.转账金额textBox.Name = "转账金额textBox";
             this.转账金额textBox.Size = new System.Drawing.Size(200, 35);
@@ -96,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(32, 72);
+            this.label1.Location = new System.Drawing.Point(32, 119);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
@@ -107,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(32, 152);
+            this.label2.Location = new System.Drawing.Point(32, 187);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
@@ -142,6 +144,8 @@
             // 
             // 通道转账groupBox
             // 
+            this.通道转账groupBox.Controls.Add(this.comboBox1);
+            this.通道转账groupBox.Controls.Add(this.label6);
             this.通道转账groupBox.Controls.Add(this.资产类型comboBox);
             this.通道转账groupBox.Controls.Add(this.label3);
             this.通道转账groupBox.Controls.Add(this.转账button);
@@ -158,13 +162,34 @@
             this.通道转账groupBox.TabStop = false;
             this.通道转账groupBox.Text = "通道转账";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 24;
+            this.comboBox1.Location = new System.Drawing.Point(190, 55);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(662, 32);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(32, 63);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "本端账户";
+            // 
             // 资产类型comboBox
             // 
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
             "NEO",
             "TNC"});
-            this.资产类型comboBox.Location = new System.Drawing.Point(190, 224);
+            this.资产类型comboBox.Location = new System.Drawing.Point(190, 247);
             this.资产类型comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.资产类型comboBox.Name = "资产类型comboBox";
             this.资产类型comboBox.Size = new System.Drawing.Size(120, 32);
@@ -173,7 +198,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 232);
+            this.label3.Location = new System.Drawing.Point(32, 251);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
@@ -182,7 +207,7 @@
             // 
             // 转账button
             // 
-            this.转账button.Location = new System.Drawing.Point(856, 224);
+            this.转账button.Location = new System.Drawing.Point(856, 243);
             this.转账button.Margin = new System.Windows.Forms.Padding(4);
             this.转账button.Name = "转账button";
             this.转账button.Size = new System.Drawing.Size(152, 54);
@@ -292,10 +317,10 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1});
+            listViewGroup2});
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(4, 4);
@@ -524,5 +549,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

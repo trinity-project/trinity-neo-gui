@@ -1,36 +1,19 @@
 ﻿using Neo;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Neo.Persistence;
-using Neo.Persistence.LevelDB;
-using Neo.Network.P2P;
-using System.Net;
-using Neo.IO.Data.LevelDB;
-using System.Threading;
-using Neo.IO.Json;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using Neo.Ledger;
-using Neo.Network.P2P.Payloads;
 using Neo.IO;
+using Neo.Wallets;
+using Neo.Cryptography;
 
 namespace plugin_trinity
 {
     public partial class Form_main : Form
     {
-
         public Form_main()
         {
             InitializeComponent();
-
-
         }
 
         private void 创建通道button_Click(object sender, EventArgs e)
@@ -50,7 +33,6 @@ namespace plugin_trinity
                 }
             }
         }
-
 
         private void 拆除通道button_Click(object sender, EventArgs e)
         {
@@ -151,8 +133,17 @@ namespace plugin_trinity
 
         private void Form_main_Load(object sender, EventArgs e)
         {
-            //TrinityTcpClient client = new TrinityTcpClient("47.98.228.81", "8234");
-            //client.createConnetion();
+            if (Plugin_trinity.api.CurrentWallet != null)
+            {
+                var currWallet = Plugin_trinity.api.CurrentWallet;
+                foreach (var s in currWallet.GetAccounts())
+                {
+                    comboBox1.Items.Add(s.Address.ToString());
+                }
+                comboBox1.SelectedIndex = 0;
+                comboBox1.Refresh();
+            }
         }
+
     }
 }

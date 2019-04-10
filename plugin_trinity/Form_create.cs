@@ -56,5 +56,6 @@ namespace plugin_trinity
             string name = this.通道别名textBox.Text;
             channelInfo = new string[] { account, name, deposit, type};
         }
+
     }
 }
