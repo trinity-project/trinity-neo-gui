@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.对端账户textBox = new System.Windows.Forms.TextBox();
             this.转账金额textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -80,70 +80,41 @@
             // 
             // 对端账户textBox
             // 
-            this.对端账户textBox.Location = new System.Drawing.Point(190, 115);
-            this.对端账户textBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.对端账户textBox, "对端账户textBox");
             this.对端账户textBox.Name = "对端账户textBox";
-            this.对端账户textBox.Size = new System.Drawing.Size(662, 35);
-            this.对端账户textBox.TabIndex = 0;
             // 
             // 转账金额textBox
             // 
-            this.转账金额textBox.Location = new System.Drawing.Point(190, 183);
-            this.转账金额textBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.转账金额textBox, "转账金额textBox");
             this.转账金额textBox.Name = "转账金额textBox";
-            this.转账金额textBox.Size = new System.Drawing.Size(200, 35);
-            this.转账金额textBox.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(32, 119);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "对端账户";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(32, 187);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "转账金额";
             // 
             // 创建通道button
             // 
-            this.创建通道button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.创建通道button.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.创建通道button.Location = new System.Drawing.Point(16, 352);
-            this.创建通道button.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.创建通道button, "创建通道button");
             this.创建通道button.Name = "创建通道button";
-            this.创建通道button.Size = new System.Drawing.Size(64, 50);
-            this.创建通道button.TabIndex = 8;
-            this.创建通道button.Text = "+";
             this.创建通道button.UseVisualStyleBackColor = true;
             this.创建通道button.Click += new System.EventHandler(this.创建通道button_Click);
             // 
             // 拆除通道button
             // 
-            this.拆除通道button.Enabled = false;
-            this.拆除通道button.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.拆除通道button.Location = new System.Drawing.Point(96, 352);
-            this.拆除通道button.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.拆除通道button, "拆除通道button");
             this.拆除通道button.Name = "拆除通道button";
-            this.拆除通道button.Size = new System.Drawing.Size(68, 50);
-            this.拆除通道button.TabIndex = 9;
-            this.拆除通道button.Text = "-";
             this.拆除通道button.UseVisualStyleBackColor = true;
             this.拆除通道button.Click += new System.EventHandler(this.拆除通道button_Click);
             // 
             // 通道转账groupBox
             // 
+            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Controls.Add(this.comboBox1);
             this.通道转账groupBox.Controls.Add(this.label6);
             this.通道转账groupBox.Controls.Add(this.资产类型comboBox);
@@ -153,111 +124,72 @@
             this.通道转账groupBox.Controls.Add(this.label2);
             this.通道转账groupBox.Controls.Add(this.转账金额textBox);
             this.通道转账groupBox.Controls.Add(this.对端账户textBox);
-            this.通道转账groupBox.Location = new System.Drawing.Point(22, 20);
-            this.通道转账groupBox.Margin = new System.Windows.Forms.Padding(4);
             this.通道转账groupBox.Name = "通道转账groupBox";
-            this.通道转账groupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.通道转账groupBox.Size = new System.Drawing.Size(1108, 328);
-            this.通道转账groupBox.TabIndex = 10;
             this.通道转账groupBox.TabStop = false;
-            this.通道转账groupBox.Text = "通道转账";
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 24;
-            this.comboBox1.Location = new System.Drawing.Point(190, 55);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(662, 32);
-            this.comboBox1.TabIndex = 18;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(32, 63);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 24);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "本端账户";
             // 
             // 资产类型comboBox
             // 
+            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
-            "NEO",
-            "TNC"});
-            this.资产类型comboBox.Location = new System.Drawing.Point(190, 247);
-            this.资产类型comboBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.GetString("资产类型comboBox.Items"),
+            resources.GetString("资产类型comboBox.Items1")});
             this.资产类型comboBox.Name = "资产类型comboBox";
-            this.资产类型comboBox.Size = new System.Drawing.Size(120, 32);
-            this.资产类型comboBox.TabIndex = 15;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 251);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "资产类型";
             // 
             // 转账button
             // 
-            this.转账button.Location = new System.Drawing.Point(856, 243);
-            this.转账button.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.转账button, "转账button");
             this.转账button.Name = "转账button";
-            this.转账button.Size = new System.Drawing.Size(152, 54);
-            this.转账button.TabIndex = 12;
-            this.转账button.Text = "转账";
             this.转账button.UseVisualStyleBackColor = true;
             this.转账button.Click += new System.EventHandler(this.转账button_Click);
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1166, 844);
-            this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.可用通道列表groupBox);
             this.tabPage1.Controls.Add(this.通道转账groupBox);
-            this.tabPage1.Location = new System.Drawing.Point(8, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1150, 797);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "转账交易";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // 可用通道列表groupBox
             // 
+            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
             this.可用通道列表groupBox.Controls.Add(this.通道列表listView);
             this.可用通道列表groupBox.Controls.Add(this.创建通道button);
             this.可用通道列表groupBox.Controls.Add(this.拆除通道button);
-            this.可用通道列表groupBox.Location = new System.Drawing.Point(22, 356);
-            this.可用通道列表groupBox.Margin = new System.Windows.Forms.Padding(4);
             this.可用通道列表groupBox.Name = "可用通道列表groupBox";
-            this.可用通道列表groupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.可用通道列表groupBox.Size = new System.Drawing.Size(1128, 416);
-            this.可用通道列表groupBox.TabIndex = 12;
             this.可用通道列表groupBox.TabStop = false;
-            this.可用通道列表groupBox.Text = "可用通道列表";
             // 
             // 通道列表listView
             // 
+            resources.ApplyResources(this.通道列表listView, "通道列表listView");
             this.通道列表listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader6,
             this.columnHeader5,
@@ -265,178 +197,125 @@
             this.columnHeader7});
             this.通道列表listView.FullRowSelect = true;
             this.通道列表listView.GridLines = true;
-            this.通道列表listView.Location = new System.Drawing.Point(20, 40);
-            this.通道列表listView.Margin = new System.Windows.Forms.Padding(4);
             this.通道列表listView.Name = "通道列表listView";
-            this.通道列表listView.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.通道列表listView.Size = new System.Drawing.Size(1088, 304);
-            this.通道列表listView.TabIndex = 10;
             this.通道列表listView.UseCompatibleStateImageBehavior = false;
             this.通道列表listView.View = System.Windows.Forms.View.Details;
             this.通道列表listView.SelectedIndexChanged += new System.EventHandler(this.通道列表listView_SelectedIndexChanged);
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "通道别名";
-            this.columnHeader6.Width = 124;
+            resources.ApplyResources(this.columnHeader6, "columnHeader6");
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "对端地址";
-            this.columnHeader5.Width = 134;
+            resources.ApplyResources(this.columnHeader5, "columnHeader5");
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "本端通道余额";
-            this.columnHeader8.Width = 178;
+            resources.ApplyResources(this.columnHeader8, "columnHeader8");
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "通道状态";
-            this.columnHeader7.Width = 140;
+            resources.ApplyResources(this.columnHeader7, "columnHeader7");
             // 
             // tabPage2
             // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.listView1);
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1150, 797);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "转账记录";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
+            ((System.Windows.Forms.ListViewGroup)(resources.GetObject("listView1.Groups")))});
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 4);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.ShowGroups = false;
-            this.listView1.Size = new System.Drawing.Size(1142, 789);
-            this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "交易时间";
-            this.columnHeader1.Width = 158;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "通道别名";
-            this.columnHeader2.Width = 148;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "交易金额";
-            this.columnHeader3.Width = 174;
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "资产类型";
-            this.columnHeader4.Width = 298;
+            resources.ApplyResources(this.columnHeader4, "columnHeader4");
             // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Location = new System.Drawing.Point(8, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1150, 797);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "通道管理";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.查询类型comboBox);
             this.groupBox4.Controls.Add(this.查询条件comboBox);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(16, 16);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(1128, 126);
-            this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "通道查询";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 56);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "查询类型";
             // 
             // 查询类型comboBox
             // 
+            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
             this.查询类型comboBox.FormattingEnabled = true;
             this.查询类型comboBox.Items.AddRange(new object[] {
-            "通道状态",
-            "通道别名",
-            "通道余额"});
-            this.查询类型comboBox.Location = new System.Drawing.Point(190, 52);
-            this.查询类型comboBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.GetString("查询类型comboBox.Items"),
+            resources.GetString("查询类型comboBox.Items1"),
+            resources.GetString("查询类型comboBox.Items2")});
             this.查询类型comboBox.Name = "查询类型comboBox";
-            this.查询类型comboBox.Size = new System.Drawing.Size(172, 32);
-            this.查询类型comboBox.TabIndex = 1;
             this.查询类型comboBox.SelectedIndexChanged += new System.EventHandler(this.查询类型comboBox_SelectedIndexChanged);
             // 
             // 查询条件comboBox
             // 
+            resources.ApplyResources(this.查询条件comboBox, "查询条件comboBox");
             this.查询条件comboBox.FormattingEnabled = true;
-            this.查询条件comboBox.Location = new System.Drawing.Point(572, 52);
-            this.查询条件comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.查询条件comboBox.Name = "查询条件comboBox";
-            this.查询条件comboBox.Size = new System.Drawing.Size(160, 32);
-            this.查询条件comboBox.TabIndex = 4;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(444, 56);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "查询条件";
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.listView2);
-            this.groupBox3.Location = new System.Drawing.Point(16, 168);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1128, 614);
-            this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "通道信息";
             // 
             // listView2
             // 
+            resources.ApplyResources(this.listView2, "listView2");
+            this.listView2.AllowColumnReorder = true;
             this.listView2.AllowDrop = true;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
@@ -446,55 +325,38 @@
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(6, 44);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1116, 564);
-            this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "通道别名";
-            this.columnHeader9.Width = 202;
+            resources.ApplyResources(this.columnHeader9, "columnHeader9");
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "对端账户";
-            this.columnHeader10.Width = 200;
+            resources.ApplyResources(this.columnHeader10, "columnHeader10");
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "通道状态";
-            this.columnHeader11.Width = 192;
+            resources.ApplyResources(this.columnHeader11, "columnHeader11");
             // 
             // columnHeader12
             // 
-            this.columnHeader12.Text = "通道余额";
-            this.columnHeader12.Width = 166;
+            resources.ApplyResources(this.columnHeader12, "columnHeader12");
             // 
             // tabPage4
             // 
-            this.tabPage4.Location = new System.Drawing.Point(8, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1150, 797);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "节点管理";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // Form_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 862);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "通道交易：";
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.通道转账groupBox.ResumeLayout(false);
             this.通道转账groupBox.PerformLayout();

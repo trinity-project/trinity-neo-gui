@@ -204,10 +204,19 @@
     <EmbeddedResource Include="Form_close.resx">
       <DependentUpon>Form_close.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_close.zh-Hans.resx">
+      <DependentUpon>Form_close.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_create.resx">
       <DependentUpon>Form_create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_create.zh-Hans.resx">
+      <DependentUpon>Form_create.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_main.zh-Hans.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

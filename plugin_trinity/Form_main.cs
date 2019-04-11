@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using Neo.IO;
 using Neo.Wallets;
 using Neo.Cryptography;
+using System.Threading;
 
 namespace plugin_trinity
 {

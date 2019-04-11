@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_create));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.网络接入点comboBox1 = new System.Windows.Forms.ComboBox();
             this.资产类型comboBox = new System.Windows.Forms.ComboBox();
@@ -42,12 +44,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label6);
@@ -64,145 +66,96 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1030, 529);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "通道信息";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 104);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 24);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "对端接入点";
             // 
             // 网络接入点comboBox1
             // 
+            resources.ApplyResources(this.网络接入点comboBox1, "网络接入点comboBox1");
             this.网络接入点comboBox1.FormattingEnabled = true;
-            this.网络接入点comboBox1.Location = new System.Drawing.Point(204, 46);
             this.网络接入点comboBox1.Name = "网络接入点comboBox1";
-            this.网络接入点comboBox1.Size = new System.Drawing.Size(624, 32);
-            this.网络接入点comboBox1.TabIndex = 13;
             // 
             // 资产类型comboBox
             // 
+            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
-            "NEO",
-            "TNC"});
-            this.资产类型comboBox.Location = new System.Drawing.Point(204, 238);
+            resources.GetString("资产类型comboBox.Items"),
+            resources.GetString("资产类型comboBox.Items1")});
             this.资产类型comboBox.Name = "资产类型comboBox";
-            this.资产类型comboBox.Size = new System.Drawing.Size(121, 32);
-            this.资产类型comboBox.TabIndex = 12;
             // 
             // 取消button
             // 
+            resources.ApplyResources(this.取消button, "取消button");
             this.取消button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.取消button.Location = new System.Drawing.Point(624, 441);
             this.取消button.Name = "取消button";
-            this.取消button.Size = new System.Drawing.Size(128, 44);
-            this.取消button.TabIndex = 11;
-            this.取消button.Text = "取消";
             this.取消button.UseVisualStyleBackColor = true;
             this.取消button.Click += new System.EventHandler(this.取消button_Click);
             // 
             // 创建button
             // 
+            resources.ApplyResources(this.创建button, "创建button");
             this.创建button.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.创建button.Location = new System.Drawing.Point(156, 441);
             this.创建button.Name = "创建button";
-            this.创建button.Size = new System.Drawing.Size(115, 44);
-            this.创建button.TabIndex = 10;
-            this.创建button.Text = "创建";
             this.创建button.UseVisualStyleBackColor = true;
             this.创建button.Click += new System.EventHandler(this.创建button_Click_1);
             // 
             // 通道密码textBox
             // 
-            this.通道密码textBox.Location = new System.Drawing.Point(204, 365);
+            resources.ApplyResources(this.通道密码textBox, "通道密码textBox");
             this.通道密码textBox.Name = "通道密码textBox";
-            this.通道密码textBox.Size = new System.Drawing.Size(318, 35);
-            this.通道密码textBox.TabIndex = 9;
             // 
             // 通道别名textBox
             // 
-            this.通道别名textBox.Location = new System.Drawing.Point(204, 300);
+            resources.ApplyResources(this.通道别名textBox, "通道别名textBox");
             this.通道别名textBox.Name = "通道别名textBox";
-            this.通道别名textBox.Size = new System.Drawing.Size(266, 35);
-            this.通道别名textBox.TabIndex = 8;
             // 
             // 通道押金textBox
             // 
-            this.通道押金textBox.Location = new System.Drawing.Point(204, 173);
+            resources.ApplyResources(this.通道押金textBox, "通道押金textBox");
             this.通道押金textBox.Name = "通道押金textBox";
-            this.通道押金textBox.Size = new System.Drawing.Size(146, 35);
-            this.通道押金textBox.TabIndex = 6;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 369);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "通道密码";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 305);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "通道别名";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 237);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "资产类型";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 174);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "通道押金";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 49);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "本端接入点";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(204, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(624, 35);
-            this.textBox1.TabIndex = 15;
             // 
             // Form_create
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 546);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_create";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "创建通道";
             this.Load += new System.EventHandler(this.Form_create_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
