@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="plugin_trinity.Properties" GeneratedClassName="trinitySettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="gatewayIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="gatewayPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8089</Value>
+    </Setting>
+    <Setting Name="AddressVersion" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">23</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

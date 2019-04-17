@@ -7,37 +7,86 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Neo;
+using Neo.Cryptography;
+using Neo.Wallets;
+using Settings = plugin_trinity.Properties.trinitySettings;
 
 namespace plugin_trinity
 {
     public partial class Form_start : Form
     {
-        private static string channelAddress = "";
+        private static string accountAddress = "";
+        private static string accountPublicKey = "";
+        private static UInt160 accountScriptHash = null;
+        private static string accountURI = "";
+
+        public static UInt160 toScriptHash(string address)
+        {
+            byte[] data = address.Base58CheckDecode();
+            if (data.Length != 21)
+                throw new FormatException();
+            if (data[0] != Settings.Default.AddressVersion)
+                throw new FormatException();
+            return new UInt160(data.Skip(1).ToArray());
+        }
 
         public Form_start()
         {
             InitializeComponent();
         }
 
-        public static string getChannelAddress()
+        public static string getAccountAddress()
         {
-            return channelAddress;
+            return accountAddress;
+        }
+
+        public static string getChannelUri()
+        {
+            return accountURI;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            channelAddress = comboBox1.SelectedItem.ToString();
+            try
+            {
+                UInt160 scriptHash = toScriptHash(comboBox1.SelectedItem.ToString());                              
+                WalletAccount account = Plugin_trinity.api.CurrentWallet.GetAccount(scriptHash);
+
+                KeyPair key = account.GetKey();
+                accountAddress = account.Address;
+                accountPublicKey = key.PublicKey.EncodePoint(true).ToHexString();
+                accountScriptHash = account.ScriptHash;
+
+                string[] uriList = { accountPublicKey, Settings.Default.gatewayIP, Settings.Default.gatewayPort };
+                accountURI = string.Join(":", uriList);
+                
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (channelAddress == "")
+            if (accountAddress == "")
             {
                 MessageBox.Show("Please choise correct channel address");
                 return;
             }
-            var formMain = new Form_main();
-            formMain.ShowDialog();
+            try
+            {
+                //Todo trigger keepAlive message;
+                var formMain = new Form_main();
+                formMain.ShowDialog();
+                Close();
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)

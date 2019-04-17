@@ -22,7 +22,7 @@ namespace plugin_trinity
 
         private void Form_create_Load(object sender, EventArgs e)
         {
-            this.textBox2.Text = Form_start.getChannelAddress();
+            this.textBox2.Text = Form_start.getAccountAddress();
         }
 
         private void 取消button_Click(object sender, EventArgs e)

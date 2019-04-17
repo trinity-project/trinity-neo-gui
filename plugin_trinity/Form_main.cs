@@ -8,6 +8,7 @@ using Neo.Wallets;
 using Neo.Cryptography;
 using System.Threading;
 
+
 namespace plugin_trinity
 {
     public partial class Form_main : Form
@@ -134,7 +135,17 @@ namespace plugin_trinity
 
         private void Form_main_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Form_start.getChannelAddress();
+            string URI = Form_start.getChannelUri();
+            textBox1.Text = URI;
+
+            //ToDO:
+            /*
+            string[] channelList= GetChannelList(URI);
+            if (channelList.Length > 0)
+            {
+                enable all control
+            }
+            */
         }
 
     }
