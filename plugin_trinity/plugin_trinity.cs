@@ -53,8 +53,8 @@ namespace plugin_trinity
         /// </summary>
         public void MenuClick()
         {
-            var formMain = new Form_main();
-            formMain.ShowDialog();
+            var formStart = new Form_start();
+            formStart.ShowDialog();
         }
 
         /// <summary>

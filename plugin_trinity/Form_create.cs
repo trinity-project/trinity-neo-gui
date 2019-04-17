@@ -22,20 +22,7 @@ namespace plugin_trinity
 
         private void Form_create_Load(object sender, EventArgs e)
         {
-            if (Plugin_trinity.api.CurrentWallet != null)
-            {
-                var currWallet = Plugin_trinity.api.CurrentWallet;
-                foreach (var s in currWallet.GetAccounts())
-                {
-                    //var addrOut = s.ScriptHash;
-                    //string addrStr = addrOut.ToString();
-
-                    网络接入点comboBox1.Items.Add(s.Address.ToString());
-                }
-                网络接入点comboBox1.SelectedIndex = 0;
-                网络接入点comboBox1.Refresh();
-
-            }
+            this.textBox2.Text = Form_start.getChannelAddress();
         }
 
         private void 取消button_Click(object sender, EventArgs e)
@@ -50,11 +37,12 @@ namespace plugin_trinity
 
         private void 创建button_Click_1(object sender, EventArgs e)
         {
-            string account = this.网络接入点comboBox1.SelectedItem.ToString();
+            string founderAddress = this.textBox2.Text;
+            string peerAddress = this.textBox1.Text;
             string deposit = this.通道押金textBox.Text;
             string type = this.资产类型comboBox.SelectedItem.ToString();
             string name = this.通道别名textBox.Text;
-            channelInfo = new string[] { account, name, deposit, type};
+            channelInfo = new string[] {name, peerAddress, deposit, type, founderAddress};
         }
 
     }

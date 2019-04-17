@@ -134,16 +134,7 @@ namespace plugin_trinity
 
         private void Form_main_Load(object sender, EventArgs e)
         {
-            if (Plugin_trinity.api.CurrentWallet != null)
-            {
-                var currWallet = Plugin_trinity.api.CurrentWallet;
-                foreach (var s in currWallet.GetAccounts())
-                {
-                    comboBox1.Items.Add(s.Address.ToString());
-                }
-                comboBox1.SelectedIndex = 0;
-                comboBox1.Refresh();
-            }
+            textBox1.Text = Form_start.getChannelAddress();
         }
 
     }

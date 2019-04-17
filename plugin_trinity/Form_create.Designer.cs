@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_create));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.网络接入点comboBox1 = new System.Windows.Forms.ComboBox();
             this.资产类型comboBox = new System.Windows.Forms.ComboBox();
             this.取消button = new System.Windows.Forms.Button();
             this.创建button = new System.Windows.Forms.Button();
@@ -49,11 +49,10 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.网络接入点comboBox1);
             this.groupBox1.Controls.Add(this.资产类型comboBox);
             this.groupBox1.Controls.Add(this.取消button);
             this.groupBox1.Controls.Add(this.创建button);
@@ -66,8 +65,14 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
             // 
             // textBox1
             // 
@@ -79,33 +84,27 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // 网络接入点comboBox1
-            // 
-            resources.ApplyResources(this.网络接入点comboBox1, "网络接入点comboBox1");
-            this.网络接入点comboBox1.FormattingEnabled = true;
-            this.网络接入点comboBox1.Name = "网络接入点comboBox1";
-            // 
             // 资产类型comboBox
             // 
-            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
             resources.GetString("资产类型comboBox.Items"),
             resources.GetString("资产类型comboBox.Items1")});
+            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.Name = "资产类型comboBox";
             // 
             // 取消button
             // 
-            resources.ApplyResources(this.取消button, "取消button");
             this.取消button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.取消button, "取消button");
             this.取消button.Name = "取消button";
             this.取消button.UseVisualStyleBackColor = true;
             this.取消button.Click += new System.EventHandler(this.取消button_Click);
             // 
             // 创建button
             // 
-            resources.ApplyResources(this.创建button, "创建button");
             this.创建button.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.创建button, "创建button");
             this.创建button.Name = "创建button";
             this.创建button.UseVisualStyleBackColor = true;
             this.创建button.Click += new System.EventHandler(this.创建button_Click_1);
@@ -177,8 +176,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox 资产类型comboBox;
-        private System.Windows.Forms.ComboBox 网络接入点comboBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

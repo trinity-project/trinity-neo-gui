@@ -197,6 +197,12 @@
     <Compile Include="Form_main.Designer.cs">
       <DependentUpon>Form_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_start.Designer.cs">
+      <DependentUpon>Form_start.cs</DependentUpon>
+    </Compile>
     <Compile Include="plugin_trinity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -218,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_main.zh-Hans.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_start.resx">
+      <DependentUpon>Form_start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_start.zh-Hans.resx">
+      <DependentUpon>Form_start.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
