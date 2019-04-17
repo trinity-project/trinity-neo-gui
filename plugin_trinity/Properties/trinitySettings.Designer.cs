@@ -46,17 +46,5 @@ namespace plugin_trinity.Properties {
                 this["gatewayPort"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("23")]
-        public byte AddressVersion {
-            get {
-                return ((byte)(this["AddressVersion"]));
-            }
-            set {
-                this["AddressVersion"] = value;
-            }
-        }
     }
 }

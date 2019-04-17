@@ -22,16 +22,6 @@ namespace plugin_trinity
         private static UInt160 accountScriptHash = null;
         private static string accountURI = "";
 
-        public static UInt160 toScriptHash(string address)
-        {
-            byte[] data = address.Base58CheckDecode();
-            if (data.Length != 21)
-                throw new FormatException();
-            if (data[0] != Settings.Default.AddressVersion)
-                throw new FormatException();
-            return new UInt160(data.Skip(1).ToArray());
-        }
-
         public Form_start()
         {
             InitializeComponent();
@@ -51,7 +41,7 @@ namespace plugin_trinity
         {
             try
             {
-                UInt160 scriptHash = toScriptHash(comboBox1.SelectedItem.ToString());                              
+                UInt160 scriptHash = ((string)comboBox1.SelectedItem).ToScriptHash();
                 WalletAccount account = Plugin_trinity.api.CurrentWallet.GetAccount(scriptHash);
 
                 KeyPair key = account.GetKey();
@@ -60,8 +50,7 @@ namespace plugin_trinity
                 accountScriptHash = account.ScriptHash;
 
                 string[] uriList = { accountPublicKey, Settings.Default.gatewayIP, Settings.Default.gatewayPort };
-                accountURI = string.Join(":", uriList);
-                
+                accountURI = string.Join(":", uriList);               
             }
             catch (Exception ex)
             {

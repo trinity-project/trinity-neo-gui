@@ -8,8 +8,5 @@
     <Setting Name="gatewayPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8089</Value>
     </Setting>
-    <Setting Name="AddressVersion" Type="System.Byte" Scope="User">
-      <Value Profile="(Default)">23</Value>
-    </Setting>
   </Settings>
 </SettingsFile>
