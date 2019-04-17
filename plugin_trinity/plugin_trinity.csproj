@@ -210,6 +210,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>trinitySettings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Properties\trinityString.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trinityString.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form_close.resx">
@@ -236,6 +241,11 @@
     <EmbeddedResource Include="Form_start.zh-Hans.resx">
       <DependentUpon>Form_start.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\trinityString.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>trinityString.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\trinityString.zh-Hans.resx" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

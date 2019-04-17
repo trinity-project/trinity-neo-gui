@@ -33,16 +33,23 @@ namespace plugin_trinity
         public string GetChannel()
         {     
             return string.Join(",", channelInfo);           
-        }   
+        }
 
         private void 创建button_Click_1(object sender, EventArgs e)
         {
-            string founderAddress = this.textBox2.Text;
-            string peerAddress = this.textBox1.Text;
-            string deposit = this.通道押金textBox.Text;
-            string type = this.资产类型comboBox.SelectedItem.ToString();
-            string name = this.通道别名textBox.Text;
-            channelInfo = new string[] {name, peerAddress, deposit, type, founderAddress};
+            try
+            {
+                string founderAddress = this.textBox2.Text;
+                string peerAddress = this.textBox1.Text;
+                string deposit = this.通道押金textBox.Text;
+                string type = this.资产类型comboBox.SelectedItem.ToString();
+                string name = this.通道别名textBox.Text;
+                channelInfo = new string[] { name, peerAddress, deposit, type, founderAddress };
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
         }
 
     }

@@ -7,7 +7,7 @@ using Neo.IO;
 using Neo.Wallets;
 using Neo.Cryptography;
 using System.Threading;
-
+using Strings = plugin_trinity.Properties.trinityString;
 
 namespace plugin_trinity
 {
@@ -22,16 +22,23 @@ namespace plugin_trinity
         {
             using (Form_create formCreate = new Form_create())
             {
-                if (formCreate.ShowDialog() == DialogResult.OK)
+                try
                 {
-                    string info = formCreate.GetChannel();
-                    string[] destStr = info.Split(',');
+                    if (formCreate.ShowDialog() == DialogResult.OK)
+                    {
+                        string info = formCreate.GetChannel();
+                        string[] destStr = info.Split(',');
 
-                    ListViewItem channelItem = new ListViewItem(destStr[0]);
-                    channelItem.SubItems.Add(destStr[1]);
-                    channelItem.SubItems.Add(destStr[2]);
-                    channelItem.SubItems.Add(destStr[3]);
-                    this.通道列表listView.Items.Add(channelItem);
+                        ListViewItem channelItem = new ListViewItem(destStr[0]);
+                        channelItem.SubItems.Add(destStr[1]);
+                        channelItem.SubItems.Add(destStr[2]);
+                        channelItem.SubItems.Add(destStr[3]);
+                        this.通道列表listView.Items.Add(channelItem);
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -42,20 +49,27 @@ namespace plugin_trinity
             int Index = 0;
             if (this.通道列表listView.SelectedItems.Count > 0)
             {
-                ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
-                foreach (ListViewItem item in channelInfo)
+                try
                 {
-                    deleteChannel = item.SubItems[0].Text + ",";
-                    deleteChannel += item.SubItems[1].Text;
-                }
-
-                using (Form_close formClose = new Form_close(deleteChannel))
-                {
-                    if (formClose.ShowDialog() == DialogResult.OK)
+                    ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
+                    foreach (ListViewItem item in channelInfo)
                     {
-                        Index = this.通道列表listView.SelectedItems[0].Index;
-                        通道列表listView.Items[Index].Remove();
+                        deleteChannel = item.SubItems[0].Text + ",";
+                        deleteChannel += item.SubItems[1].Text;
                     }
+
+                    using (Form_close formClose = new Form_close(deleteChannel))
+                    {
+                        if (formClose.ShowDialog() == DialogResult.OK)
+                        {
+                            Index = this.通道列表listView.SelectedItems[0].Index;
+                            通道列表listView.Items[Index].Remove();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -65,16 +79,16 @@ namespace plugin_trinity
             try
             {
                 string transferNumber = 转账金额textBox.Text;
-                string assetTyupe = 资产类型comboBox.SelectedItem.ToString();
+                string assetType = 资产类型comboBox.SelectedItem.ToString();
                 string peerAccount = 对端账户textBox.Text;
                 if (string.IsNullOrEmpty(transferNumber) || string.IsNullOrEmpty(peerAccount))
                 {
-                    MessageBox.Show("请输入完整的信息", "提示");
+                    MessageBox.Show(Strings.invalidTransferParameters);
                     return;
                 }
 
-                string message = "发送 " + transferNumber + " " + assetTyupe + " 给 " + peerAccount;
-                string caption = "转账交易确认";
+                string message = Strings.TransferMessage + peerAccount + " " + transferNumber + " " + assetType;
+                string caption = Strings.TransferPromptTitle;
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result;
                 result = MessageBox.Show(this, message, caption, buttons);
@@ -90,7 +104,7 @@ namespace plugin_trinity
             }
             catch (NullReferenceException)
             {
-                MessageBox.Show("请选择资产类型", "提示");
+                MessageBox.Show(Strings.invalidAssetType);
                 return;
             }
         }
@@ -107,9 +121,8 @@ namespace plugin_trinity
             {
                 case 0:
                     {
-                        查询条件comboBox.Items.AddRange(new object[] {"开启",
-                            "关闭",
-                            "正在开启"});
+                        查询条件comboBox.Items.AddRange(new object[] {Strings.channelOpened,
+                            Strings.channelOpened});
                         break;
                     }
                 case 1:
@@ -122,7 +135,7 @@ namespace plugin_trinity
                     }
                 default:
                     {
-                        MessageBox.Show("请选择查询条件", "查询", MessageBoxButtons.YesNo);
+                        MessageBox.Show(Strings.invalidQueryCondition);
                         break;
                     }
             }
@@ -130,7 +143,7 @@ namespace plugin_trinity
 
         private void 查询条件comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(this.查询类型comboBox.SelectedItem.ToString() + 查询条件comboBox.SelectedItem.ToString(), "查询条件", MessageBoxButtons.OK);
+            //MessageBox.Show(this.查询类型comboBox.SelectedItem.ToString() + 查询条件comboBox.SelectedItem.ToString(), "查询条件", MessageBoxButtons.OK);
         }
 
         private void Form_main_Load(object sender, EventArgs e)

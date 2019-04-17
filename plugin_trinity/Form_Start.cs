@@ -11,6 +11,7 @@ using Neo;
 using Neo.Cryptography;
 using Neo.Wallets;
 using Settings = plugin_trinity.Properties.trinitySettings;
+using Strings = plugin_trinity.Properties.trinityString;
 
 namespace plugin_trinity
 {
@@ -64,7 +65,8 @@ namespace plugin_trinity
             }
             catch (Exception ex)
             {
-                throw (ex);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
@@ -72,7 +74,7 @@ namespace plugin_trinity
         {
             if (accountAddress == "")
             {
-                MessageBox.Show("Please choise correct channel address");
+                MessageBox.Show(Strings.choiceChannelAddress);
                 return;
             }
             try
@@ -84,7 +86,8 @@ namespace plugin_trinity
             }
             catch (Exception ex)
             {
-                throw (ex);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
         }
