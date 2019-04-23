@@ -93,7 +93,10 @@ namespace plugin_trinity
                 var currWallet = Plugin_trinity.api.CurrentWallet;
                 foreach (var s in currWallet.GetAccounts())
                 {
-                    comboBox1.Items.Add(s.Address.ToString());
+                    if (s.Contract.IsStandard)
+                    { 
+                        comboBox1.Items.Add(s.Address.ToString());
+                    }
                 }
                 comboBox1.SelectedIndex = 0;
                 comboBox1.Refresh();
