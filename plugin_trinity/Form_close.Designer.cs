@@ -36,7 +36,7 @@
             this.对端余额textBox = new System.Windows.Forms.TextBox();
             this.本段余额textBox = new System.Windows.Forms.TextBox();
             this.对端账户textBox = new System.Windows.Forms.TextBox();
-            this.通道别名textBox = new System.Windows.Forms.TextBox();
+            this.通道名称textBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +46,6 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.取消button);
             this.groupBox1.Controls.Add(this.强拆通道button);
@@ -54,11 +53,12 @@
             this.groupBox1.Controls.Add(this.对端余额textBox);
             this.groupBox1.Controls.Add(this.本段余额textBox);
             this.groupBox1.Controls.Add(this.对端账户textBox);
-            this.groupBox1.Controls.Add(this.通道别名textBox);
+            this.groupBox1.Controls.Add(this.通道名称textBox);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -77,10 +77,11 @@
             // 
             // 快拆通道button
             // 
-            resources.ApplyResources(this.快拆通道button, "快拆通道button");
             this.快拆通道button.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.快拆通道button, "快拆通道button");
             this.快拆通道button.Name = "快拆通道button";
             this.快拆通道button.UseVisualStyleBackColor = true;
+            this.快拆通道button.Click += new System.EventHandler(this.快拆通道button_Click);
             // 
             // 对端余额textBox
             // 
@@ -100,11 +101,11 @@
             this.对端账户textBox.Name = "对端账户textBox";
             this.对端账户textBox.ReadOnly = true;
             // 
-            // 通道别名textBox
+            // 通道名称textBox
             // 
-            resources.ApplyResources(this.通道别名textBox, "通道别名textBox");
-            this.通道别名textBox.Name = "通道别名textBox";
-            this.通道别名textBox.ReadOnly = true;
+            resources.ApplyResources(this.通道名称textBox, "通道名称textBox");
+            this.通道名称textBox.Name = "通道名称textBox";
+            this.通道名称textBox.ReadOnly = true;
             // 
             // label4
             // 
@@ -146,7 +147,7 @@
         private System.Windows.Forms.TextBox 对端余额textBox;
         private System.Windows.Forms.TextBox 本段余额textBox;
         private System.Windows.Forms.TextBox 对端账户textBox;
-        private System.Windows.Forms.TextBox 通道别名textBox;
+        private System.Windows.Forms.TextBox 通道名称textBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

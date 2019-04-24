@@ -441,6 +441,9 @@
   <data name="&gt;&gt;转账button.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="通道转账groupBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="通道转账groupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 20</value>
   </data>
@@ -472,7 +475,7 @@
     <value>1</value>
   </data>
   <data name="columnHeader6.Text" xml:space="preserve">
-    <value>Channel Alias</value>
+    <value>Channel Name</value>
   </data>
   <data name="columnHeader6.Width" type="System.Int32, mscorlib">
     <value>183</value>
@@ -608,6 +611,9 @@
   </data>
   <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="listView1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -790,6 +796,9 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBox4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 16</value>
   </data>
@@ -843,6 +852,9 @@
   </data>
   <data name="columnHeader12.Width" type="System.Int32, mscorlib">
     <value>212</value>
+  </data>
+  <data name="listView2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listView2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 44</value>

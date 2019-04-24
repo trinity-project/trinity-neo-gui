@@ -151,14 +151,30 @@ namespace plugin_trinity
             string URI = Form_start.getChannelUri();
             textBox1.Text = URI;
 
-            //ToDO:
+            //ToDO: Query Channel List Information
+            /*
+             * Function name: GetChannelList
+             * Parameters: string  URI
+             * Return: string[] List
+            */
             /*
             string[] channelList= GetChannelList(URI);
             if (channelList.Length > 0)
             {
-                enable all control
+                foreach (string channel in channelList)
+                {
+                    ListViewItem channelItem = new ListViewItem(channel[0]);
+                    channelItem.SubItems.Add(channel[1]);
+                    channelItem.SubItems.Add(channel[2]);
+                    channelItem.SubItems.Add(channel[3]);
+                    this.通道列表listView.Items.Add(channelItem);
+                }
             }
             */
+
+            /*
+             * ToDo: Start trinity server
+             */
         }
 
     }

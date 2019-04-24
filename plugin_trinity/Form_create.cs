@@ -22,7 +22,7 @@ namespace plugin_trinity
 
         private void Form_create_Load(object sender, EventArgs e)
         {
-            this.textBox2.Text = Form_start.getAccountAddress();
+            this.textBox2.Text = Form_start.getChannelUri();
         }
 
         private void 取消button_Click(object sender, EventArgs e)
@@ -43,11 +43,24 @@ namespace plugin_trinity
                 string peerAddress = this.textBox1.Text;
                 string deposit = this.通道押金textBox.Text;
                 string type = this.资产类型comboBox.SelectedItem.ToString();
-                string name = this.通道别名textBox.Text;
-                channelInfo = new string[] { name, peerAddress, deposit, type, founderAddress };
+                string channelName = null;
+                channelInfo = new string[] {peerAddress, deposit, type, founderAddress };
+
+                /*
+                ToDo: Create Channel
+                paramerer:  founderAddress
+                            peerAddress
+                            deposit
+                            assetType
+                            wallet (Form_start.getWalletAccount())
+                result : channelName
+                */
+
+                channelInfo = new string[] { channelName, peerAddress, deposit, type, founderAddress };
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return;
             }
         }

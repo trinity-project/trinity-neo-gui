@@ -155,7 +155,7 @@
     <value>106, 24</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>通道别名</value>
+    <value>通道名称</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>通道信息</value>

@@ -319,10 +319,10 @@
             this.columnHeader10,
             this.columnHeader11,
             this.columnHeader12});
+            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.Name = "listView2";
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;

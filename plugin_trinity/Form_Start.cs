@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Neo;
-using Neo.Cryptography;
 using Neo.Wallets;
 using Settings = plugin_trinity.Properties.trinitySettings;
 using Strings = plugin_trinity.Properties.trinityString;
@@ -17,7 +9,7 @@ namespace plugin_trinity
 {
     public partial class Form_start : Form
     {
-        private static string accountAddress = "";
+        private static WalletAccount walletAccount = null;
         private static string accountPublicKey = "";
         private static UInt160 accountScriptHash = null;
         private static string accountURI = "";
@@ -27,9 +19,14 @@ namespace plugin_trinity
             InitializeComponent();
         }
 
-        public static string getAccountAddress()
+        public static WalletAccount getWalletAccount()
         {
-            return accountAddress;
+            return walletAccount;
+        }
+
+        public static UInt160 getAccountScriptHash()
+        {
+            return accountScriptHash;
         }
 
         public static string getChannelUri()
@@ -45,12 +42,11 @@ namespace plugin_trinity
                 WalletAccount account = Plugin_trinity.api.CurrentWallet.GetAccount(scriptHash);
 
                 KeyPair key = account.GetKey();
-                accountAddress = account.Address;
+                walletAccount = account;
                 accountPublicKey = key.PublicKey.EncodePoint(true).ToHexString();
-                accountScriptHash = account.ScriptHash;
-
-                string[] uriList = { accountPublicKey, Settings.Default.gatewayIP, Settings.Default.gatewayPort };
-                accountURI = string.Join(":", uriList);               
+                accountScriptHash = scriptHash;
+                
+                accountURI = accountPublicKey + "@" + Settings.Default.gatewayIP + ":"+ Settings.Default.gatewayPort;
             }
             catch (Exception ex)
             {
@@ -61,7 +57,7 @@ namespace plugin_trinity
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (accountAddress == "")
+            if (walletAccount == null)
             {
                 MessageBox.Show(Strings.choiceChannelAddress);
                 return;
@@ -69,6 +65,9 @@ namespace plugin_trinity
             try
             {
                 //Todo trigger keepAlive message;
+                /*
+                 * parameter: null
+                 */
                 var formMain = new Form_main();
                 formMain.ShowDialog();
                 Close();
