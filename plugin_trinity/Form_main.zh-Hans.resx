@@ -163,20 +163,38 @@
   <data name="通道转账groupBox.Text" xml:space="preserve">
     <value>通道转账</value>
   </data>
-  <data name="columnHeader6.Text" xml:space="preserve">
+  <data name="columnHeader5.Text" xml:space="preserve">
     <value>通道名称</value>
   </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>对端地址</value>
-  </data>
-  <data name="columnHeader8.Text" xml:space="preserve">
-    <value>本端通道余额</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
-    <value>191</value>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>本段余额</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>143</value>
   </data>
   <data name="columnHeader7.Text" xml:space="preserve">
+    <value>对端余额</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>对端地址</value>
+  </data>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="columnHeader13.Text" xml:space="preserve">
+    <value>资产类型</value>
+  </data>
+  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="columnHeader14.Text" xml:space="preserve">
     <value>通道状态</value>
   </data>
   <data name="可用通道列表groupBox.Text" xml:space="preserve">

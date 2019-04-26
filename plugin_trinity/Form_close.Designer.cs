@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_close));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.取消button = new System.Windows.Forms.Button();
-            this.强拆通道button = new System.Windows.Forms.Button();
             this.快拆通道button = new System.Windows.Forms.Button();
             this.对端余额textBox = new System.Windows.Forms.TextBox();
             this.本段余额textBox = new System.Windows.Forms.TextBox();
@@ -46,10 +45,8 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.取消button);
-            this.groupBox1.Controls.Add(this.强拆通道button);
             this.groupBox1.Controls.Add(this.快拆通道button);
             this.groupBox1.Controls.Add(this.对端余额textBox);
             this.groupBox1.Controls.Add(this.本段余额textBox);
@@ -59,6 +56,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -69,16 +67,10 @@
             this.取消button.UseVisualStyleBackColor = true;
             this.取消button.Click += new System.EventHandler(this.取消button_Click);
             // 
-            // 强拆通道button
-            // 
-            resources.ApplyResources(this.强拆通道button, "强拆通道button");
-            this.强拆通道button.Name = "强拆通道button";
-            this.强拆通道button.UseVisualStyleBackColor = true;
-            // 
             // 快拆通道button
             // 
-            resources.ApplyResources(this.快拆通道button, "快拆通道button");
             this.快拆通道button.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.快拆通道button, "快拆通道button");
             this.快拆通道button.Name = "快拆通道button";
             this.快拆通道button.UseVisualStyleBackColor = true;
             this.快拆通道button.Click += new System.EventHandler(this.快拆通道button_Click);
@@ -142,7 +134,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button 强拆通道button;
         private System.Windows.Forms.Button 快拆通道button;
         private System.Windows.Forms.TextBox 对端余额textBox;
         private System.Windows.Forms.TextBox 本段余额textBox;
