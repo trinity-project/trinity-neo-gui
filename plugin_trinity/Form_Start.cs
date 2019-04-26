@@ -4,29 +4,18 @@ using Neo;
 using Neo.Wallets;
 using Settings = plugin_trinity.Properties.trinitySettings;
 using Strings = plugin_trinity.Properties.trinityString;
+using Neo.SmartContract;
 
 namespace plugin_trinity
 {
     public partial class Form_start : Form
     {
-        private static WalletAccount walletAccount = null;
         private static string accountPublicKey = "";
-        private static UInt160 accountScriptHash = null;
         private static string accountURI = "";
 
         public Form_start()
         {
             InitializeComponent();
-        }
-
-        public static WalletAccount getWalletAccount()
-        {
-            return walletAccount;
-        }
-
-        public static UInt160 getAccountScriptHash()
-        {
-            return accountScriptHash;
         }
 
         public static string getChannelUri()
@@ -42,11 +31,8 @@ namespace plugin_trinity
                 WalletAccount account = Plugin_trinity.api.CurrentWallet.GetAccount(scriptHash);
 
                 KeyPair key = account.GetKey();
-                walletAccount = account;
                 accountPublicKey = key.PublicKey.EncodePoint(true).ToHexString();
-                accountScriptHash = scriptHash;
-                
-                accountURI = accountPublicKey + "@" + Settings.Default.gatewayIP + ":"+ Settings.Default.gatewayPort;
+                accountURI = accountPublicKey + "@" + Settings.Default.gatewayIP + ":" + Settings.Default.gatewayPort;
             }
             catch (Exception ex)
             {
@@ -57,7 +43,7 @@ namespace plugin_trinity
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (walletAccount == null)
+            if (accountPublicKey == null)
             {
                 MessageBox.Show(Strings.choiceChannelAddress);
                 return;
@@ -68,6 +54,9 @@ namespace plugin_trinity
                 /*
                  * parameter: null
                  */
+
+                Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, Plugin_trinity.api.CurrentWallet, accountPublicKey);
+
                 var formMain = new Form_main();
                 formMain.ShowDialog();
                 Close();
@@ -86,14 +75,14 @@ namespace plugin_trinity
         }
 
         private void Form_start_Load(object sender, EventArgs e)
-        {           
+        {
             if (Plugin_trinity.api.CurrentWallet != null)
             {
                 var currWallet = Plugin_trinity.api.CurrentWallet;
                 foreach (var s in currWallet.GetAccounts())
                 {
                     if (s.Contract.IsStandard)
-                    { 
+                    {
                         comboBox1.Items.Add(s.Address.ToString());
                     }
                 }
