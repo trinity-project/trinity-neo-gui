@@ -63,7 +63,11 @@ namespace plugin_trinity
                  * parameter: null
                  */
 
-                Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, Plugin_trinity.api.CurrentWallet, accountPublicKey);
+                Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, 
+                                                      Plugin_trinity.api.CurrentWallet, 
+                                                      accountPublicKey,
+                                                      Settings.Default.gatewayIP,
+                                                      Settings.Default.gatewayPort);
 
                 var formMain = new Form_main();
                 formMain.ShowDialog();
@@ -97,40 +101,6 @@ namespace plugin_trinity
                 comboBox1.SelectedIndex = 0;
                 comboBox1.Refresh();
             }
-
         }     
-        private void addChannel()
-        {
-            try
-            {
-                string channelName = "test";
-                string assetType = "TNC";
-                string founderPk = "founder";
-                string peerPk = "peer";
-                Channel channel = new Channel(channelName, assetType, accountURI, accountURI);
-
-                ChannelTableContent newChannel = new ChannelTableContent();
-                newChannel.channel = "test";
-                newChannel.asset = "TNC";
-                newChannel.magic = "112233";
-                newChannel.alive = 0;
-                newChannel.balance = new Dictionary<string, double>();
-                newChannel.balance.Add(accountURI, 100);
-                newChannel.balance.Add(peerPk, 100);
-                newChannel.deposit = new Dictionary<string, double>();
-                newChannel.deposit.Add(founderPk, 100);
-                newChannel.deposit.Add(peerPk, 100);
-                newChannel.peer = accountURI;
-                newChannel.role = Trinity.ChannelSet.Definitions.EnumRole.FOUNDER;
-                newChannel.state = Trinity.ChannelSet.Definitions.EnumChannelState.OPENED;
-                newChannel.uri = accountURI;
-
-                channel.AddChannel("test", newChannel);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }
