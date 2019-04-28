@@ -60,9 +60,15 @@ namespace plugin_trinity
             }
             try
             {
+                string magic = getMagic();
+                if (magic == null)
+                {
+                    return;
+                }
                 Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, 
                                                       Plugin_trinity.api.CurrentWallet, 
                                                       accountPublicKey,
+                                                      magic,
                                                       Settings.Default.gatewayIP,
                                                       Settings.Default.gatewayPort);
                 //Todo trigger keepAlive message;
@@ -70,9 +76,9 @@ namespace plugin_trinity
                  * parameter: null
                  */
 
-                RegisterWallet registerWalletHndl = new RegisterWallet("localhost", "20556");
+                RegisterWallet registerWalletHndl = new RegisterWallet(Settings.Default.localIp, Settings.Default.localPort);
                 registerWalletHndl.MakeTransaction();
-
+                
                 var formMain = new Form_main();
                 formMain.ShowDialog();
                 Close();
@@ -105,6 +111,35 @@ namespace plugin_trinity
                 comboBox1.SelectedIndex = 0;
                 comboBox1.Refresh();
             }
-        }     
+        }
+        
+        private string getMagic()
+        {
+            try
+            {
+                uint magicNeo = Neo.Network.P2P.Message.Magic;
+                uint currentMagic = 0;
+                if (magicNeo == Settings.Default.neoMagicMainNet)
+                {
+                    currentMagic = Settings.Default.trinityMagicMainNet;
+                }
+                else if (magicNeo == Settings.Default.neoMagicTestNet)
+                {
+                    currentMagic = Settings.Default.trinityMagicTestNet;
+                }
+                else
+                {
+                    Exception ex = new Exception("Magic is invalid");
+                    throw ex;
+                }
+                return currentMagic.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
     }
 }

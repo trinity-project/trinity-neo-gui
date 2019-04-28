@@ -49,25 +49,49 @@ namespace plugin_trinity.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20030515")]
-        public uint magicMainNet {
+        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+        public string localIp {
             get {
-                return ((uint)(this["magicMainNet"]));
+                return ((string)(this["localIp"]));
             }
             set {
-                this["magicMainNet"] = value;
+                this["localIp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20556")]
+        public string localPort {
+            get {
+                return ((string)(this["localPort"]));
+            }
+            set {
+                this["localPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20030515")]
+        public uint trinityMagicMainNet {
+            get {
+                return ((uint)(this["trinityMagicMainNet"]));
+            }
+            set {
+                this["trinityMagicMainNet"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("19990331")]
-        public uint magicTestNet {
+        public uint trinityMagicTestNet {
             get {
-                return ((uint)(this["magicTestNet"]));
+                return ((uint)(this["trinityMagicTestNet"]));
             }
             set {
-                this["magicTestNet"] = value;
+                this["trinityMagicTestNet"] = value;
             }
         }
         

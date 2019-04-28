@@ -8,10 +8,16 @@
     <Setting Name="gatewayPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8089</Value>
     </Setting>
-    <Setting Name="magicMainNet" Type="System.UInt32" Scope="User">
+    <Setting Name="localIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="localPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20556</Value>
+    </Setting>
+    <Setting Name="trinityMagicMainNet" Type="System.UInt32" Scope="User">
       <Value Profile="(Default)">20030515</Value>
     </Setting>
-    <Setting Name="magicTestNet" Type="System.UInt32" Scope="User">
+    <Setting Name="trinityMagicTestNet" Type="System.UInt32" Scope="User">
       <Value Profile="(Default)">19990331</Value>
     </Setting>
     <Setting Name="neoMagicMainNet" Type="System.UInt32" Scope="User">
