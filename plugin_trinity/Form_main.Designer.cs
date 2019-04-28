@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.对端账户textBox = new System.Windows.Forms.TextBox();
             this.转账金额textBox = new System.Windows.Forms.TextBox();
@@ -70,6 +71,7 @@
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.通道转账groupBox.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -116,7 +118,6 @@
             // 
             // 通道转账groupBox
             // 
-            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Controls.Add(this.textBox1);
             this.通道转账groupBox.Controls.Add(this.label6);
             this.通道转账groupBox.Controls.Add(this.资产类型comboBox);
@@ -126,6 +127,7 @@
             this.通道转账groupBox.Controls.Add(this.label2);
             this.通道转账groupBox.Controls.Add(this.转账金额textBox);
             this.通道转账groupBox.Controls.Add(this.对端账户textBox);
+            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Name = "通道转账groupBox";
             this.通道转账groupBox.TabStop = false;
             // 
@@ -141,11 +143,11 @@
             // 
             // 资产类型comboBox
             // 
-            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
             resources.GetString("资产类型comboBox.Items"),
             resources.GetString("资产类型comboBox.Items1")});
+            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.Name = "资产类型comboBox";
             // 
             // label3
@@ -162,34 +164,33 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.可用通道列表groupBox);
             this.tabPage1.Controls.Add(this.通道转账groupBox);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // 可用通道列表groupBox
             // 
-            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
             this.可用通道列表groupBox.Controls.Add(this.通道列表listView);
             this.可用通道列表groupBox.Controls.Add(this.创建通道button);
             this.可用通道列表groupBox.Controls.Add(this.拆除通道button);
+            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
             this.可用通道列表groupBox.Name = "可用通道列表groupBox";
             this.可用通道列表groupBox.TabStop = false;
             // 
             // 通道列表listView
             // 
-            resources.ApplyResources(this.通道列表listView, "通道列表listView");
             this.通道列表listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
@@ -199,6 +200,7 @@
             this.columnHeader14});
             this.通道列表listView.FullRowSelect = true;
             this.通道列表listView.GridLines = true;
+            resources.ApplyResources(this.通道列表listView, "通道列表listView");
             this.通道列表listView.Name = "通道列表listView";
             this.通道列表listView.UseCompatibleStateImageBehavior = false;
             this.通道列表listView.View = System.Windows.Forms.View.Details;
@@ -230,19 +232,19 @@
             // 
             // tabPage2
             // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.listView1);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
@@ -272,19 +274,19 @@
             // 
             // tabPage3
             // 
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.groupBox3);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.查询类型comboBox);
             this.groupBox4.Controls.Add(this.查询条件comboBox);
             this.groupBox4.Controls.Add(this.label5);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -295,19 +297,19 @@
             // 
             // 查询类型comboBox
             // 
-            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
             this.查询类型comboBox.FormattingEnabled = true;
             this.查询类型comboBox.Items.AddRange(new object[] {
             resources.GetString("查询类型comboBox.Items"),
             resources.GetString("查询类型comboBox.Items1"),
             resources.GetString("查询类型comboBox.Items2")});
+            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
             this.查询类型comboBox.Name = "查询类型comboBox";
             this.查询类型comboBox.SelectedIndexChanged += new System.EventHandler(this.查询类型comboBox_SelectedIndexChanged);
             // 
             // 查询条件comboBox
             // 
-            resources.ApplyResources(this.查询条件comboBox, "查询条件comboBox");
             this.查询条件comboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.查询条件comboBox, "查询条件comboBox");
             this.查询条件comboBox.Name = "查询条件comboBox";
             // 
             // label5
@@ -317,14 +319,13 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.listView2);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // listView2
             // 
-            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.AllowColumnReorder = true;
             this.listView2.AllowDrop = true;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -332,6 +333,7 @@
             this.columnHeader10,
             this.columnHeader11,
             this.columnHeader12});
+            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
@@ -360,6 +362,11 @@
             resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Form_main
             // 
@@ -425,5 +432,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.Timer timer1;
     }
 }

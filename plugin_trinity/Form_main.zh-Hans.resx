@@ -136,6 +136,9 @@
   <data name="label2.Text" xml:space="preserve">
     <value>转账数量</value>
   </data>
+  <data name="通道转账groupBox.Text" xml:space="preserve">
+    <value>通道转账</value>
+  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 58</value>
   </data>
@@ -160,27 +163,30 @@
   <data name="转账button.Text" xml:space="preserve">
     <value>转账</value>
   </data>
-  <data name="通道转账groupBox.Text" xml:space="preserve">
-    <value>通道转账</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>转账交易</value>
+  </data>
+  <data name="可用通道列表groupBox.Text" xml:space="preserve">
+    <value>可用通道</value>
   </data>
   <data name="columnHeader5.Text" xml:space="preserve">
     <value>通道名称</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>128</value>
+    <value>125</value>
   </data>
   <data name="columnHeader6.Text" xml:space="preserve">
     <value>本段余额</value>
   </data>
   <data name="columnHeader6.Width" type="System.Int32, mscorlib">
-    <value>143</value>
+    <value>127</value>
   </data>
   <data name="columnHeader7.Text" xml:space="preserve">
     <value>对端余额</value>
   </data>
   <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>135</value>
+    <value>132</value>
   </data>
   <data name="columnHeader8.Text" xml:space="preserve">
     <value>对端地址</value>
@@ -192,16 +198,26 @@
     <value>资产类型</value>
   </data>
   <data name="columnHeader13.Width" type="System.Int32, mscorlib">
-    <value>128</value>
+    <value>124</value>
   </data>
   <data name="columnHeader14.Text" xml:space="preserve">
     <value>通道状态</value>
   </data>
-  <data name="可用通道列表groupBox.Text" xml:space="preserve">
-    <value>可用通道</value>
+  <data name="columnHeader14.Width" type="System.Int32, mscorlib">
+    <value>147</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>转账交易</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>转账记录</value>
+  </data>
+  <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
+        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
+        AwAAAA1MaXN0Vmlld0dyb3VwBfz///8oU3lzdGVtLldpbmRvd3MuRm9ybXMuSG9yaXpvbnRhbEFsaWdu
+        bWVudAEAAAAHdmFsdWVfXwAIAgAAAAAAAAAKBgUAAAAObGlzdFZpZXdHcm91cDEL
+</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>交易时间</value>
@@ -218,18 +234,11 @@
   <data name="columnHeader4.Text" xml:space="preserve">
     <value>资产类型</value>
   </data>
-  <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
-        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
-        AwAAAA1MaXN0Vmlld0dyb3VwBfz///8oU3lzdGVtLldpbmRvd3MuRm9ybXMuSG9yaXpvbnRhbEFsaWdu
-        bWVudAEAAAAHdmFsdWVfXwAIAgAAAAAAAAAKBgUAAAAObGlzdFZpZXdHcm91cDEL
-</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>通道管理</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>转账记录</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>通道查询</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
@@ -243,8 +252,8 @@
   <data name="label5.Text" xml:space="preserve">
     <value>查询条件</value>
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>通道查询</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>通道信息</value>
   </data>
   <data name="columnHeader9.Text" xml:space="preserve">
     <value>通道别名</value>
@@ -257,12 +266,6 @@
   </data>
   <data name="columnHeader12.Text" xml:space="preserve">
     <value>通道余额</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>通道信息</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>通道管理</value>
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
     <value>节点管理</value>

@@ -8,5 +8,17 @@
     <Setting Name="gatewayPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8089</Value>
     </Setting>
+    <Setting Name="magicMainNet" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">20030515</Value>
+    </Setting>
+    <Setting Name="magicTestNet" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">19990331</Value>
+    </Setting>
+    <Setting Name="neoMagicMainNet" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">7630401</Value>
+    </Setting>
+    <Setting Name="neoMagicTestNet" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">1953787457</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

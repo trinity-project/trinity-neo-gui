@@ -12,7 +12,7 @@ namespace plugin_trinity.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.0.0.0")]
     internal sealed partial class trinitySettings : global::System.Configuration.ApplicationSettingsBase {
         
         private static trinitySettings defaultInstance = ((trinitySettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new trinitySettings())));
@@ -44,6 +44,54 @@ namespace plugin_trinity.Properties {
             }
             set {
                 this["gatewayPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20030515")]
+        public uint magicMainNet {
+            get {
+                return ((uint)(this["magicMainNet"]));
+            }
+            set {
+                this["magicMainNet"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("19990331")]
+        public uint magicTestNet {
+            get {
+                return ((uint)(this["magicTestNet"]));
+            }
+            set {
+                this["magicTestNet"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("7630401")]
+        public uint neoMagicMainNet {
+            get {
+                return ((uint)(this["neoMagicMainNet"]));
+            }
+            set {
+                this["neoMagicMainNet"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1953787457")]
+        public uint neoMagicTestNet {
+            get {
+                return ((uint)(this["neoMagicTestNet"]));
+            }
+            set {
+                this["neoMagicTestNet"] = value;
             }
         }
     }

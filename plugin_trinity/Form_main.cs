@@ -1,13 +1,9 @@
-﻿using Neo;
-using System;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Windows.Forms;
-using Neo.IO;
-using Neo.Wallets;
-using Neo.Cryptography;
-using System.Threading;
 using Strings = plugin_trinity.Properties.trinityString;
+using Trinity.ChannelSet;
+using Trinity.TrinityDB.Definitions;
+using System.Collections.Generic;
 
 namespace plugin_trinity
 {
@@ -26,6 +22,8 @@ namespace plugin_trinity
                 {
                     if (formCreate.ShowDialog() == DialogResult.OK)
                     {
+                        timer1.Enabled = true;
+                        /*
                         string info = formCreate.GetChannel();
                         string[] destStr = info.Split(',');
 
@@ -34,6 +32,7 @@ namespace plugin_trinity
                         channelItem.SubItems.Add(destStr[2]);
                         channelItem.SubItems.Add(destStr[3]);
                         this.通道列表listView.Items.Add(channelItem);
+                        */
                     }
                 }
                 catch(Exception ex)
@@ -143,39 +142,63 @@ namespace plugin_trinity
 
         private void 查询条件comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(this.查询类型comboBox.SelectedItem.ToString() + 查询条件comboBox.SelectedItem.ToString(), "查询条件", MessageBoxButtons.OK);
+            
         }
 
         private void Form_main_Load(object sender, EventArgs e)
         {
-            string URI = Form_start.getChannelUri();
-            textBox1.Text = URI;
-
-            //ToDO: Query Channel List Information
-            /*
-             * Function name: GetChannelList
-             * Parameters: string  URI
-             * Return: string[] List
-            */
-            /*
-            string[] channelList= GetChannelList(URI);
-            if (channelList.Length > 0)
+            if (getChannelNumber() > 0)
             {
-                foreach (string channel in channelList)
-                {
-                    ListViewItem channelItem = new ListViewItem(channel[0]);
-                    channelItem.SubItems.Add(channel[1]);
-                    channelItem.SubItems.Add(channel[2]);
-                    channelItem.SubItems.Add(channel[3]);
-                    this.通道列表listView.Items.Add(channelItem);
-                }
+                getChannelList();
+                timer1.Enabled = true;
             }
-            */
-
-            /*
-             * ToDo: Start trinity server
-             */
         }
 
+        private int getChannelNumber()
+        {
+            Channel channel = new Channel(null, null, Form_start.getChannelUri(), null);
+            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+            return channelList.Count;
+        }
+
+        private void getChannelList()
+        {
+            Channel channel = new Channel(null, null, Form_start.getChannelUri(), null);
+            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+            this.通道列表listView.Items.Clear();
+
+            if (channelList.Count > 0)
+            {
+                foreach (ChannelTableContent item in channelList)
+                {
+                    string founderBalane = null;
+                    string peerBalane = null;
+                    foreach (KeyValuePair<string, double> bl in item.balance)
+                    {
+                        if (bl.Key.Contains(Form_start.getAccountPublic()))
+                        {
+                            founderBalane = bl.Value.ToString();
+                        }
+                        else
+                        {
+                            peerBalane = bl.Value.ToString();
+                        }
+                    }
+
+                    ListViewItem channelItem = new ListViewItem(item.channel);
+                    channelItem.SubItems.Add(founderBalane);
+                    channelItem.SubItems.Add(peerBalane);
+                    channelItem.SubItems.Add(item.peer);
+                    channelItem.SubItems.Add(item.asset);
+                    channelItem.SubItems.Add(item.state.ToString());
+                    this.通道列表listView.Items.Add(channelItem);                   
+                }
+            }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            getChannelList();
+        }
     }
 }
