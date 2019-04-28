@@ -72,8 +72,11 @@ namespace plugin_trinity
                                                       Settings.Default.gatewayIP,
                                                       Settings.Default.gatewayPort);
 
-                // Trigger cs-trinity control messages
+                // Trigger RegisterKeepAlive message to gateway
                 this.RegisterToGateway();
+
+                // Trigger SyncWalletData message to gateway
+                this.NotifyWalletInfoToGateway(accountPublicKey, magic);
                 
                 var formMain = new Form_main();
                 formMain.ShowDialog();
@@ -152,7 +155,7 @@ namespace plugin_trinity
         /// </summary>
         private void NotifyWalletInfoToGateway(string pubKey, string magic)
         {
-            string sender = pubKey + "@" + Settings.Default.gatewayIP +":"+ Settings.Default.gatewayPort;
+            string sender = pubKey + "@" + Settings.Default.localIp + ":"+ Settings.Default.localPort;
             // Trigger SyncWalletData message to gateway
             SyncWalletHandler syncWalletHndl = new SyncWalletHandler(sender, magic);
             syncWalletHndl.SetPublicKey(pubKey);
@@ -163,6 +166,8 @@ namespace plugin_trinity
             syncWalletHndl.SetChannelInfo();
 
             syncWalletHndl.MakeTransaction();
+
+            bool ret = syncWalletHndl.GetClient().ReceiveMessage("AckSyncWallet");
         }
     }
 }
