@@ -71,13 +71,9 @@ namespace plugin_trinity
                                                       magic,
                                                       Settings.Default.gatewayIP,
                                                       Settings.Default.gatewayPort);
-                //Todo trigger keepAlive message;
-                /*
-                 * parameter: null
-                 */
 
-                RegisterWallet registerWalletHndl = new RegisterWallet(Settings.Default.localIp, Settings.Default.localPort);
-                registerWalletHndl.MakeTransaction();
+                // Trigger cs-trinity control messages
+                this.RegisterToGateway();
                 
                 var formMain = new Form_main();
                 formMain.ShowDialog();
@@ -141,5 +137,32 @@ namespace plugin_trinity
             }
         }
 
+        /// <summary>
+        /// this method will inform the gateway the wallet is online
+        /// </summary>
+        private void RegisterToGateway()
+        {
+            // Trigger RegisterKeepAlive message to gateway
+            RegisterWallet registerWalletHndl = new RegisterWallet(Settings.Default.localIp, Settings.Default.localPort);
+            registerWalletHndl.MakeTransaction();
+        }
+
+        /// <summary>
+        /// This method will sync the basic wallet information to the gateway.
+        /// </summary>
+        private void NotifyWalletInfoToGateway(string pubKey, string magic)
+        {
+            string sender = pubKey + "@" + Settings.Default.gatewayIP +":"+ Settings.Default.gatewayPort;
+            // Trigger SyncWalletData message to gateway
+            SyncWalletHandler syncWalletHndl = new SyncWalletHandler(sender, magic);
+            syncWalletHndl.SetPublicKey(pubKey);
+            syncWalletHndl.SetAlias("NoAlias");
+            syncWalletHndl.SetAutoCreate("0");
+            syncWalletHndl.SetNetAddress(Settings.Default.localIp+":"+Settings.Default.localPort);
+            syncWalletHndl.SetMaxChannel(10);
+            syncWalletHndl.SetChannelInfo();
+
+            syncWalletHndl.MakeTransaction();
+        }
     }
 }
