@@ -9,6 +9,8 @@ using Trinity.ChannelSet;
 using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
 
+using Trinity.Wallets.TransferHandler.ControlHandler;
+
 namespace plugin_trinity
 {
     public partial class Form_start : Form
@@ -58,16 +60,18 @@ namespace plugin_trinity
             }
             try
             {
-                //Todo trigger keepAlive message;
-                /*
-                 * parameter: null
-                 */
-
                 Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, 
                                                       Plugin_trinity.api.CurrentWallet, 
                                                       accountPublicKey,
                                                       Settings.Default.gatewayIP,
                                                       Settings.Default.gatewayPort);
+                //Todo trigger keepAlive message;
+                /*
+                 * parameter: null
+                 */
+
+                RegisterWallet registerWalletHndl = new RegisterWallet("localhost", "20556");
+                registerWalletHndl.MakeTransaction();
 
                 var formMain = new Form_main();
                 formMain.ShowDialog();
