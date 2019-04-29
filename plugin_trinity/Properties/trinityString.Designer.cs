@@ -70,6 +70,15 @@ namespace plugin_trinity.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Channel Transaction 的本地化字符串。
+        /// </summary>
+        internal static string ChannelMenuTitle {
+            get {
+                return ResourceManager.GetString("ChannelMenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Opened 的本地化字符串。
         /// </summary>
         internal static string channelOpened {

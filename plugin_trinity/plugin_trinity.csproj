@@ -224,6 +224,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>trinityString.resx</DependentUpon>
     </Compile>
+    <Compile Include="socket.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form_close.resx">

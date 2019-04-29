@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Neo.GUIPlugin;
+using Strings = plugin_trinity.Properties.trinityString;
 
 namespace plugin_trinity
 {
@@ -15,7 +16,7 @@ namespace plugin_trinity
         /// 设置插件名称
         /// </summary>
         /// <returns>插件名称</returns>
-        public string Name => "通道交易";
+        public string Name => Strings.ChannelMenuTitle;
 
         /// <summary>
         /// 设置菜单路径

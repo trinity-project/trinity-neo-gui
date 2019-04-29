@@ -144,4 +144,7 @@
   <data name="choiceDeleteChannel" xml:space="preserve">
     <value>Please choice a channel from channel list</value>
   </data>
+  <data name="ChannelMenuTitle" xml:space="preserve">
+    <value>Channel Transaction</value>
+  </data>
 </root>
