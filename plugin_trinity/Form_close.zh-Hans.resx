@@ -121,6 +121,9 @@
   <data name="取消button.Location" type="System.Drawing.Point, System.Drawing">
     <value>589, 370</value>
   </data>
+  <data name="取消button.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
   <data name="快拆通道button.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 370</value>
   </data>

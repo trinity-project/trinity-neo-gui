@@ -45,6 +45,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.取消button);
             this.groupBox1.Controls.Add(this.快拆通道button);
@@ -56,7 +57,6 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -69,8 +69,8 @@
             // 
             // 快拆通道button
             // 
-            this.快拆通道button.DialogResult = System.Windows.Forms.DialogResult.OK;
             resources.ApplyResources(this.快拆通道button, "快拆通道button");
+            this.快拆通道button.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.快拆通道button.Name = "快拆通道button";
             this.快拆通道button.UseVisualStyleBackColor = true;
             this.快拆通道button.Click += new System.EventHandler(this.快拆通道button_Click);

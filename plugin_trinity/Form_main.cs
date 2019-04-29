@@ -44,17 +44,22 @@ namespace plugin_trinity
 
         private void 拆除通道button_Click(object sender, EventArgs e)
         {
-            var deleteChannel = "";
             int Index = 0;
             if (this.通道列表listView.SelectedItems.Count > 0)
             {
                 try
                 {
                     ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
+                    ChannelTableContent deleteChannel = new ChannelTableContent();
                     foreach (ListViewItem item in channelInfo)
                     {
-                        deleteChannel = item.SubItems[0].Text + ",";
-                        deleteChannel += item.SubItems[1].Text;
+                        deleteChannel.channel = item.SubItems[0].Text;
+                        deleteChannel.uri = Form_start.getChannelUri();
+                        deleteChannel.peer = item.SubItems[3].Text;
+                        deleteChannel.asset = item.SubItems[4].Text;
+                        deleteChannel.balance = new Dictionary<string, double>();
+                        deleteChannel.balance.Add(deleteChannel.uri, double.Parse(item.SubItems[1].Text));
+                        deleteChannel.balance.Add(deleteChannel.peer, double.Parse(item.SubItems[2].Text));
                     }
 
                     using (Form_close formClose = new Form_close(deleteChannel))

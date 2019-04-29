@@ -184,7 +184,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Trinity">
-      <HintPath>bin\Release\Trinity.dll</HintPath>
+      <HintPath>..\neo-gui\bin\Debug\Trinity.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

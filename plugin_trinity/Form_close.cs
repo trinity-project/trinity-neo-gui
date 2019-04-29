@@ -7,29 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Trinity.TrinityDB.Definitions;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
 
 namespace plugin_trinity
 {
     public partial class Form_close : Form
     {
-        public Form_close(string channelName)
+        private string channelName;
+        private string founderUri;
+        private string peerUri;
+        private string asset;
+
+        public Form_close(ChannelTableContent channel)
         {
             InitializeComponent();
 
-            /*
-             * ToDo: Query Channel Information
-             * parameter: channel name
-             * return: string
-             */
-
-            /*
-            通道名称textBox.Text = channelName;
-            对端账户textBox.Text = 
-            本段余额textBox.Text = 
-            对端余额textBox.Text = 
-            */
+            this.通道名称textBox.Text = channel.channel;
+            this.对端账户textBox.Text = channel.peer;
+            foreach (KeyValuePair<string, double> balanceItem in channel.balance)
+            {
+                if (balanceItem.Key.Contains(Form_start.getAccountPublic()))
+                {
+                    this.本段余额textBox.Text = balanceItem.Value.ToString();
+                }
+                else
+                {
+                    this.对端余额textBox.Text = balanceItem.Value.ToString();
+                }
+            }
+            channelName = channel.channel;
+            founderUri = channel.uri;
+            peerUri = channel.peer;
+            asset = channel.asset;
         }
 
         private void 取消button_Click(object sender, EventArgs e)
@@ -44,14 +54,16 @@ namespace plugin_trinity
              *            WalletAccount (Form_start.getWalletAccount())
              * return: boolean
              */
-            this.CloseChannel(null, null, null, null);
+            this.CloseChannel(founderUri, peerUri, channelName, asset);
         }
 
+        
         private void CloseChannel(string uri, string peerUri, string channel, string asset)
         {
             // Send Settle Message to Peer
             SettleHandler settleHndl = new SettleHandler(uri, peerUri, channel, asset, null);
             settleHndl.MakeTransaction();
         }
+        
     }
 }
