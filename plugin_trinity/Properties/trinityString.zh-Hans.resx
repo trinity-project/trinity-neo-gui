@@ -141,4 +141,7 @@
   <data name="TransferPromptTitle" xml:space="preserve">
     <value>转账交易确认</value>
   </data>
+  <data name="choiceDeleteChannel" xml:space="preserve">
+    <value>请选择一个要删除的通道</value>
+  </data>
 </root>

@@ -141,4 +141,7 @@
   <data name="TransferPromptTitle" xml:space="preserve">
     <value>Transfer Transaction Confirmation</value>
   </data>
+  <data name="choiceDeleteChannel" xml:space="preserve">
+    <value>Please choice a channel from channel list</value>
+  </data>
 </root>

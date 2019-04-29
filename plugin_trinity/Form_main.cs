@@ -76,6 +76,10 @@ namespace plugin_trinity
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            else
+            {
+                MessageBox.Show(Strings.choiceDeleteChannel);
+            }
         }
 
         private void 转账button_Click(object sender, EventArgs e)
