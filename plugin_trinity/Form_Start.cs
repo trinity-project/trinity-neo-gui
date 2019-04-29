@@ -166,8 +166,6 @@ namespace plugin_trinity
             syncWalletHndl.SetChannelInfo();
 
             syncWalletHndl.MakeTransaction();
-
-            bool ret = syncWalletHndl.GetClient().ReceiveMessage("AckSyncWallet");
         }
     }
 }
