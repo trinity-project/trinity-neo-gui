@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Trinity.Wallets.TransferHandler.TransactionHandler;
+
 namespace plugin_trinity
 {
     public partial class Form_close : Form
@@ -42,6 +44,14 @@ namespace plugin_trinity
              *            WalletAccount (Form_start.getWalletAccount())
              * return: boolean
              */
+            this.CloseChannel(null, null, null, null);
+        }
+
+        private void CloseChannel(string uri, string peerUri, string channel, string asset)
+        {
+            // Send Settle Message to Peer
+            SettleHandler settleHndl = new SettleHandler(uri, peerUri, channel, asset, null);
+            settleHndl.MakeTransaction();
         }
     }
 }

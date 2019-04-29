@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Neo.Wallets;
 
+using Settings = plugin_trinity.Properties.trinitySettings;
+
+using Trinity.Wallets.TransferHandler.TransactionHandler;
+
 namespace plugin_trinity
 {
     public partial class Form_create : Form
@@ -46,15 +50,8 @@ namespace plugin_trinity
                 string channelName = null;
                 channelInfo = new string[] {peerAddress, deposit, type, founderAddress };
 
-                /*
-                ToDo: Create Channel
-                paramerer:  founderAddress
-                            peerAddress
-                            deposit
-                            assetType
-                            wallet (Form_start.getWalletAccount())
-                result : channelName
-                */
+                // Trigger to create channel
+                this.CreateChannel(founderAddress, peerAddress, type, deposit);
 
                 channelInfo = new string[] { channelName, peerAddress, deposit, type, founderAddress };
             }
@@ -63,6 +60,14 @@ namespace plugin_trinity
                 MessageBox.Show(ex.Message);
                 return;
             }
+        }
+
+        private void CreateChannel(string uri, string peerUri, string asset, string deposit)
+        {
+            // Send RegisterChannel Messages to peer
+            RegisterChannelHandler registerChannelHndl = new RegisterChannelHandler(
+                uri, peerUri, null, asset, null, Convert.ToDouble(deposit));
+            registerChannelHndl.MakeTransaction();
         }
 
     }
