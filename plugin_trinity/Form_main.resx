@@ -117,55 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="peerUritextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="对端账户textBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="peerUritextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 119</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="对端账户textBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="peerUritextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="对端账户textBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>662, 35</value>
+  <data name="peerUritextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 35</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="对端账户textBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="peerUritextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;对端账户textBox.Name" xml:space="preserve">
-    <value>对端账户textBox</value>
+  <data name="&gt;&gt;peerUritextBox.Name" xml:space="preserve">
+    <value>peerUritextBox</value>
   </data>
-  <data name="&gt;&gt;对端账户textBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;peerUritextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;对端账户textBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;peerUritextBox.Parent" xml:space="preserve">
     <value>通道转账groupBox</value>
   </data>
-  <data name="&gt;&gt;对端账户textBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;peerUritextBox.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="转账金额textBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="accounttextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 183</value>
   </data>
-  <data name="转账金额textBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="accounttextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="转账金额textBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 35</value>
+  <data name="accounttextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 35</value>
   </data>
-  <data name="转账金额textBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="accounttextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;转账金额textBox.Name" xml:space="preserve">
-    <value>转账金额textBox</value>
+  <data name="&gt;&gt;accounttextBox.Name" xml:space="preserve">
+    <value>accounttextBox</value>
   </data>
-  <data name="&gt;&gt;转账金额textBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;accounttextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;转账金额textBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;accounttextBox.Parent" xml:space="preserve">
     <value>通道转账groupBox</value>
   </data>
-  <data name="&gt;&gt;转账金额textBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;accounttextBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -300,119 +303,53 @@
   <data name="&gt;&gt;拆除通道button.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Name" xml:space="preserve">
-    <value>资产类型comboBox</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;转账button.Name" xml:space="preserve">
-    <value>转账button</value>
-  </data>
-  <data name="&gt;&gt;转账button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;转账button.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;转账button.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="通道转账groupBox.Enabled" type="System.Boolean, mscorlib">
+  <data name="assettextBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="通道转账groupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 20</value>
+  <data name="assettextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 248</value>
   </data>
-  <data name="通道转账groupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="assettextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 35</value>
   </data>
-  <data name="通道转账groupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="assettextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="通道转账groupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1108, 328</value>
+  <data name="&gt;&gt;assettextBox.Name" xml:space="preserve">
+    <value>assettextBox</value>
   </data>
-  <data name="通道转账groupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="通道转账groupBox.Text" xml:space="preserve">
-    <value>Channel Transfer</value>
-  </data>
-  <data name="&gt;&gt;通道转账groupBox.Name" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;通道转账groupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;通道转账groupBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;通道转账groupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 63</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>658, 35</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;assettextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;assettextBox.Parent" xml:space="preserve">
     <value>通道转账groupBox</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;assettextBox.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="founderUritextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="founderUritextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 63</value>
+  </data>
+  <data name="founderUritextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 35</value>
+  </data>
+  <data name="founderUritextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;founderUritextBox.Name" xml:space="preserve">
+    <value>founderUritextBox</value>
+  </data>
+  <data name="&gt;&gt;founderUritextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;founderUritextBox.Parent" xml:space="preserve">
+    <value>通道转账groupBox</value>
+  </data>
+  <data name="&gt;&gt;founderUritextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,36 +382,6 @@
     <value>通道转账groupBox</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="资产类型comboBox.Items" xml:space="preserve">
-    <value>NEO</value>
-  </data>
-  <data name="资产类型comboBox.Items1" xml:space="preserve">
-    <value>TNC</value>
-  </data>
-  <data name="资产类型comboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 247</value>
-  </data>
-  <data name="资产类型comboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="资产类型comboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 32</value>
-  </data>
-  <data name="资产类型comboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Name" xml:space="preserve">
-    <value>资产类型comboBox</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.Parent" xml:space="preserve">
-    <value>通道转账groupBox</value>
-  </data>
-  <data name="&gt;&gt;资产类型comboBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
@@ -534,119 +441,89 @@
   <data name="&gt;&gt;转账button.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="通道转账groupBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="通道转账groupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 20</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="通道转账groupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1166, 844</value>
+  <data name="通道转账groupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="通道转账groupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1108, 328</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="通道转账groupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="通道转账groupBox.Text" xml:space="preserve">
+    <value>Channel Transfer</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;通道转账groupBox.Name" xml:space="preserve">
+    <value>通道转账groupBox</value>
   </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;可用通道列表groupBox.Name" xml:space="preserve">
-    <value>可用通道列表groupBox</value>
-  </data>
-  <data name="&gt;&gt;可用通道列表groupBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;通道转账groupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;可用通道列表groupBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;通道转账groupBox.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;可用通道列表groupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;通道转账groupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 39</value>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Channel Name</value>
   </data>
-  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>163</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Founder Balance</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>198</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Peer Balance</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>156</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Peer Address</value>
+  </data>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>171</value>
+  </data>
+  <data name="columnHeader13.Text" xml:space="preserve">
+    <value>Asset Type</value>
+  </data>
+  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="columnHeader14.Text" xml:space="preserve">
+    <value>Channel State</value>
+  </data>
+  <data name="columnHeader14.Width" type="System.Int32, mscorlib">
+    <value>192</value>
+  </data>
+  <data name="通道列表listView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 40</value>
+  </data>
+  <data name="通道列表listView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="通道列表listView.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1150, 797</value>
+  <data name="通道列表listView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 304</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Transfer Transaction</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="通道列表listView.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;通道列表listView.Name" xml:space="preserve">
     <value>通道列表listView</value>
@@ -690,68 +567,87 @@
   <data name="&gt;&gt;可用通道列表groupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="通道列表listView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 40</value>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 39</value>
   </data>
-  <data name="通道列表listView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="通道列表listView.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="通道列表listView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1092, 304</value>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1150, 797</value>
   </data>
-  <data name="通道列表listView.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;通道列表listView.Name" xml:space="preserve">
-    <value>通道列表listView</value>
-  </data>
-  <data name="&gt;&gt;通道列表listView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;通道列表listView.Parent" xml:space="preserve">
-    <value>可用通道列表groupBox</value>
-  </data>
-  <data name="&gt;&gt;通道列表listView.ZOrder" xml:space="preserve">
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Channel Name</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Transfer Transaction</value>
   </data>
-  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>163</value>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="columnHeader6.Text" xml:space="preserve">
-    <value>Founder Balance</value>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
-    <value>198</value>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>Peer Balance</value>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>156</value>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Transaction Time</value>
   </data>
-  <data name="columnHeader8.Text" xml:space="preserve">
-    <value>Peer Address</value>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>223</value>
   </data>
-  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
-    <value>171</value>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Channel Alias</value>
   </data>
-  <data name="columnHeader13.Text" xml:space="preserve">
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Transaction Amount</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>243</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
     <value>Asset Type</value>
   </data>
-  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
-    <value>138</value>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>298</value>
   </data>
-  <data name="columnHeader14.Text" xml:space="preserve">
-    <value>Channel State</value>
+  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="columnHeader14.Width" type="System.Int32, mscorlib">
-    <value>192</value>
+  <data name="listView1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
+        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
+        AwAAAA1MaXN0Vmlld0dyb3VwBfz///8oU3lzdGVtLldpbmRvd3MuRm9ybXMuSG9yaXpvbnRhbEFsaWdu
+        bWVudAEAAAAHdmFsdWVfXwAIAgAAAAAAAAAKBgUAAAAObGlzdFZpZXdHcm91cDEL
+</value>
+  </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1142, 789</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;listView1.Name" xml:space="preserve">
     <value>listView1</value>
@@ -794,205 +690,6 @@
   </data>
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listView1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACJTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0dyb3VwBAAAAAZIZWFkZXIPSGVhZGVyQWxpZ25tZW50A1Rh
-        ZwROYW1lAQQCAShTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ib3Jpem9udGFsQWxpZ25tZW50AgAAAAIAAAAG
-        AwAAAA1MaXN0Vmlld0dyb3VwBfz///8oU3lzdGVtLldpbmRvd3MuRm9ybXMuSG9yaXpvbnRhbEFsaWdu
-        bWVudAEAAAAHdmFsdWVfXwAIAgAAAAAAAAAKBgUAAAAObGlzdFZpZXdHcm91cDEL
-</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1142, 789</value>
-  </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
-  </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Transaction Time</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>223</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Channel Alias</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>189</value>
-  </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Transaction Amount</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>243</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Asset Type</value>
-  </data>
-  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
-    <value>298</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 39</value>
-  </data>
-  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1150, 797</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Channel Management</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;查询类型comboBox.Name" xml:space="preserve">
-    <value>查询类型comboBox</value>
-  </data>
-  <data name="&gt;&gt;查询类型comboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;查询类型comboBox.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;查询类型comboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;查询条件comboBox.Name" xml:space="preserve">
-    <value>查询条件comboBox</value>
-  </data>
-  <data name="&gt;&gt;查询条件comboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;查询条件comboBox.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;查询条件comboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 16</value>
-  </data>
-  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1128, 126</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Channel Query</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1111,6 +808,78 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBox4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 126</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Channel Query</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Channel Alias</value>
+  </data>
+  <data name="columnHeader9.Width" type="System.Int32, mscorlib">
+    <value>202</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Peer Account</value>
+  </data>
+  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>Channel State</value>
+  </data>
+  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
+    <value>192</value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Channel Balance</value>
+  </data>
+  <data name="columnHeader12.Width" type="System.Int32, mscorlib">
+    <value>212</value>
+  </data>
+  <data name="listView2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="listView2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="listView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1116, 564</value>
+  </data>
+  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;listView2.Name" xml:space="preserve">
     <value>listView2</value>
   </data>
@@ -1153,56 +922,35 @@
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="listView2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 39</value>
   </data>
-  <data name="listView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 44</value>
-  </data>
-  <data name="listView2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="listView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1116, 564</value>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1150, 797</value>
   </data>
-  <data name="&gt;&gt;listView2.Name" xml:space="preserve">
-    <value>listView2</value>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;listView2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Channel Management</value>
   </data>
-  <data name="&gt;&gt;listView2.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;listView2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="columnHeader9.Text" xml:space="preserve">
-    <value>Channel Alias</value>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="columnHeader9.Width" type="System.Int32, mscorlib">
-    <value>202</value>
-  </data>
-  <data name="columnHeader10.Text" xml:space="preserve">
-    <value>Peer Account</value>
-  </data>
-  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="columnHeader11.Text" xml:space="preserve">
-    <value>Channel State</value>
-  </data>
-  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
-    <value>192</value>
-  </data>
-  <data name="columnHeader12.Text" xml:space="preserve">
-    <value>Channel Balance</value>
-  </data>
-  <data name="columnHeader12.Width" type="System.Int32, mscorlib">
-    <value>212</value>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 39</value>
@@ -1233,6 +981,30 @@
   </data>
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 844</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

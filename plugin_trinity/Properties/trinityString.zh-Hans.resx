@@ -147,4 +147,7 @@
   <data name="ChannelMenuTitle" xml:space="preserve">
     <value>通道交易</value>
   </data>
+  <data name="choiceTransferChannel" xml:space="preserve">
+    <value>请选择要转账的通道</value>
+  </data>
 </root>

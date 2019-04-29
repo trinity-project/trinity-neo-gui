@@ -84,36 +84,52 @@ namespace plugin_trinity
 
         private void 转账button_Click(object sender, EventArgs e)
         {
-            try
+            if (this.通道列表listView.SelectedItems.Count > 0)
             {
-                string transferNumber = 转账金额textBox.Text;
-                string assetType = 资产类型comboBox.SelectedItem.ToString();
-                string peerAccount = 对端账户textBox.Text;
-                if (string.IsNullOrEmpty(transferNumber) || string.IsNullOrEmpty(peerAccount))
+                try
                 {
-                    MessageBox.Show(Strings.invalidTransferParameters);
+                    string founderUri = null;
+                    string peerUri = null;
+                    string transferAmount = null;
+                    string assetType = null;
+
+                    founderUri = founderUritextBox.Text;
+                    peerUri = peerUritextBox.Text;
+                    assetType = assettextBox.Text;
+                    transferAmount = accounttextBox.Text;
+
+                    if (string.IsNullOrEmpty(transferAmount))
+                    {
+                        MessageBox.Show(Strings.invalidTransferParameters);
+                        return;
+                    }
+
+                    string message = Strings.TransferMessage + peerUri + " " + transferAmount + " " + assetType;
+                    string caption = Strings.TransferPromptTitle;
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result;
+                    result = MessageBox.Show(this, message, caption, buttons);
+                    if (result == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        /*Todo  transfer asset to special account*/
+
+                        accounttextBox.Text = "";
+                        peerUritextBox.Text = "";
+                    }
+                    else
+                    {
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                     return;
                 }
-
-                string message = Strings.TransferMessage + peerAccount + " " + transferNumber + " " + assetType;
-                string caption = Strings.TransferPromptTitle;
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-                result = MessageBox.Show(this, message, caption, buttons);
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    转账金额textBox.Text = "";
-                    对端账户textBox.Text = "";
-                }
-                else
-                {
-
-                }
             }
-            catch (NullReferenceException)
+            else
             {
-                MessageBox.Show(Strings.invalidAssetType);
-                return;
+                MessageBox.Show(Strings.choiceTransferChannel);
             }
         }
 
@@ -122,6 +138,24 @@ namespace plugin_trinity
             拆除通道button.Enabled = true;
         }
 
+        private void 通道列表listView_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
+                foreach (ListViewItem item in channelInfo)
+                {
+                    founderUritextBox.Text = Form_start.getChannelUri();
+                    peerUritextBox.Text = item.SubItems[3].Text;
+                    assettextBox.Text = item.SubItems[4].Text;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
         private void 查询类型comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             查询条件comboBox.Items.Clear();

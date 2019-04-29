@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
-            this.对端账户textBox = new System.Windows.Forms.TextBox();
-            this.转账金额textBox = new System.Windows.Forms.TextBox();
+            this.peerUritextBox = new System.Windows.Forms.TextBox();
+            this.accounttextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.创建通道button = new System.Windows.Forms.Button();
             this.拆除通道button = new System.Windows.Forms.Button();
             this.通道转账groupBox = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.assettextBox = new System.Windows.Forms.TextBox();
+            this.founderUritextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.资产类型comboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.转账button = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -82,15 +82,15 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // 对端账户textBox
+            // peerUritextBox
             // 
-            resources.ApplyResources(this.对端账户textBox, "对端账户textBox");
-            this.对端账户textBox.Name = "对端账户textBox";
+            resources.ApplyResources(this.peerUritextBox, "peerUritextBox");
+            this.peerUritextBox.Name = "peerUritextBox";
             // 
-            // 转账金额textBox
+            // accounttextBox
             // 
-            resources.ApplyResources(this.转账金额textBox, "转账金额textBox");
-            this.转账金额textBox.Name = "转账金额textBox";
+            resources.ApplyResources(this.accounttextBox, "accounttextBox");
+            this.accounttextBox.Name = "accounttextBox";
             // 
             // label1
             // 
@@ -118,37 +118,33 @@
             // 
             // 通道转账groupBox
             // 
-            this.通道转账groupBox.Controls.Add(this.textBox1);
+            this.通道转账groupBox.Controls.Add(this.assettextBox);
+            this.通道转账groupBox.Controls.Add(this.founderUritextBox);
             this.通道转账groupBox.Controls.Add(this.label6);
-            this.通道转账groupBox.Controls.Add(this.资产类型comboBox);
             this.通道转账groupBox.Controls.Add(this.label3);
             this.通道转账groupBox.Controls.Add(this.转账button);
             this.通道转账groupBox.Controls.Add(this.label1);
             this.通道转账groupBox.Controls.Add(this.label2);
-            this.通道转账groupBox.Controls.Add(this.转账金额textBox);
-            this.通道转账groupBox.Controls.Add(this.对端账户textBox);
+            this.通道转账groupBox.Controls.Add(this.accounttextBox);
+            this.通道转账groupBox.Controls.Add(this.peerUritextBox);
             resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Name = "通道转账groupBox";
             this.通道转账groupBox.TabStop = false;
             // 
-            // textBox1
+            // assettextBox
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.assettextBox, "assettextBox");
+            this.assettextBox.Name = "assettextBox";
+            // 
+            // founderUritextBox
+            // 
+            resources.ApplyResources(this.founderUritextBox, "founderUritextBox");
+            this.founderUritextBox.Name = "founderUritextBox";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            // 
-            // 资产类型comboBox
-            // 
-            this.资产类型comboBox.FormattingEnabled = true;
-            this.资产类型comboBox.Items.AddRange(new object[] {
-            resources.GetString("资产类型comboBox.Items"),
-            resources.GetString("资产类型comboBox.Items1")});
-            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
-            this.资产类型comboBox.Name = "资产类型comboBox";
             // 
             // label3
             // 
@@ -205,6 +201,7 @@
             this.通道列表listView.UseCompatibleStateImageBehavior = false;
             this.通道列表listView.View = System.Windows.Forms.View.Details;
             this.通道列表listView.SelectedIndexChanged += new System.EventHandler(this.通道列表listView_SelectedIndexChanged);
+            this.通道列表listView.DoubleClick += new System.EventHandler(this.通道列表listView_DoubleClick);
             // 
             // columnHeader5
             // 
@@ -391,8 +388,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox 对端账户textBox;
-        private System.Windows.Forms.TextBox 转账金额textBox;
+        private System.Windows.Forms.TextBox peerUritextBox;
+        private System.Windows.Forms.TextBox accounttextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button 创建通道button;
@@ -409,7 +406,6 @@
         private System.Windows.Forms.Button 转账button;
         private System.Windows.Forms.GroupBox 可用通道列表groupBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox 资产类型comboBox;
         private System.Windows.Forms.ListView 通道列表listView;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
@@ -429,9 +425,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox founderUritextBox;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox assettextBox;
     }
 }

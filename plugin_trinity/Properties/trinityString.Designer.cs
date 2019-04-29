@@ -106,6 +106,15 @@ namespace plugin_trinity.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Please choice a valid channel from channel list 的本地化字符串。
+        /// </summary>
+        internal static string choiceTransferChannel {
+            get {
+                return ResourceManager.GetString("choiceTransferChannel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Please choice valid asset type 的本地化字符串。
         /// </summary>
         internal static string invalidAssetType {
