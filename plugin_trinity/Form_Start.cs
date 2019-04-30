@@ -117,21 +117,21 @@ namespace plugin_trinity
             try
             {
                 uint magicNeo = Neo.Network.P2P.Message.Magic;
-                uint currentMagic = 0;
+                string currentMagic = null;
                 if (magicNeo == Settings.Default.neoMagicMainNet)
                 {
-                    currentMagic = Settings.Default.trinityMagicMainNet;
+                    currentMagic = Settings.Default.neoMagicMainNet.ToString()+Settings.Default.trinityMagicMainNet.ToString();
                 }
                 else if (magicNeo == Settings.Default.neoMagicTestNet)
                 {
-                    currentMagic = Settings.Default.trinityMagicTestNet;
+                    currentMagic = Settings.Default.neoMagicTestNet.ToString()+Settings.Default.trinityMagicTestNet.ToString();
                 }
                 else
                 {
                     Exception ex = new Exception("Magic is invalid");
                     throw ex;
                 }
-                return currentMagic.ToString();
+                return currentMagic;
             }
             catch(Exception ex)
             {
