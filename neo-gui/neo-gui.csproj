@@ -303,6 +303,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Trinity">
+      <HintPath>..\..\cs-trinity-built\bin\Debug\Trinity.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cryptography\CertificateQueryResult.cs" />

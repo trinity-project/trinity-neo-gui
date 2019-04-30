@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="gatewayIP" Type="System.String" Scope="User">
-      <Value Profile="(Default)">127.0.0.1</Value>
+      <Value Profile="(Default)">10.0.0.5</Value>
     </Setting>
     <Setting Name="gatewayPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8089</Value>
