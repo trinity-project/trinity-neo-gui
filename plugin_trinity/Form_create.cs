@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
 
+using Neo;
+
 namespace plugin_trinity
 {
     public partial class Form_create : Form
@@ -44,7 +46,7 @@ namespace plugin_trinity
         {
             // Send RegisterChannel Messages to peer
             RegisterChannelHandler registerChannelHndl = new RegisterChannelHandler(
-                uri, peerUri, null, asset, null, Convert.ToDouble(deposit));
+                uri, peerUri, null, asset, null, Fixed8.Parse(deposit).GetData());
             registerChannelHndl.MakeTransaction();
         }
 
