@@ -25,7 +25,7 @@ namespace plugin_trinity
 
             this.通道名称textBox.Text = channel.channel;
             this.对端账户textBox.Text = channel.peer;
-            foreach (KeyValuePair<string, double> balanceItem in channel.balance)
+            foreach (KeyValuePair<string, long> balanceItem in channel.balance)
             {
                 if (balanceItem.Key.Contains(Form_start.getAccountPublic()))
                 {
