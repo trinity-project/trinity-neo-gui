@@ -5,6 +5,8 @@ using Trinity.ChannelSet;
 using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
 
+using Neo;
+
 namespace plugin_trinity
 {
     public partial class Form_main : Form
@@ -220,11 +222,11 @@ namespace plugin_trinity
                     {
                         if (bl.Key.Contains(Form_start.getAccountPublic()))
                         {
-                            founderBalane = bl.Value.ToString();
+                            founderBalane = new Fixed8(bl.Value).ToString();
                         }
                         else
                         {
-                            peerBalane = bl.Value.ToString();
+                            peerBalane = new Fixed8(bl.Value).ToString();
                         }
                     }
 
