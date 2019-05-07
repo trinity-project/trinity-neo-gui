@@ -45,7 +45,6 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -58,6 +57,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -79,25 +79,26 @@
             // 
             // 资产类型comboBox
             // 
-            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.FormattingEnabled = true;
             this.资产类型comboBox.Items.AddRange(new object[] {
             resources.GetString("资产类型comboBox.Items"),
-            resources.GetString("资产类型comboBox.Items1")});
+            resources.GetString("资产类型comboBox.Items1"),
+            resources.GetString("资产类型comboBox.Items2")});
+            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
             this.资产类型comboBox.Name = "资产类型comboBox";
             // 
             // 取消button
             // 
-            resources.ApplyResources(this.取消button, "取消button");
             this.取消button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.取消button, "取消button");
             this.取消button.Name = "取消button";
             this.取消button.UseVisualStyleBackColor = true;
             this.取消button.Click += new System.EventHandler(this.取消button_Click);
             // 
             // 创建button
             // 
-            resources.ApplyResources(this.创建button, "创建button");
             this.创建button.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.创建button, "创建button");
             this.创建button.Name = "创建button";
             this.创建button.UseVisualStyleBackColor = true;
             this.创建button.Click += new System.EventHandler(this.创建button_Click_1);

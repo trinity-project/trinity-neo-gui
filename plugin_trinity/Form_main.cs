@@ -57,9 +57,9 @@ namespace plugin_trinity
                         deleteChannel.uri = Form_start.getChannelUri();
                         deleteChannel.peer = item.SubItems[3].Text;
                         deleteChannel.asset = item.SubItems[4].Text;
-                        deleteChannel.balance = new Dictionary<string, double>();
-                        deleteChannel.balance.Add(deleteChannel.uri, double.Parse(item.SubItems[1].Text));
-                        deleteChannel.balance.Add(deleteChannel.peer, double.Parse(item.SubItems[2].Text));
+                        deleteChannel.balance = new Dictionary<string, long>();
+                        deleteChannel.balance.Add(deleteChannel.uri, long.Parse(item.SubItems[1].Text));
+                        deleteChannel.balance.Add(deleteChannel.peer, long.Parse(item.SubItems[2].Text));
                     }
 
                     using (Form_close formClose = new Form_close(deleteChannel))
@@ -216,7 +216,7 @@ namespace plugin_trinity
                 {
                     string founderBalane = null;
                     string peerBalane = null;
-                    foreach (KeyValuePair<string, double> bl in item.balance)
+                    foreach (KeyValuePair<string, long> bl in item.balance)
                     {
                         if (bl.Key.Contains(Form_start.getAccountPublic()))
                         {
