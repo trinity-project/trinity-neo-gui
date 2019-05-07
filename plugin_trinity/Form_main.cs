@@ -24,7 +24,6 @@ namespace plugin_trinity
                 {
                     if (formCreate.ShowDialog() == DialogResult.OK)
                     {
-                        timer1.Enabled = true;
                         /*
                         string info = formCreate.GetChannel();
                         string[] destStr = info.Split(',');
@@ -188,15 +187,6 @@ namespace plugin_trinity
         private void 查询条件comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-        }
-
-        private void Form_main_Load(object sender, EventArgs e)
-        {
-            if (getChannelNumber() > 0)
-            {
-                getChannelList();
-                timer1.Enabled = true;
-            }
         }
 
         private int getChannelNumber()

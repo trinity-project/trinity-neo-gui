@@ -362,6 +362,7 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
@@ -371,7 +372,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
             this.Name = "Form_main";
-            this.Load += new System.EventHandler(this.Form_main_Load);
             this.通道转账groupBox.ResumeLayout(false);
             this.通道转账groupBox.PerformLayout();
             this.tabControl1.ResumeLayout(false);
