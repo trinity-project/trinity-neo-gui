@@ -45,7 +45,6 @@ namespace plugin_trinity
 
         private void 拆除通道button_Click(object sender, EventArgs e)
         {
-            int Index = 0;
             if (this.通道列表listView.SelectedItems.Count > 0)
             {
                 try
@@ -67,8 +66,7 @@ namespace plugin_trinity
                     {
                         if (formClose.ShowDialog() == DialogResult.OK)
                         {
-                            Index = this.通道列表listView.SelectedItems[0].Index;
-                            通道列表listView.Items[Index].Remove();
+                            getChannelList();
                         }
                     }
                 }
