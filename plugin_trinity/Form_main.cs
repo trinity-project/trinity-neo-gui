@@ -207,6 +207,7 @@ namespace plugin_trinity
 
             if (channelList.Count > 0)
             {
+                this.通道列表listView.BeginUpdate();
                 foreach (ChannelTableContent item in channelList)
                 {
                     string founderBalane = null;
@@ -231,6 +232,7 @@ namespace plugin_trinity
                     channelItem.SubItems.Add(item.state.ToString());
                     this.通道列表listView.Items.Add(channelItem);                   
                 }
+                this.通道列表listView.EndUpdate();
             }
         }
 
