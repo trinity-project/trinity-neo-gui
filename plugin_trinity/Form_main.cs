@@ -189,6 +189,11 @@ namespace plugin_trinity
             
         }
 
+        private void Form_main_Load(object sender, EventArgs e)
+        {
+            getChannelList();
+        }
+
         private int getChannelNumber()
         {
             Channel channel = new Channel(null, null, Form_start.getChannelUri(), null);
