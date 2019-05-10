@@ -1,4 +1,5 @@
-﻿namespace plugin_trinity
+﻿
+namespace plugin_trinity
 {
     partial class Form_main
     {
@@ -52,6 +53,12 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.channelStatue = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.All = new System.Windows.Forms.ToolStripMenuItem();
+            this.Opened = new System.Windows.Forms.ToolStripMenuItem();
+            this.Opening = new System.Windows.Forms.ToolStripMenuItem();
+            this.Settled = new System.Windows.Forms.ToolStripMenuItem();
+            this.Settling = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -76,6 +83,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.可用通道列表groupBox.SuspendLayout();
+            this.channelStatue.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -194,6 +202,7 @@
             this.columnHeader8,
             this.columnHeader13,
             this.columnHeader14});
+            this.通道列表listView.ContextMenuStrip = this.channelStatue;
             this.通道列表listView.FullRowSelect = true;
             this.通道列表listView.GridLines = true;
             resources.ApplyResources(this.通道列表listView, "通道列表listView");
@@ -202,6 +211,7 @@
             this.通道列表listView.View = System.Windows.Forms.View.Details;
             this.通道列表listView.SelectedIndexChanged += new System.EventHandler(this.通道列表listView_SelectedIndexChanged);
             this.通道列表listView.DoubleClick += new System.EventHandler(this.通道列表listView_DoubleClick);
+            //this.通道列表listView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listViewtcmedicineSearchMouseClick);
             // 
             // columnHeader5
             // 
@@ -226,6 +236,43 @@
             // columnHeader14
             // 
             resources.ApplyResources(this.columnHeader14, "columnHeader14");
+            // 
+            // channelStatue
+            // 
+            this.channelStatue.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.channelStatue.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.All,
+            this.Opened,
+            this.Opening,
+            this.Settled,
+            this.Settling});
+            this.channelStatue.Name = "channelStatue";
+            resources.ApplyResources(this.channelStatue, "channelStatue");
+            // 
+            // All
+            // 
+            this.All.Name = "All";
+            resources.ApplyResources(this.All, "All");
+            // 
+            // Opened
+            // 
+            this.Opened.Name = "Opened";
+            resources.ApplyResources(this.Opened, "Opened");
+            // 
+            // Opening
+            // 
+            this.Opening.Name = "Opening";
+            resources.ApplyResources(this.Opening, "Opening");
+            // 
+            // Settled
+            // 
+            this.Settled.Name = "Settled";
+            resources.ApplyResources(this.Settled, "Settled");
+            // 
+            // Settling
+            // 
+            this.Settling.Name = "Settling";
+            resources.ApplyResources(this.Settling, "Settling");
             // 
             // tabPage2
             // 
@@ -378,6 +425,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.可用通道列表groupBox.ResumeLayout(false);
+            this.channelStatue.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -431,5 +479,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader14;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox assettextBox;
+        private System.Windows.Forms.ContextMenuStrip channelStatue;
+        private System.Windows.Forms.ToolStripMenuItem All;
+        private System.Windows.Forms.ToolStripMenuItem Opened;
+        private System.Windows.Forms.ToolStripMenuItem Opening;
+        private System.Windows.Forms.ToolStripMenuItem Settled;
+        private System.Windows.Forms.ToolStripMenuItem Settling;
     }
 }

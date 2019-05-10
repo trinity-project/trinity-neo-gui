@@ -4,6 +4,7 @@ using Strings = plugin_trinity.Properties.trinityString;
 using Trinity.ChannelSet;
 using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
+using Trinity.ChannelSet.Definitions;
 
 using Neo;
 
@@ -11,6 +12,8 @@ namespace plugin_trinity
 {
     public partial class Form_main : Form
     {
+        private static EnumChannelState showChannelState = EnumChannelState.INIT;
+        private ContextMenuStrip menuStrip;
         public Form_main()
         {
             InitializeComponent();
@@ -190,6 +193,15 @@ namespace plugin_trinity
         private void Form_main_Load(object sender, EventArgs e)
         {
             getChannelList();
+            //menuStrip = new ContextMenuStrip();//1
+            //menuStrip.Items.Add("item1");//2
+            //menuStrip.Items.Add("item2"); //3
+
+            this.All.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            this.Opened.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            this.Opening.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            this.Settled.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
         }
 
         private int getChannelNumber()
@@ -210,34 +222,122 @@ namespace plugin_trinity
                 this.通道列表listView.BeginUpdate();
                 foreach (ChannelTableContent item in channelList)
                 {
-                    string founderBalane = null;
-                    string peerBalane = null;
-                    foreach (KeyValuePair<string, long> bl in item.balance)
+                    if (showChannelState.ToString().Equals(EnumChannelState.INIT.ToString()))
                     {
-                        if (bl.Key.Contains(Form_start.getAccountPublic()))
+                        string founderBalane = null;
+                        string peerBalane = null;
+                        foreach (KeyValuePair<string, long> bl in item.balance)
                         {
-                            founderBalane = new Fixed8(bl.Value).ToString();
+                            if (bl.Key.Contains(Form_start.getAccountPublic()))
+                            {
+                                founderBalane = new Fixed8(bl.Value).ToString();
+                            }
+                            else
+                            {
+                                peerBalane = new Fixed8(bl.Value).ToString();
+                            }
                         }
-                        else
+
+                        ListViewItem channelItem = new ListViewItem(item.channel);
+                        channelItem.SubItems.Add(founderBalane);
+                        channelItem.SubItems.Add(peerBalane);
+                        channelItem.SubItems.Add(item.peer);
+                        channelItem.SubItems.Add(item.asset);
+                        channelItem.SubItems.Add(item.state.ToString());
+                        this.通道列表listView.Items.Add(channelItem);
+                    }
+                    else
+                    {
+                        if (item.state.Equals(showChannelState.ToString()))
                         {
-                            peerBalane = new Fixed8(bl.Value).ToString();
+                            string founderBalane = null;
+                            string peerBalane = null;
+                            foreach (KeyValuePair<string, long> bl in item.balance)
+                            {
+                                if (bl.Key.Contains(Form_start.getAccountPublic()))
+                                {
+                                    founderBalane = new Fixed8(bl.Value).ToString();
+                                }
+                                else
+                                {
+                                    peerBalane = new Fixed8(bl.Value).ToString();
+                                }
+                            }
+
+                            ListViewItem channelItem = new ListViewItem(item.channel);
+                            channelItem.SubItems.Add(founderBalane);
+                            channelItem.SubItems.Add(peerBalane);
+                            channelItem.SubItems.Add(item.peer);
+                            channelItem.SubItems.Add(item.asset);
+                            channelItem.SubItems.Add(item.state.ToString());
+                            this.通道列表listView.Items.Add(channelItem);
                         }
                     }
-
-                    ListViewItem channelItem = new ListViewItem(item.channel);
-                    channelItem.SubItems.Add(founderBalane);
-                    channelItem.SubItems.Add(peerBalane);
-                    channelItem.SubItems.Add(item.peer);
-                    channelItem.SubItems.Add(item.asset);
-                    channelItem.SubItems.Add(item.state.ToString());
-                    this.通道列表listView.Items.Add(channelItem);                   
                 }
+                this.通道列表listView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 this.通道列表listView.EndUpdate();
             }
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            getChannelList();
+        }
+
+         private void ToolStripMenuItem_Click(object sender, EventArgs e)
+         {
+              ToolStripMenuItem tsMenumItem = sender as ToolStripMenuItem;
+              if (tsMenumItem.Checked)
+              {
+                  return;//已经选中则返回
+              }
+              else
+              {
+                //清除勾选的右键菜单项
+                ClearCheckState(channelStatue);
+                //勾选鼠标选中的右键菜单项
+                  tsMenumItem.Checked = true;
+              }
+              //设置ListView列表显示样式
+              SetDisplayStyle(tsMenumItem.Text);
+         }
+
+          private void ClearCheckState(ContextMenuStrip cms)
+          {
+              ToolStripMenuItem tsMenumItemTemp;
+              for (int i = 0; i<cms.Items.Count; i++)
+              {
+                  if (!(cms.Items[i] is ToolStripMenuItem))
+                  {
+                      continue;
+                  }
+                  tsMenumItemTemp = cms.Items[i] as ToolStripMenuItem;
+                  if (tsMenumItemTemp.Checked)
+                  {
+                      tsMenumItemTemp.Checked = false;
+                  }
+              }
+          }
+        private void SetDisplayStyle(string name)
+        {
+            switch (name)
+            {
+                case "All":
+                    showChannelState = EnumChannelState.INIT;
+                    break;
+                case "Opening":
+                    showChannelState = EnumChannelState.OPENING;
+                    break;
+                case "Opened":
+                    showChannelState = EnumChannelState.OPENED;
+                    break;
+                case "Settling":
+                    showChannelState = EnumChannelState.SETTLING;
+                    break;
+                case "Settled":
+                    showChannelState = EnumChannelState.SETTLED;
+                    break;
+            }
             getChannelList();
         }
     }
