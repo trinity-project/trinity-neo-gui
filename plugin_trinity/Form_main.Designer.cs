@@ -38,13 +38,21 @@ namespace plugin_trinity
             this.创建通道button = new System.Windows.Forms.Button();
             this.拆除通道button = new System.Windows.Forms.Button();
             this.通道转账groupBox = new System.Windows.Forms.GroupBox();
-            this.assettextBox = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.founderUritextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.转账button = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.可用通道列表groupBox = new System.Windows.Forms.GroupBox();
             this.通道列表listView = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -82,6 +90,7 @@ namespace plugin_trinity
             this.通道转账groupBox.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.可用通道列表groupBox.SuspendLayout();
             this.channelStatue.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -126,7 +135,7 @@ namespace plugin_trinity
             // 
             // 通道转账groupBox
             // 
-            this.通道转账groupBox.Controls.Add(this.assettextBox);
+            this.通道转账groupBox.Controls.Add(this.comboBox2);
             this.通道转账groupBox.Controls.Add(this.founderUritextBox);
             this.通道转账groupBox.Controls.Add(this.label6);
             this.通道转账groupBox.Controls.Add(this.label3);
@@ -139,10 +148,15 @@ namespace plugin_trinity
             this.通道转账groupBox.Name = "通道转账groupBox";
             this.通道转账groupBox.TabStop = false;
             // 
-            // assettextBox
+            // comboBox2
             // 
-            resources.ApplyResources(this.assettextBox, "assettextBox");
-            this.assettextBox.Name = "assettextBox";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2")});
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
             // 
             // founderUritextBox
             // 
@@ -178,11 +192,69 @@ namespace plugin_trinity
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.可用通道列表groupBox);
             this.tabPage1.Controls.Add(this.通道转账groupBox);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.textBox1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.ValueMember = "TNC";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             // 
             // 可用通道列表groupBox
             // 
@@ -211,7 +283,6 @@ namespace plugin_trinity
             this.通道列表listView.View = System.Windows.Forms.View.Details;
             this.通道列表listView.SelectedIndexChanged += new System.EventHandler(this.通道列表listView_SelectedIndexChanged);
             this.通道列表listView.DoubleClick += new System.EventHandler(this.通道列表listView_DoubleClick);
-            //this.通道列表listView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listViewtcmedicineSearchMouseClick);
             // 
             // columnHeader5
             // 
@@ -424,6 +495,8 @@ namespace plugin_trinity
             this.通道转账groupBox.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.可用通道列表groupBox.ResumeLayout(false);
             this.channelStatue.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -478,12 +551,20 @@ namespace plugin_trinity
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TextBox assettextBox;
         private System.Windows.Forms.ContextMenuStrip channelStatue;
         private System.Windows.Forms.ToolStripMenuItem All;
         private System.Windows.Forms.ToolStripMenuItem Opened;
         private System.Windows.Forms.ToolStripMenuItem Opening;
         private System.Windows.Forms.ToolStripMenuItem Settled;
         private System.Windows.Forms.ToolStripMenuItem Settling;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -88,6 +88,15 @@ namespace plugin_trinity.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Invalid payment code 的本地化字符串。
+        /// </summary>
+        internal static string CheckPaymentCode {
+            get {
+                return ResourceManager.GetString("CheckPaymentCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Please choice a valid account for channel operation 的本地化字符串。
         /// </summary>
         internal static string choiceChannelAddress {

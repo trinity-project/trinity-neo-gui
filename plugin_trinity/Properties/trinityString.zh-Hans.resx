@@ -150,4 +150,7 @@
   <data name="choiceTransferChannel" xml:space="preserve">
     <value>请选择要转账的通道</value>
   </data>
+  <data name="CheckPaymentCode" xml:space="preserve">
+    <value>收款码不正确</value>
+  </data>
 </root>

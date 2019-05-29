@@ -5,15 +5,17 @@ using Trinity.ChannelSet;
 using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
 using Trinity.ChannelSet.Definitions;
+using Trinity.Wallets.TransferHandler.ControlHandler;
 
 using Neo;
+using Neo.Cryptography;
+using System.Linq;
 
 namespace plugin_trinity
 {
     public partial class Form_main : Form
     {
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
-        private ContextMenuStrip menuStrip;
         public Form_main()
         {
             InitializeComponent();
@@ -94,18 +96,36 @@ namespace plugin_trinity
                     string peerUri = null;
                     string transferAmount = null;
                     string assetType = null;
+                    string HashR = null;
 
                     founderUri = founderUritextBox.Text;
                     peerUri = peerUritextBox.Text;
-                    assetType = assettextBox.Text;
+                    assetType = comboBox2.SelectedItem.ToString();
                     transferAmount = accounttextBox.Text;
 
-                    if (string.IsNullOrEmpty(transferAmount))
+                    if (peerUri.Length > 88)
                     {
-                        MessageBox.Show(Strings.invalidTransferParameters);
-                        return;
+                        byte[] pamentByte = Base58.Decode(peerUri);
+                        string paymentString = System.Text.Encoding.Default.GetString(pamentByte);
+                        string[] info = paymentString.Split('&');
+                        if (info.Length != 5)
+                        {
+                            MessageBox.Show(Strings.CheckPaymentCode);
+                            return;
+                        }
+                        peerUri = info[0];
+                        HashR = info[1];
+                        assetType = info[2];
+                        transferAmount = info[3];
                     }
-
+                    else
+                    { 
+                        if (string.IsNullOrEmpty(transferAmount))
+                        {
+                            MessageBox.Show(Strings.invalidTransferParameters);
+                            return;
+                        }
+                    }
                     string message = Strings.TransferMessage + peerUri + " " + transferAmount + " " + assetType;
                     string caption = Strings.TransferPromptTitle;
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -149,7 +169,7 @@ namespace plugin_trinity
                 {
                     founderUritextBox.Text = Form_start.getChannelUri();
                     peerUritextBox.Text = item.SubItems[3].Text;
-                    assettextBox.Text = item.SubItems[4].Text;
+                    comboBox2.Text = item.SubItems[4].Text;
                 }
             }
             catch (Exception ex)
@@ -339,6 +359,23 @@ namespace plugin_trinity
                     break;
             }
             getChannelList();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            try
+            {
+                textBox1.Text = Payment.GeneratePaymentCode(Form_start.getChannelUri(),
+                                                            comboBox1.SelectedItem.ToString(),
+                                                            new Fixed8(long.Parse(textBox2.Text)),
+                                                            "payment");
+            }
+            catch (Exception ex)
+            {
+                textBox1.Text = null;
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

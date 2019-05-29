@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="对端账户textBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 119</value>
+  <data name="peerUritextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 102</value>
   </data>
-  <data name="转账金额textBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 183</value>
+  <data name="peerUritextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>915, 35</value>
+  </data>
+  <data name="accounttextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 158</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
@@ -136,11 +139,20 @@
   <data name="label2.Text" xml:space="preserve">
     <value>转账数量</value>
   </data>
+  <data name="通道转账groupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1108, 230</value>
+  </data>
   <data name="通道转账groupBox.Text" xml:space="preserve">
     <value>通道转账</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 58</value>
+  <data name="assettextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 158</value>
+  </data>
+  <data name="founderUritextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 48</value>
+  </data>
+  <data name="founderUritextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>915, 35</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
@@ -148,8 +160,8 @@
   <data name="label6.Text" xml:space="preserve">
     <value>本端地址</value>
   </data>
-  <data name="资产类型comboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 247</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 164</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
@@ -158,13 +170,64 @@
     <value>资产类型</value>
   </data>
   <data name="转账button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>810, 243</value>
+    <value>955, 162</value>
   </data>
   <data name="转账button.Text" xml:space="preserve">
     <value>转账</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>转账交易</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 263</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>收款信息</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>收款码</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 37</value>
+  </data>
+  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 35</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 40</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 48</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>资产类型</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>收款数量</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>909, 40</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 40</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>生成收款码</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 106</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>923, 35</value>
   </data>
   <data name="可用通道列表groupBox.Text" xml:space="preserve">
     <value>可用通道</value>
@@ -269,5 +332,8 @@
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
     <value>节点管理</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>通道转账</value>
   </data>
 </root>
