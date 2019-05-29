@@ -183,8 +183,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Trinity">
-      <HintPath>..\neo-gui\bin\Debug\Trinity.dll</HintPath>
+    <Reference Include="Trinity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\neo-gui\bin\Release\Trinity.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
