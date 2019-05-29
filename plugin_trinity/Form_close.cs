@@ -19,23 +19,15 @@ namespace plugin_trinity
         private string peerUri;
         private string asset;
 
-        public Form_close(ChannelTableContent channel)
+        public Form_close (ChannelTableContent channel)
         {
             InitializeComponent();
 
             this.通道名称textBox.Text = channel.channel;
             this.对端账户textBox.Text = channel.peer;
-            foreach (KeyValuePair<string, long> balanceItem in channel.balance)
-            {
-                if (balanceItem.Key.Contains(Form_start.getAccountPublic()))
-                {
-                    this.本段余额textBox.Text = balanceItem.Value.ToString();
-                }
-                else
-                {
-                    this.对端余额textBox.Text = balanceItem.Value.ToString();
-                }
-            }
+            this.本段余额textBox.Text = channel.balance.ToString();
+            this.对端余额textBox.Text = channel.peerBalance.ToString();
+
             channelName = channel.channel;
             founderUri = channel.uri;
             peerUri = channel.peer;

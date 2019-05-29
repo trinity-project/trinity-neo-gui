@@ -6,6 +6,7 @@ using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
 using Trinity.ChannelSet.Definitions;
 using Trinity.Wallets.TransferHandler.ControlHandler;
+using Trinity.Wallets.TransferHandler.TransactionHandler;
 
 using Neo;
 using Neo.Cryptography;
@@ -62,9 +63,8 @@ namespace plugin_trinity
                         deleteChannel.uri = Form_start.getChannelUri();
                         deleteChannel.peer = item.SubItems[3].Text;
                         deleteChannel.asset = item.SubItems[4].Text;
-                        deleteChannel.balance = new Dictionary<string, long>();
-                        deleteChannel.balance.Add(deleteChannel.uri, long.Parse(item.SubItems[1].Text));
-                        deleteChannel.balance.Add(deleteChannel.peer, long.Parse(item.SubItems[2].Text));
+                        deleteChannel.balance = long.Parse(item.SubItems[1].Text);
+                        deleteChannel.peerBalance = long.Parse(item.SubItems[2].Text);
                     }
 
                     using (Form_close formClose = new Form_close(deleteChannel))
@@ -134,6 +134,9 @@ namespace plugin_trinity
                     if (result == System.Windows.Forms.DialogResult.Yes)
                     {
                         /*Todo  transfer asset to special account*/
+                        RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, this.通道列表listView.SelectedItems[0].SubItems[0].Text, 
+                            assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
+                        rsmcHndl.MakeTransaction();
 
                         accounttextBox.Text = "";
                         peerUritextBox.Text = "";
@@ -244,19 +247,8 @@ namespace plugin_trinity
                 {
                     if (showChannelState.ToString().Equals(EnumChannelState.INIT.ToString()))
                     {
-                        string founderBalane = null;
-                        string peerBalane = null;
-                        foreach (KeyValuePair<string, long> bl in item.balance)
-                        {
-                            if (bl.Key.Contains(Form_start.getAccountPublic()))
-                            {
-                                founderBalane = new Fixed8(bl.Value).ToString();
-                            }
-                            else
-                            {
-                                peerBalane = new Fixed8(bl.Value).ToString();
-                            }
-                        }
+                        string founderBalane = new Fixed8(item.balance).ToString();
+                        string peerBalane = new Fixed8(item.peerBalance).ToString();
 
                         ListViewItem channelItem = new ListViewItem(item.channel);
                         channelItem.SubItems.Add(founderBalane);
@@ -270,19 +262,8 @@ namespace plugin_trinity
                     {
                         if (item.state.Equals(showChannelState.ToString()))
                         {
-                            string founderBalane = null;
-                            string peerBalane = null;
-                            foreach (KeyValuePair<string, long> bl in item.balance)
-                            {
-                                if (bl.Key.Contains(Form_start.getAccountPublic()))
-                                {
-                                    founderBalane = new Fixed8(bl.Value).ToString();
-                                }
-                                else
-                                {
-                                    peerBalane = new Fixed8(bl.Value).ToString();
-                                }
-                            }
+                            string founderBalane = new Fixed8(item.balance).ToString();
+                            string peerBalane = new Fixed8(item.peerBalance).ToString();
 
                             ListViewItem channelItem = new ListViewItem(item.channel);
                             channelItem.SubItems.Add(founderBalane);
