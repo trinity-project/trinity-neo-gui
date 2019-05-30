@@ -92,16 +92,12 @@ namespace plugin_trinity
             {
                 try
                 {
-                    string founderUri = null;
-                    string peerUri = null;
-                    string transferAmount = null;
-                    string assetType = null;
+                    string founderUri = founderUritextBox.Text;
+                    string peerUri = peerUritextBox.Text;
+                    string assetType = comboBox2.SelectedItem.ToString();
+                    string transferAmount = accounttextBox.Text;
+                    string channelName = this.通道列表listView.SelectedItems[0].SubItems[0].Text;
                     string HashR = null;
-
-                    founderUri = founderUritextBox.Text;
-                    peerUri = peerUritextBox.Text;
-                    assetType = comboBox2.SelectedItem.ToString();
-                    transferAmount = accounttextBox.Text;
 
                     if (peerUri.Length > 88)
                     {
@@ -134,7 +130,7 @@ namespace plugin_trinity
                     if (result == System.Windows.Forms.DialogResult.Yes)
                     {
                         /*Todo  transfer asset to special account*/
-                        RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, this.通道列表listView.SelectedItems[0].SubItems[0].Text, 
+                        RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName, 
                             assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
                         rsmcHndl.MakeTransaction();
 
