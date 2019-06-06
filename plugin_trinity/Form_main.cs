@@ -65,8 +65,9 @@ namespace plugin_trinity
                         deleteChannel.uri = Form_start.getChannelUri();
                         deleteChannel.peer = item.SubItems[3].Text;
                         deleteChannel.asset = item.SubItems[4].Text;
-                        deleteChannel.balance = long.Parse(item.SubItems[1].Text);
-                        deleteChannel.peerBalance = long.Parse(item.SubItems[2].Text);
+
+                        deleteChannel.balance = Fixed8.Parse(item.SubItems[1].Text).GetData();
+                        deleteChannel.peerBalance = Fixed8.Parse(item.SubItems[2].Text).GetData();
                     }
 
                     using (Form_close formClose = new Form_close(deleteChannel))

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Neo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,8 +26,8 @@ namespace plugin_trinity
 
             this.通道名称textBox.Text = channel.channel;
             this.对端账户textBox.Text = channel.peer;
-            this.本段余额textBox.Text = channel.balance.ToString();
-            this.对端余额textBox.Text = channel.peerBalance.ToString();
+            this.本段余额textBox.Text = new Fixed8(channel.balance).ToString();
+            this.对端余额textBox.Text = new Fixed8(channel.peerBalance).ToString();
 
             channelName = channel.channel;
             founderUri = channel.uri;
