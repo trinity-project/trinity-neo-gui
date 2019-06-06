@@ -18,6 +18,7 @@ namespace plugin_trinity
     {
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
         private Channel channel;
+        private string transferChannelName;
 
         public Form_main()
         {
@@ -91,7 +92,8 @@ namespace plugin_trinity
 
         private void 转账button_Click(object sender, EventArgs e)
         {
-            if (this.通道列表listView.SelectedItems.Count > 0)
+            //if (this.通道列表listView.SelectedItems.Count > 0)
+            if (true)
             {
                 try
                 {
@@ -99,7 +101,7 @@ namespace plugin_trinity
                     string peerUri = peerUritextBox.Text;
                     string assetType = comboBox2.SelectedItem.ToString();
                     string transferAmount = accounttextBox.Text;
-                    string channelName = this.通道列表listView.SelectedItems[0].SubItems[0].Text;
+                    string channelName = transferChannelName;//this.通道列表listView.SelectedItems[0].SubItems[0].Text;
                     string HashR = null;
 
                     if (peerUri.Length > 88)
@@ -172,6 +174,7 @@ namespace plugin_trinity
                     founderUritextBox.Text = Form_start.getChannelUri();
                     peerUritextBox.Text = item.SubItems[3].Text;
                     comboBox2.Text = item.SubItems[4].Text;
+                    transferChannelName = item.SubItems[0].Text;
                 }
             }
             catch (Exception ex)
