@@ -153,4 +153,7 @@
   <data name="CheckPaymentCode" xml:space="preserve">
     <value>收款码不正确</value>
   </data>
+  <data name="monitorBlock" xml:space="preserve">
+    <value>监控块高</value>
+  </data>
 </root>

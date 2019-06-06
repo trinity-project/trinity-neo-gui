@@ -151,6 +151,15 @@ namespace plugin_trinity.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Monitoring Block Height 的本地化字符串。
+        /// </summary>
+        internal static string monitorBlock {
+            get {
+                return ResourceManager.GetString("monitorBlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Transfer to 的本地化字符串。
         /// </summary>
         internal static string TransferMessage {

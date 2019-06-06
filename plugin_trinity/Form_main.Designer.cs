@@ -87,6 +87,9 @@ namespace plugin_trinity
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.通道转账groupBox.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -97,6 +100,7 @@ namespace plugin_trinity
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // peerUritextBox
@@ -135,6 +139,7 @@ namespace plugin_trinity
             // 
             // 通道转账groupBox
             // 
+            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Controls.Add(this.comboBox2);
             this.通道转账groupBox.Controls.Add(this.founderUritextBox);
             this.通道转账groupBox.Controls.Add(this.label6);
@@ -144,18 +149,17 @@ namespace plugin_trinity
             this.通道转账groupBox.Controls.Add(this.label2);
             this.通道转账groupBox.Controls.Add(this.accounttextBox);
             this.通道转账groupBox.Controls.Add(this.peerUritextBox);
-            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
             this.通道转账groupBox.Name = "通道转账groupBox";
             this.通道转账groupBox.TabStop = false;
             // 
             // comboBox2
             // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             resources.GetString("comboBox2.Items"),
             resources.GetString("comboBox2.Items1"),
             resources.GetString("comboBox2.Items2")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
             // 
             // founderUritextBox
@@ -182,25 +186,26 @@ namespace plugin_trinity
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.可用通道列表groupBox);
             this.tabPage1.Controls.Add(this.通道转账groupBox);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -208,18 +213,18 @@ namespace plugin_trinity
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.DisplayMember = "TNC";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.ValueMember = "TNC";
             // 
@@ -258,15 +263,16 @@ namespace plugin_trinity
             // 
             // 可用通道列表groupBox
             // 
+            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
             this.可用通道列表groupBox.Controls.Add(this.通道列表listView);
             this.可用通道列表groupBox.Controls.Add(this.创建通道button);
             this.可用通道列表groupBox.Controls.Add(this.拆除通道button);
-            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
             this.可用通道列表groupBox.Name = "可用通道列表groupBox";
             this.可用通道列表groupBox.TabStop = false;
             // 
             // 通道列表listView
             // 
+            resources.ApplyResources(this.通道列表listView, "通道列表listView");
             this.通道列表listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
@@ -277,7 +283,6 @@ namespace plugin_trinity
             this.通道列表listView.ContextMenuStrip = this.channelStatue;
             this.通道列表listView.FullRowSelect = true;
             this.通道列表listView.GridLines = true;
-            resources.ApplyResources(this.通道列表listView, "通道列表listView");
             this.通道列表listView.Name = "通道列表listView";
             this.通道列表listView.UseCompatibleStateImageBehavior = false;
             this.通道列表listView.View = System.Windows.Forms.View.Details;
@@ -310,6 +315,7 @@ namespace plugin_trinity
             // 
             // channelStatue
             // 
+            resources.ApplyResources(this.channelStatue, "channelStatue");
             this.channelStatue.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.channelStatue.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.All,
@@ -318,48 +324,47 @@ namespace plugin_trinity
             this.Settled,
             this.Settling});
             this.channelStatue.Name = "channelStatue";
-            resources.ApplyResources(this.channelStatue, "channelStatue");
             // 
             // All
             // 
-            this.All.Name = "All";
             resources.ApplyResources(this.All, "All");
+            this.All.Name = "All";
             // 
             // Opened
             // 
-            this.Opened.Name = "Opened";
             resources.ApplyResources(this.Opened, "Opened");
+            this.Opened.Name = "Opened";
             // 
             // Opening
             // 
-            this.Opening.Name = "Opening";
             resources.ApplyResources(this.Opening, "Opening");
+            this.Opening.Name = "Opening";
             // 
             // Settled
             // 
-            this.Settled.Name = "Settled";
             resources.ApplyResources(this.Settled, "Settled");
+            this.Settled.Name = "Settled";
             // 
             // Settling
             // 
-            this.Settling.Name = "Settling";
             resources.ApplyResources(this.Settling, "Settling");
+            this.Settling.Name = "Settling";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listView1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
@@ -389,19 +394,19 @@ namespace plugin_trinity
             // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.groupBox3);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.查询类型comboBox);
             this.groupBox4.Controls.Add(this.查询条件comboBox);
             this.groupBox4.Controls.Add(this.label5);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -412,19 +417,19 @@ namespace plugin_trinity
             // 
             // 查询类型comboBox
             // 
+            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
             this.查询类型comboBox.FormattingEnabled = true;
             this.查询类型comboBox.Items.AddRange(new object[] {
             resources.GetString("查询类型comboBox.Items"),
             resources.GetString("查询类型comboBox.Items1"),
             resources.GetString("查询类型comboBox.Items2")});
-            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
             this.查询类型comboBox.Name = "查询类型comboBox";
             this.查询类型comboBox.SelectedIndexChanged += new System.EventHandler(this.查询类型comboBox_SelectedIndexChanged);
             // 
             // 查询条件comboBox
             // 
-            this.查询条件comboBox.FormattingEnabled = true;
             resources.ApplyResources(this.查询条件comboBox, "查询条件comboBox");
+            this.查询条件comboBox.FormattingEnabled = true;
             this.查询条件comboBox.Name = "查询条件comboBox";
             // 
             // label5
@@ -434,13 +439,14 @@ namespace plugin_trinity
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listView2);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.listView2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // listView2
             // 
+            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.AllowColumnReorder = true;
             this.listView2.AllowDrop = true;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -448,7 +454,6 @@ namespace plugin_trinity
             this.columnHeader10,
             this.columnHeader11,
             this.columnHeader12});
-            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
@@ -484,10 +489,30 @@ namespace plugin_trinity
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // statusStrip1
+            // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Name = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form_main";
             this.Load += new System.EventHandler(this.Form_main_Load);
@@ -504,7 +529,10 @@ namespace plugin_trinity
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -566,5 +594,8 @@ namespace plugin_trinity
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

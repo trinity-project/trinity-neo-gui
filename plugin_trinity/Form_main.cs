@@ -17,6 +17,8 @@ namespace plugin_trinity
     public partial class Form_main : Form
     {
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
+        private Channel channel;
+
         public Form_main()
         {
             InitializeComponent();
@@ -211,6 +213,8 @@ namespace plugin_trinity
 
         private void Form_main_Load(object sender, EventArgs e)
         {
+            channel = new Channel(null, null, Form_start.getChannelUri(), null);
+
             getChannelList();
             //menuStrip = new ContextMenuStrip();//1
             //menuStrip.Items.Add("item1");//2
@@ -220,19 +224,17 @@ namespace plugin_trinity
             this.Opened.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             this.Opening.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             this.Settled.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
-            this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);            
         }
 
         private int getChannelNumber()
         {
-            Channel channel = new Channel(null, null, Form_start.getChannelUri(), null);
             List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
             return channelList.Count;
         }
 
         private void getChannelList()
         {
-            Channel channel = new Channel(null, null, Form_start.getChannelUri(), null);
             List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
             this.通道列表listView.Items.Clear();
 
@@ -353,6 +355,15 @@ namespace plugin_trinity
                 textBox1.Text = null;
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        static uint test = 0;
+        private void Timer2_Tick(object sender, EventArgs e)
+        {
+            uint currentMonitordBlockHeight = 0;
+
+            currentMonitordBlockHeight = channel.TryGetBlockHeight(Form_start.getChannelUri());
+            this.toolStripStatusLabel1.Text = String.Format("{0} : {1}", Strings.monitorBlock, currentMonitordBlockHeight.ToString());
         }
     }
 }
