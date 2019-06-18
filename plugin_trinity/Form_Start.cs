@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using Neo;
 using Neo.Wallets;
-using Settings = plugin_trinity.Properties.trinitySettings;
+using Trinity.Properties;
 using Strings = plugin_trinity.Properties.trinityString;
 using Neo.SmartContract;
 using Trinity.ChannelSet;
@@ -68,9 +68,7 @@ namespace plugin_trinity
                 Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, 
                                                       Plugin_trinity.api.CurrentWallet, 
                                                       accountPublicKey,
-                                                      magic,
-                                                      Settings.Default.gatewayIP,
-                                                      Settings.Default.gatewayPort);
+                                                      magic);
 
                 // Trigger RegisterKeepAlive message to gateway
                 this.RegisterToGateway();
@@ -116,15 +114,21 @@ namespace plugin_trinity
         {
             try
             {
+                uint neoMagicMainNet = 7630401;
+                uint neoMagicTestNet = 1953787457;
+                uint trinityMagic = 0;
+
                 uint magicNeo = Neo.Network.P2P.Message.Magic;
                 string currentMagic = null;
-                if (magicNeo == Settings.Default.neoMagicMainNet)
+                if (magicNeo == neoMagicMainNet)
                 {
-                    currentMagic = Settings.Default.neoMagicMainNet.ToString()+Settings.Default.trinityMagicMainNet.ToString();
+                    trinityMagic = Settings.Default.trinityMagicMainNet;
+                    currentMagic = string.Format("{0}{1}",neoMagicMainNet.ToString(),trinityMagic.ToString());
                 }
-                else if (magicNeo == Settings.Default.neoMagicTestNet)
+                else if (magicNeo == neoMagicTestNet)
                 {
-                    currentMagic = Settings.Default.neoMagicTestNet.ToString()+Settings.Default.trinityMagicTestNet.ToString();
+                    trinityMagic = Settings.Default.trinityMagicTestNet;
+                    currentMagic = string.Format("{0}{1}", neoMagicTestNet.ToString(), trinityMagic.ToString());
                 }
                 else
                 {
@@ -146,7 +150,7 @@ namespace plugin_trinity
         private void RegisterToGateway()
         {
             // Trigger RegisterKeepAlive message to gateway
-            RegisterWallet registerWalletHndl = new RegisterWallet(Settings.Default.localIp, Settings.Default.localPort);
+            RegisterWallet registerWalletHndl = new RegisterWallet();
             registerWalletHndl.MakeTransaction();
         }
 

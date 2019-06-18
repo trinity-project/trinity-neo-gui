@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui", "neo-gui\neo-gui.csproj", "{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui_pluginframework", "neo-gui_pluginframework\neo-gui_pluginframework.csproj", "{F3166EDF-72D3-4301-947F-F66C211AC2FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-trinity", "..\cs-trinity\cs-trinity\cs-trinity.csproj", "{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-trinity-test", "..\cs-trinity\cs-trinity-test\cs-trinity-test.csproj", "{D3F17290-6310-4D27-B48B-7E6346CB98DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBC62ED-FE13-4FE5-B1B1-1048AB4978DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F17290-6310-4D27-B48B-7E6346CB98DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F17290-6310-4D27-B48B-7E6346CB98DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F17290-6310-4D27-B48B-7E6346CB98DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F17290-6310-4D27-B48B-7E6346CB98DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
