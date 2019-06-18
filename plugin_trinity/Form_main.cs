@@ -361,7 +361,6 @@ namespace plugin_trinity
             }
         }
 
-        static uint test = 0;
         private void Timer2_Tick(object sender, EventArgs e)
         {
             uint currentMonitordBlockHeight = 0;
