@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Trinity.ChannelSet.Definitions;
 using Trinity.Wallets.TransferHandler.ControlHandler;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
+using Trinity.Exceptions;
 
 using Neo;
 using Neo.Cryptography;
@@ -134,13 +135,21 @@ namespace plugin_trinity
                     result = MessageBox.Show(this, message, caption, buttons);
                     if (result == System.Windows.Forms.DialogResult.Yes)
                     {
-                        /*Todo  transfer asset to special account*/
-                        RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName, 
-                            assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
-                        rsmcHndl.MakeTransaction();
+                        try
+                        {
+                            /*Todo  transfer asset to special account*/
+                            RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName,
+                                assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
+                            rsmcHndl.MakeTransaction();
 
-                        accounttextBox.Text = "";
-                        peerUritextBox.Text = "";
+                            accounttextBox.Text = "";
+                            peerUritextBox.Text = "";
+                        }
+                        catch (TrinityException trinityEx)
+                        {
+                            MessageBox.Show(trinityEx.Message);
+                            return;
+                        }
                     }
                     else
                     {

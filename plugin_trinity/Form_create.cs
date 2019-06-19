@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
-
+using Trinity.Exceptions;
 using Neo;
 
 namespace plugin_trinity
@@ -34,6 +34,11 @@ namespace plugin_trinity
 
                 // Trigger to create channel
                 this.CreateChannel(founderAddress, peerAddress, type, deposit);
+            }
+            catch (TrinityException trinityEx)
+            {
+                MessageBox.Show(trinityEx.Message);
+                return;
             }
             catch (Exception ex)
             {

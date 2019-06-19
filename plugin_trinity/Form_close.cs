@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trinity.TrinityDB.Definitions;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
+using Trinity.Exceptions;
 
 namespace plugin_trinity
 {
@@ -47,7 +48,20 @@ namespace plugin_trinity
              *            WalletAccount (Form_start.getWalletAccount())
              * return: boolean
              */
-            this.CloseChannel(founderUri, peerUri, channelName, asset);
+            try
+            {
+                this.CloseChannel(founderUri, peerUri, channelName, asset);
+            }
+            catch (TrinityException trinityEx)
+            {
+                MessageBox.Show(trinityEx.Message);
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
         }
 
         
