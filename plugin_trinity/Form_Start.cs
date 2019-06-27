@@ -100,6 +100,10 @@ namespace plugin_trinity
                 var currWallet = Plugin_trinity.api.CurrentWallet;
                 foreach (var s in currWallet.GetAccounts())
                 {
+                    if (s.Contract is null)
+                    {
+                        continue;
+                    }
                     if (s.Contract.IsStandard)
                     {
                         comboBox1.Items.Add(s.Address.ToString());
