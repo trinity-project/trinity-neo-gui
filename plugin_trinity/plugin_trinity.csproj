@@ -188,29 +188,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_close.cs">
+    <Compile Include="FormCloseChannel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_close.Designer.cs">
-      <DependentUpon>Form_close.cs</DependentUpon>
+    <Compile Include="FormCloseChannel.Designer.cs">
+      <DependentUpon>FormCloseChannel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_create.cs">
+    <Compile Include="FormCreateChannel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_create.Designer.cs">
-      <DependentUpon>Form_create.cs</DependentUpon>
+    <Compile Include="FormCreateChannel.Designer.cs">
+      <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_main.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_main.Designer.cs">
-      <DependentUpon>Form_main.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_start.cs">
+    <Compile Include="FormStartTrinity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_start.Designer.cs">
-      <DependentUpon>Form_start.cs</DependentUpon>
+    <Compile Include="FormStartTrinity.Designer.cs">
+      <DependentUpon>FormStartTrinity.cs</DependentUpon>
     </Compile>
     <Compile Include="plugin_trinity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,29 +221,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form_close.resx">
-      <DependentUpon>Form_close.cs</DependentUpon>
+    <EmbeddedResource Include="FormCloseChannel.resx">
+      <DependentUpon>FormCloseChannel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_close.zh-Hans.resx">
-      <DependentUpon>Form_close.cs</DependentUpon>
+    <EmbeddedResource Include="FormCloseChannel.zh-Hans.resx">
+      <DependentUpon>FormCloseChannel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_create.resx">
-      <DependentUpon>Form_create.cs</DependentUpon>
+    <EmbeddedResource Include="FormCreateChannel.resx">
+      <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_create.zh-Hans.resx">
-      <DependentUpon>Form_create.cs</DependentUpon>
+    <EmbeddedResource Include="FormCreateChannel.zh-Hans.resx">
+      <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_main.resx">
-      <DependentUpon>Form_main.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_main.zh-Hans.resx">
-      <DependentUpon>Form_main.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.zh-Hans.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_start.resx">
-      <DependentUpon>Form_start.cs</DependentUpon>
+    <EmbeddedResource Include="FormStartTrinity.resx">
+      <DependentUpon>FormStartTrinity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_start.zh-Hans.resx">
-      <DependentUpon>Form_start.cs</DependentUpon>
+    <EmbeddedResource Include="FormStartTrinity.zh-Hans.resx">
+      <DependentUpon>FormStartTrinity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\trinityString.resx">
       <Generator>ResXFileCodeGenerator</Generator>

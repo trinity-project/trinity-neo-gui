@@ -1,7 +1,7 @@
 ﻿
 namespace plugin_trinity
 {
-    partial class Form_main
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace plugin_trinity
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.peerUritextBox = new System.Windows.Forms.TextBox();
             this.accounttextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();

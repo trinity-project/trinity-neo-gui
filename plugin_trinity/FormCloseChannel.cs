@@ -14,14 +14,14 @@ using Trinity.Exceptions;
 
 namespace plugin_trinity
 {
-    public partial class Form_close : Form
+    public partial class FormCloseChannel : Form
     {
         private string channelName;
         private string founderUri;
         private string peerUri;
         private string asset;
 
-        public Form_close (ChannelTableContent channel)
+        public FormCloseChannel (ChannelTableContent channel)
         {
             InitializeComponent();
 

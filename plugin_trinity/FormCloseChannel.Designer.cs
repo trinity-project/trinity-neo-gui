@@ -1,6 +1,6 @@
 ﻿namespace plugin_trinity
 {
-    partial class Form_close
+    partial class FormCloseChannel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_close));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCloseChannel));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.取消button = new System.Windows.Forms.Button();
             this.快拆通道button = new System.Windows.Forms.Button();

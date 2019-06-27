@@ -13,12 +13,12 @@ using Trinity.Wallets.TransferHandler.ControlHandler;
 
 namespace plugin_trinity
 {
-    public partial class Form_start : Form
+    public partial class FormStartTrinity : Form
     {
         private static string accountPublicKey = "";
         private static string accountURI = "";
 
-        public Form_start()
+        public FormStartTrinity()
         {
             InitializeComponent();
         }
@@ -76,7 +76,7 @@ namespace plugin_trinity
                 // Trigger SyncWalletData message to gateway
                 this.NotifyWalletInfoToGateway(accountPublicKey, magic);
                 
-                var formMain = new Form_main();
+                var formMain = new FormMain();
                 formMain.ShowDialog();
                 Close();
             }

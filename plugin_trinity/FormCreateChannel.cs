@@ -6,16 +6,16 @@ using Neo;
 
 namespace plugin_trinity
 {
-    public partial class Form_create : Form
+    public partial class FormCreateChannel : Form
     {
-        public Form_create()
+        public FormCreateChannel()
         {
             InitializeComponent();
         }
 
         private void Form_create_Load(object sender, EventArgs e)
         {
-            this.textBox2.Text = Form_start.getChannelUri();
+            this.textBox2.Text = FormStartTrinity.getChannelUri();
         }
 
         private void 取消button_Click(object sender, EventArgs e)

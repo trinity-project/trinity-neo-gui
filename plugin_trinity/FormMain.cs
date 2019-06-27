@@ -15,20 +15,20 @@ using System.Linq;
 
 namespace plugin_trinity
 {
-    public partial class Form_main : Form
+    public partial class FormMain : Form
     {
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
         private Channel channel;
         private string transferChannelName;
 
-        public Form_main()
+        public FormMain()
         {
             InitializeComponent();
         }
 
         private void 创建通道button_Click(object sender, EventArgs e)
         {
-            using (Form_create formCreate = new Form_create())
+            using (FormCreateChannel formCreate = new FormCreateChannel())
             {
                 try
                 {
@@ -64,7 +64,7 @@ namespace plugin_trinity
                     foreach (ListViewItem item in channelInfo)
                     {
                         deleteChannel.channel = item.SubItems[0].Text;
-                        deleteChannel.uri = Form_start.getChannelUri();
+                        deleteChannel.uri = FormStartTrinity.getChannelUri();
                         deleteChannel.peer = item.SubItems[3].Text;
                         deleteChannel.asset = item.SubItems[4].Text;
 
@@ -72,7 +72,7 @@ namespace plugin_trinity
                         deleteChannel.peerBalance = Fixed8.Parse(item.SubItems[2].Text).GetData();
                     }
 
-                    using (Form_close formClose = new Form_close(deleteChannel))
+                    using (FormCloseChannel formClose = new FormCloseChannel(deleteChannel))
                     {
                         if (formClose.ShowDialog() == DialogResult.OK)
                         {
@@ -182,7 +182,7 @@ namespace plugin_trinity
                 ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
                 foreach (ListViewItem item in channelInfo)
                 {
-                    founderUritextBox.Text = Form_start.getChannelUri();
+                    founderUritextBox.Text = FormStartTrinity.getChannelUri();
                     peerUritextBox.Text = item.SubItems[3].Text;
                     comboBox2.Text = item.SubItems[4].Text;
                     transferChannelName = item.SubItems[0].Text;
@@ -228,7 +228,7 @@ namespace plugin_trinity
 
         private void Form_main_Load(object sender, EventArgs e)
         {
-            channel = new Channel(null, null, Form_start.getChannelUri(), null);
+            channel = new Channel(null, null, FormStartTrinity.getChannelUri(), null);
 
             getChannelList();
             //menuStrip = new ContextMenuStrip();//1
@@ -360,7 +360,7 @@ namespace plugin_trinity
             textBox1.Clear();
             try
             {
-                textBox1.Text = Payment.GeneratePaymentCode(Form_start.getChannelUri(),
+                textBox1.Text = Payment.GeneratePaymentCode(FormStartTrinity.getChannelUri(),
                                                             comboBox1.SelectedItem.ToString(),
                                                             new Fixed8(long.Parse(textBox2.Text)),
                                                             "payment");
@@ -376,7 +376,7 @@ namespace plugin_trinity
         {
             uint currentMonitordBlockHeight = 0;
 
-            currentMonitordBlockHeight = channel.TryGetBlockHeight(Form_start.getChannelUri());
+            currentMonitordBlockHeight = channel.TryGetBlockHeight(FormStartTrinity.getChannelUri());
             this.toolStripStatusLabel1.Text = String.Format("{0} : {1}", Strings.monitorBlock, currentMonitordBlockHeight.ToString());
         }
     }
