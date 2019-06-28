@@ -139,7 +139,7 @@ namespace plugin_trinity
                         {
                             /*Todo  transfer asset to special account*/
                             TransactionHandler.MakeTransaction(founderUri, peerUri, channelName,
-                                assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
+                                assetType, null, 0, Fixed8.Parse(transferAmount).GetData(), HashR);
                             //RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName,
                             //    assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
                             //rsmcHndl.MakeTransaction();
