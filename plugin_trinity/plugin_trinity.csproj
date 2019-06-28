@@ -40,8 +40,9 @@
     <Reference Include="Neo">
       <HintPath>..\packages\Neo.2.9.0\lib\netstandard2.0\Neo.dll</HintPath>
     </Reference>
-    <Reference Include="neo-gui_pluginframework">
-      <HintPath>..\neo-gui\bin\Debug\neo-gui_pluginframework.dll</HintPath>
+    <Reference Include="neo-gui_pluginframework, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\neo-gui_pluginframework\bin\Debug\neo-gui_pluginframework.dll</HintPath>
     </Reference>
     <Reference Include="Neo.VM">
       <HintPath>..\packages\Neo.VM.2.3.1.1\lib\netstandard1.6\Neo.VM.dll</HintPath>
