@@ -231,7 +231,7 @@ namespace Neo.UI
         {
             public Wallet CurrentWallet => Program.CurrentWallet;
             public NeoSystem NeoSystem => Program.NeoSystem;
-
+            public System.Collections.Specialized.StringCollection NEP5Watched => Settings.Default.NEP5Watched;
             public void SignAndShowInformation(Transaction tx)
             {
                 Helper.SignAndShowInformation(tx);

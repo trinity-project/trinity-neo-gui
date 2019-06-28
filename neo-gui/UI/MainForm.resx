@@ -162,28 +162,28 @@
     <value>E&amp;xit</value>
   </data>
   <data name="钱包WToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 35</value>
+    <value>98, 38</value>
   </data>
   <data name="钱包WToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Wallet</value>
   </data>
   <data name="转账TToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 38</value>
+    <value>304, 38</value>
   </data>
   <data name="转账TToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Transfer...</value>
   </data>
   <data name="交易TToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 38</value>
+    <value>304, 38</value>
   </data>
   <data name="交易TToolStripMenuItem1.Text" xml:space="preserve">
     <value>Transactions(&amp;X)...</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 6</value>
+    <value>301, 6</value>
   </data>
   <data name="签名SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 38</value>
+    <value>304, 38</value>
   </data>
   <data name="签名SToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Signature...</value>
@@ -192,7 +192,7 @@
     <value>False</value>
   </data>
   <data name="交易TToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 35</value>
+    <value>158, 38</value>
   </data>
   <data name="交易TToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Transaction</value>
@@ -288,7 +288,7 @@
     <value>&amp;Options...</value>
   </data>
   <data name="高级AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 35</value>
+    <value>140, 38</value>
   </data>
   <data name="高级AToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Advanced</value>
@@ -328,7 +328,7 @@
     <value>&amp;About NEO</value>
   </data>
   <data name="帮助HToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 35</value>
+    <value>80, 38</value>
   </data>
   <data name="帮助HToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Help</value>
@@ -340,7 +340,7 @@
     <value>14, 5, 0, 5</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1806, 45</value>
+    <value>1806, 48</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -554,7 +554,7 @@
     <value>6, 5, 6, 5</value>
   </data>
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1778, 961</value>
+    <value>1778, 958</value>
   </data>
   <data name="listView1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -656,7 +656,7 @@
     <value>6, 5, 6, 5</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1790, 971</value>
+    <value>1790, 968</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -904,13 +904,13 @@
     <value>Fill</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
+    <value>0, 48</value>
   </data>
   <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 5, 6, 5</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1806, 1024</value>
+    <value>1806, 1021</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

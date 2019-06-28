@@ -12,6 +12,8 @@ using Trinity.Exceptions;
 using Neo;
 using Neo.Cryptography;
 using System.Linq;
+using Neo.VM;
+using Neo.SmartContract;
 
 namespace plugin_trinity
 {
@@ -378,6 +380,61 @@ namespace plugin_trinity
 
             currentMonitordBlockHeight = channel.TryGetBlockHeight(FormStartTrinity.getChannelUri());
             this.toolStripStatusLabel1.Text = String.Format("{0} : {1}", Strings.monitorBlock, currentMonitordBlockHeight.ToString());
+        }
+
+        public Dictionary<string, string> GetAllAssetType()
+        {
+            Dictionary<string, string> assetValues = new Dictionary<string, string>();
+
+            /*
+            using (Snapshot snapshot = Blockchain.Singleton.GetSnapshot())
+            {
+                IEnumerable<Coin> coins = Plugin_trinity.api.CurrentWallet?.GetCoins().Where(p => !p.State.HasFlag(CoinState.Spent)) ?? Enumerable.Empty<Coin>();
+                var assets = coins.GroupBy(p => p.Output.AssetId, (k, g) => new
+                {
+                    Asset = snapshot.Assets.TryGet(k),
+                    Value = g.Sum(p => p.Output.Value),
+                    Claim = k.Equals(Blockchain.UtilityToken.Hash) ? Fixed8.Zero : Fixed8.Zero
+                }).ToDictionary(p => p.Asset.AssetId);
+
+                foreach (var asset in assets.Values)
+                {
+                    
+                    string asset_name = asset.Asset.AssetType == AssetType.GoverningToken ? "NEO" :
+                                        asset.Asset.AssetType == AssetType.UtilityToken ? "NeoGas" :
+                                        asset.Asset.Name;
+                    
+                    string asset_id = asset.Asset.AssetId.ToString();
+
+                    assetValues.Add(asset_name, asset_id);
+                }
+            }
+            */
+            if (Plugin_trinity.api.CurrentWallet != null)
+            {
+                UInt160[] addresses = Plugin_trinity.api.CurrentWallet.GetAccounts().Select(p => p.ScriptHash).ToArray();
+                foreach (string s in Plugin_trinity.api.NEP5Watched)
+                {
+                    UInt160 script_hash = UInt160.Parse(s);
+                    byte[] script;
+                    using (ScriptBuilder sb = new ScriptBuilder())
+                    {
+                        foreach (UInt160 address in addresses)
+                            sb.EmitAppCall(script_hash, "balanceOf", address);
+                        sb.Emit(OpCode.DEPTH, OpCode.PACK);
+                        sb.EmitAppCall(script_hash, "decimals");
+                        sb.EmitAppCall(script_hash, "name");
+                        script = sb.ToArray();
+                    }
+                    ApplicationEngine engine = ApplicationEngine.Run(script);
+                    if (engine.State.HasFlag(VMState.FAULT)) continue;
+                    string nep5_name = engine.ResultStack.Pop().GetString();
+                    byte decimals = (byte)engine.ResultStack.Pop().GetBigInteger();
+
+                    assetValues.Add(nep5_name, script_hash.ToString());
+                }
+            }
+            return assetValues;
         }
     }
 }

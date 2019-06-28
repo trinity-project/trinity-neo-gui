@@ -142,6 +142,10 @@ namespace Neo.GUIPlugin
         {
             get;
         }
+        System.Collections.Specialized.StringCollection NEP5Watched
+        {
+            get;
+        }
     }
     /*
     public interface IAPI2 : IAPI

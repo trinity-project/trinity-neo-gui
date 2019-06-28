@@ -194,8 +194,9 @@
     <Reference Include="Neo">
       <HintPath>..\packages\Neo.2.9.0\lib\netstandard2.0\Neo.dll</HintPath>
     </Reference>
-    <Reference Include="neo-gui_pluginframework">
-      <HintPath>..\plugin_trinity\pluginFramework\neo-gui_pluginframework.dll</HintPath>
+    <Reference Include="neo-gui_pluginframework, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\neo-gui_pluginframework.dll</HintPath>
     </Reference>
     <Reference Include="Neo.VM, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neo.VM.2.3.1.1\lib\net461\Neo.VM.dll</HintPath>
@@ -977,7 +978,9 @@
     </None>
     <None Include="Resources\Onchain Certification Authority.cer" />
     <None Include="Resources\update.bat" />
-    <None Include="TrinityProtocol.json" />
+    <None Include="TrinityProtocol.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
