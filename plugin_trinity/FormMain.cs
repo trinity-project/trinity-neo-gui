@@ -362,7 +362,7 @@ namespace plugin_trinity
             {
                 textBox1.Text = Payment.GeneratePaymentCode(FormStartTrinity.getChannelUri(),
                                                             comboBox1.SelectedItem.ToString(),
-                                                            new Fixed8(long.Parse(textBox2.Text)),
+                                                            Fixed8.Parse(textBox2.Text),
                                                             "payment");
             }
             catch (Exception ex)
