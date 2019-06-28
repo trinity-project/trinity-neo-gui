@@ -978,9 +978,7 @@
     </None>
     <None Include="Resources\Onchain Certification Authority.cer" />
     <None Include="Resources\update.bat" />
-    <None Include="TrinityProtocol.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="TrinityProtocol.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
