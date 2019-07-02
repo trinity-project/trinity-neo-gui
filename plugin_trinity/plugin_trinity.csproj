@@ -234,16 +234,10 @@
     <EmbeddedResource Include="FormCreateChannel.resx">
       <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCreateChannel.zh-CN.resx">
-      <DependentUpon>FormCreateChannel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateChannel.zh-Hans.resx">
       <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.zh-CN.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.zh-Hans.resx">
