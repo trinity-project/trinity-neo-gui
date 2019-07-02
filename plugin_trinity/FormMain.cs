@@ -8,12 +8,16 @@ using Trinity.ChannelSet.Definitions;
 using Trinity.Wallets.TransferHandler.ControlHandler;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
 using Trinity.Exceptions;
-
+using Trinity.Properties;
 using Neo;
 using Neo.Cryptography;
 using System.Linq;
 using Neo.VM;
 using Neo.SmartContract;
+using Neo.Ledger;
+using Neo.Persistence;
+using Neo.Wallets;
+using Neo.Network.P2P.Payloads;
 
 namespace plugin_trinity
 {
@@ -22,15 +26,16 @@ namespace plugin_trinity
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
         private Channel channel;
         private string transferChannelName;
+        private Dictionary<string, string> assetInfos = new Dictionary<string, string>();
 
         public FormMain()
         {
             InitializeComponent();
         }
 
-        private void 创建通道button_Click(object sender, EventArgs e)
+        private void CreateChannelButton_Click(object sender, EventArgs e)
         {
-            using (FormCreateChannel formCreate = new FormCreateChannel())
+            using (FormCreateChannel formCreate = new FormCreateChannel(assetInfos))
             {
                 try
                 {
@@ -55,13 +60,13 @@ namespace plugin_trinity
             }
         }
 
-        private void 拆除通道button_Click(object sender, EventArgs e)
+        private void SettleChannelButton_Click(object sender, EventArgs e)
         {
-            if (this.通道列表listView.SelectedItems.Count > 0)
+            if (this.ChannelListListView.SelectedItems.Count > 0)
             {
                 try
                 {
-                    ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
+                    ListView.SelectedListViewItemCollection channelInfo = this.ChannelListListView.SelectedItems;
                     ChannelTableContent deleteChannel = new ChannelTableContent();
                     foreach (ListViewItem item in channelInfo)
                     {
@@ -93,95 +98,83 @@ namespace plugin_trinity
             }
         }
 
-        private void 转账button_Click(object sender, EventArgs e)
-        {
-            //if (this.通道列表listView.SelectedItems.Count > 0)
-            if (true)
-            {
-                try
-                {
-                    string founderUri = founderUritextBox.Text;
-                    string peerUri = peerUritextBox.Text;
-                    string assetType = comboBox2.SelectedItem.ToString();
-                    string transferAmount = accounttextBox.Text;
-                    string channelName = transferChannelName;//this.通道列表listView.SelectedItems[0].SubItems[0].Text;
-                    string HashR = null;
-
-                    if (peerUri.Length > 88)
-                    {
-                        byte[] pamentByte = Base58.Decode(peerUri);
-                        string paymentString = System.Text.Encoding.Default.GetString(pamentByte);
-                        string[] info = paymentString.Split('&');
-                        if (info.Length != 5)
-                        {
-                            MessageBox.Show(Strings.CheckPaymentCode);
-                            return;
-                        }
-                        peerUri = info[0];
-                        HashR = info[1];
-                        assetType = info[2];
-                        transferAmount = info[3];
-                    }
-                    else
-                    { 
-                        if (string.IsNullOrEmpty(transferAmount))
-                        {
-                            MessageBox.Show(Strings.invalidTransferParameters);
-                            return;
-                        }
-                    }
-                    string message = Strings.TransferMessage + peerUri + " " + transferAmount + " " + assetType;
-                    string caption = Strings.TransferPromptTitle;
-                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                    DialogResult result;
-                    result = MessageBox.Show(this, message, caption, buttons);
-                    if (result == System.Windows.Forms.DialogResult.Yes)
-                    {
-                        try
-                        {
-                            /*Todo  transfer asset to special account*/
-                            TransactionHandler.MakeTransaction(founderUri, peerUri, channelName,
-                                assetType, null, 0, Fixed8.Parse(transferAmount).GetData(), HashR);
-                            //RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName,
-                            //    assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
-                            //rsmcHndl.MakeTransaction();
-
-                            accounttextBox.Text = "";
-                            peerUritextBox.Text = "";
-                        }
-                        catch (TrinityException trinityEx)
-                        {
-                            MessageBox.Show(trinityEx.Message);
-                            return;
-                        }
-                    }
-                    else
-                    {
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    return;
-                }
-            }
-            else
-            {
-                MessageBox.Show(Strings.choiceTransferChannel);
-            }
-        }
-
-        private void 通道列表listView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            拆除通道button.Enabled = true;
-        }
-
-        private void 通道列表listView_DoubleClick(object sender, EventArgs e)
+        private void TransferButton_Click(object sender, EventArgs e)
         {
             try
             {
-                ListView.SelectedListViewItemCollection channelInfo = this.通道列表listView.SelectedItems;
+                string founderUri = founderUritextBox.Text;
+                string peerUri = peerUritextBox.Text;
+                string assetType = comboBox2.SelectedItem.ToString();
+                string transferAmount = accounttextBox.Text;
+                string channelName = transferChannelName;//this.通道列表listView.SelectedItems[0].SubItems[0].Text;
+                string HashR = null;
+
+                if (peerUri.Length > 88)
+                {
+                    byte[] pamentByte = Base58.Decode(peerUri);
+                    string paymentString = System.Text.Encoding.Default.GetString(pamentByte);
+                    string[] info = paymentString.Split('&');
+                    if (info.Length != 5)
+                    {
+                        MessageBox.Show(Strings.CheckPaymentCode);
+                        return;
+                    }
+                    peerUri = info[0];
+                    HashR = info[1];
+                    assetType = info[2];
+                    transferAmount = info[3];
+                }
+                else
+                { 
+                    if (string.IsNullOrEmpty(transferAmount))
+                    {
+                        MessageBox.Show(Strings.invalidTransferParameters);
+                        return;
+                    }
+                }
+                string message = Strings.TransferMessage + peerUri + " " + transferAmount + " " + assetType;
+                string caption = Strings.TransferPromptTitle;
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                result = MessageBox.Show(this, message, caption, buttons);
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    try
+                    {
+                        /*Todo  transfer asset to special account*/
+                        TransactionHandler.MakeTransaction(founderUri, peerUri, channelName,
+                            assetInfos[assetType], null, 0, Fixed8.Parse(transferAmount).GetData(), HashR);
+                        //RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName,
+                        //    assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
+                        //rsmcHndl.MakeTransaction();
+
+                        accounttextBox.Text = "";
+                        peerUritextBox.Text = "";
+                    }
+                    catch (TrinityException trinityEx)
+                    {
+                        MessageBox.Show(trinityEx.Message);
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void ChannelListListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SettleChannelButton.Enabled = true;
+        }
+
+        private void ChannelListListView_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                ListView.SelectedListViewItemCollection channelInfo = this.ChannelListListView.SelectedItems;
                 foreach (ListViewItem item in channelInfo)
                 {
                     founderUritextBox.Text = FormStartTrinity.getChannelUri();
@@ -196,14 +189,14 @@ namespace plugin_trinity
                 return;
             }
         }
-        private void 查询类型comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void QueryTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            查询条件comboBox.Items.Clear();
-            switch (this.查询类型comboBox.SelectedIndex)
+            QueryConditionComboBox.Items.Clear();
+            switch (this.QueryTypeComboBox.SelectedIndex)
             {
                 case 0:
                     {
-                        查询条件comboBox.Items.AddRange(new object[] {Strings.channelOpened,
+                        QueryConditionComboBox.Items.AddRange(new object[] {Strings.channelOpened,
                             Strings.channelOpened});
                         break;
                     }
@@ -211,7 +204,7 @@ namespace plugin_trinity
                     break;
                 case 2:
                     {
-                        查询条件comboBox.Items.AddRange(new object[] {" <= 100",
+                        QueryConditionComboBox.Items.AddRange(new object[] {" <= 100",
                             "> 100"});
                         break;
                     }
@@ -223,7 +216,7 @@ namespace plugin_trinity
             }
         }
 
-        private void 查询条件comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void QueryConditionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
@@ -241,7 +234,8 @@ namespace plugin_trinity
             this.Opened.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             this.Opening.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             this.Settled.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
-            this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);            
+            this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            SetAssetTypeItems();
         }
 
         private int getChannelNumber()
@@ -253,11 +247,11 @@ namespace plugin_trinity
         private void getChannelList()
         {
             List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
-            this.通道列表listView.Items.Clear();
+            this.ChannelListListView.Items.Clear();
 
             if (channelList.Count > 0)
             {
-                this.通道列表listView.BeginUpdate();
+                this.ChannelListListView.BeginUpdate();
                 foreach (ChannelTableContent item in channelList)
                 {
                     if (showChannelState.ToString().Equals(EnumChannelState.INIT.ToString()))
@@ -271,7 +265,7 @@ namespace plugin_trinity
                         channelItem.SubItems.Add(item.peer);
                         channelItem.SubItems.Add(item.asset);
                         channelItem.SubItems.Add(item.state.ToString());
-                        this.通道列表listView.Items.Add(channelItem);
+                        this.ChannelListListView.Items.Add(channelItem);
                     }
                     else
                     {
@@ -286,12 +280,12 @@ namespace plugin_trinity
                             channelItem.SubItems.Add(item.peer);
                             channelItem.SubItems.Add(item.asset);
                             channelItem.SubItems.Add(item.state.ToString());
-                            this.通道列表listView.Items.Add(channelItem);
+                            this.ChannelListListView.Items.Add(channelItem);
                         }
                     }
                 }
-                this.通道列表listView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-                this.通道列表listView.EndUpdate();
+                this.ChannelListListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                this.ChannelListListView.EndUpdate();
             }
         }
 
@@ -384,57 +378,68 @@ namespace plugin_trinity
 
         public Dictionary<string, string> GetAllAssetType()
         {
-            Dictionary<string, string> assetValues = new Dictionary<string, string>();
-
-            /*
-            using (Snapshot snapshot = Blockchain.Singleton.GetSnapshot())
+            try
             {
-                IEnumerable<Coin> coins = Plugin_trinity.api.CurrentWallet?.GetCoins().Where(p => !p.State.HasFlag(CoinState.Spent)) ?? Enumerable.Empty<Coin>();
-                var assets = coins.GroupBy(p => p.Output.AssetId, (k, g) => new
+                /* get neo/gas asset information */
+                using (Snapshot snapshot = Blockchain.Singleton.GetSnapshot())
                 {
-                    Asset = snapshot.Assets.TryGet(k),
-                    Value = g.Sum(p => p.Output.Value),
-                    Claim = k.Equals(Blockchain.UtilityToken.Hash) ? Fixed8.Zero : Fixed8.Zero
-                }).ToDictionary(p => p.Asset.AssetId);
-
-                foreach (var asset in assets.Values)
-                {
-                    
-                    string asset_name = asset.Asset.AssetType == AssetType.GoverningToken ? "NEO" :
-                                        asset.Asset.AssetType == AssetType.UtilityToken ? "NeoGas" :
-                                        asset.Asset.Name;
-                    
-                    string asset_id = asset.Asset.AssetId.ToString();
-
-                    assetValues.Add(asset_name, asset_id);
-                }
-            }
-            */
-            if (Plugin_trinity.api.CurrentWallet != null)
-            {
-                UInt160[] addresses = Plugin_trinity.api.CurrentWallet.GetAccounts().Select(p => p.ScriptHash).ToArray();
-                foreach (string s in Plugin_trinity.api.NEP5Watched)
-                {
-                    UInt160 script_hash = UInt160.Parse(s);
-                    byte[] script;
-                    using (ScriptBuilder sb = new ScriptBuilder())
+                    IEnumerable<Coin> coins = Plugin_trinity.api.CurrentWallet?.GetCoins().Where(p => !p.State.HasFlag(CoinState.Spent)) ?? Enumerable.Empty<Coin>();
+                    var assets = coins.GroupBy(p => p.Output.AssetId, (k, g) => new
                     {
-                        foreach (UInt160 address in addresses)
-                            sb.EmitAppCall(script_hash, "balanceOf", address);
-                        sb.Emit(OpCode.DEPTH, OpCode.PACK);
-                        sb.EmitAppCall(script_hash, "decimals");
-                        sb.EmitAppCall(script_hash, "name");
-                        script = sb.ToArray();
-                    }
-                    ApplicationEngine engine = ApplicationEngine.Run(script);
-                    if (engine.State.HasFlag(VMState.FAULT)) continue;
-                    string nep5_name = engine.ResultStack.Pop().GetString();
-                    byte decimals = (byte)engine.ResultStack.Pop().GetBigInteger();
+                        Asset = snapshot.Assets.TryGet(k),
+                        Value = g.Sum(p => p.Output.Value),
+                        Claim = k.Equals(Blockchain.UtilityToken.Hash) ? Fixed8.Zero : Fixed8.Zero
+                    }).ToDictionary(p => p.Asset.AssetId);
 
-                    assetValues.Add(nep5_name, script_hash.ToString());
+                    foreach (var asset in assets.Values)
+                    {
+
+                        string asset_name = asset.Asset.AssetType == AssetType.GoverningToken ? "NEO" :
+                                            asset.Asset.AssetType == AssetType.UtilityToken ? "NeoGas" :
+                                            asset.Asset.Name;
+
+                        string asset_id = asset.Asset.AssetId.ToString();
+
+                        assetInfos.Add(asset_name, asset_id);
+                    }
                 }
+
+                /* get nep-5 asset information */
+                if (Plugin_trinity.api.CurrentWallet != null)
+                {
+                    foreach (string s in Plugin_trinity.api.NEP5Watched)
+                    {
+                        UInt160 script_hash = UInt160.Parse(s);
+                        byte[] script;
+                        using (ScriptBuilder sb = new ScriptBuilder())
+                        {
+                            sb.Emit(OpCode.DEPTH, OpCode.PACK);
+                            sb.EmitAppCall(script_hash, "symbol");
+                            script = sb.ToArray();
+                        }
+                        ApplicationEngine engine = ApplicationEngine.Run(script);
+                        if (engine.State.HasFlag(VMState.FAULT)) continue;
+                        string nep5_name = engine.ResultStack.Pop().GetString();
+
+                        assetInfos.Add(nep5_name, script_hash.ToString());
+                    }
+                }
+                return assetInfos;
             }
-            return assetValues;
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+        }
+
+        public void SetAssetTypeItems()
+        {
+            GetAllAssetType();
+            foreach (var item in assetInfos)
+            {
+                comboBox1.Items.Add(item.Key);
+                comboBox2.Items.Add(item.Key);
+            }
         }
     }
 }

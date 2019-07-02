@@ -35,14 +35,14 @@ namespace plugin_trinity
             this.accounttextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.创建通道button = new System.Windows.Forms.Button();
-            this.拆除通道button = new System.Windows.Forms.Button();
-            this.通道转账groupBox = new System.Windows.Forms.GroupBox();
+            this.CreateChannelButton = new System.Windows.Forms.Button();
+            this.SettleChannelButton = new System.Windows.Forms.Button();
+            this.ChannelTransactionGroupBox = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.founderUritextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.转账button = new System.Windows.Forms.Button();
+            this.TransferButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,8 +53,8 @@ namespace plugin_trinity
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.可用通道列表groupBox = new System.Windows.Forms.GroupBox();
-            this.通道列表listView = new System.Windows.Forms.ListView();
+            this.ValidChannelListGroupBox = new System.Windows.Forms.GroupBox();
+            this.ChannelListListView = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -76,8 +76,8 @@ namespace plugin_trinity
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.查询类型comboBox = new System.Windows.Forms.ComboBox();
-            this.查询条件comboBox = new System.Windows.Forms.ComboBox();
+            this.QueryTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.QueryConditionComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -90,11 +90,11 @@ namespace plugin_trinity
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.通道转账groupBox.SuspendLayout();
+            this.ChannelTransactionGroupBox.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.可用通道列表groupBox.SuspendLayout();
+            this.ValidChannelListGroupBox.SuspendLayout();
             this.channelStatue.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -123,43 +123,39 @@ namespace plugin_trinity
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // 创建通道button
+            // CreateChannelButton
             // 
-            resources.ApplyResources(this.创建通道button, "创建通道button");
-            this.创建通道button.Name = "创建通道button";
-            this.创建通道button.UseVisualStyleBackColor = true;
-            this.创建通道button.Click += new System.EventHandler(this.创建通道button_Click);
+            resources.ApplyResources(this.CreateChannelButton, "CreateChannelButton");
+            this.CreateChannelButton.Name = "CreateChannelButton";
+            this.CreateChannelButton.UseVisualStyleBackColor = true;
+            this.CreateChannelButton.Click += new System.EventHandler(this.CreateChannelButton_Click);
             // 
-            // 拆除通道button
+            // SettleChannelButton
             // 
-            resources.ApplyResources(this.拆除通道button, "拆除通道button");
-            this.拆除通道button.Name = "拆除通道button";
-            this.拆除通道button.UseVisualStyleBackColor = true;
-            this.拆除通道button.Click += new System.EventHandler(this.拆除通道button_Click);
+            resources.ApplyResources(this.SettleChannelButton, "SettleChannelButton");
+            this.SettleChannelButton.Name = "SettleChannelButton";
+            this.SettleChannelButton.UseVisualStyleBackColor = true;
+            this.SettleChannelButton.Click += new System.EventHandler(this.SettleChannelButton_Click);
             // 
-            // 通道转账groupBox
+            // ChannelTransactionGroupBox
             // 
-            resources.ApplyResources(this.通道转账groupBox, "通道转账groupBox");
-            this.通道转账groupBox.Controls.Add(this.comboBox2);
-            this.通道转账groupBox.Controls.Add(this.founderUritextBox);
-            this.通道转账groupBox.Controls.Add(this.label6);
-            this.通道转账groupBox.Controls.Add(this.label3);
-            this.通道转账groupBox.Controls.Add(this.转账button);
-            this.通道转账groupBox.Controls.Add(this.label1);
-            this.通道转账groupBox.Controls.Add(this.label2);
-            this.通道转账groupBox.Controls.Add(this.accounttextBox);
-            this.通道转账groupBox.Controls.Add(this.peerUritextBox);
-            this.通道转账groupBox.Name = "通道转账groupBox";
-            this.通道转账groupBox.TabStop = false;
+            resources.ApplyResources(this.ChannelTransactionGroupBox, "ChannelTransactionGroupBox");
+            this.ChannelTransactionGroupBox.Controls.Add(this.comboBox2);
+            this.ChannelTransactionGroupBox.Controls.Add(this.founderUritextBox);
+            this.ChannelTransactionGroupBox.Controls.Add(this.label6);
+            this.ChannelTransactionGroupBox.Controls.Add(this.label3);
+            this.ChannelTransactionGroupBox.Controls.Add(this.TransferButton);
+            this.ChannelTransactionGroupBox.Controls.Add(this.label1);
+            this.ChannelTransactionGroupBox.Controls.Add(this.label2);
+            this.ChannelTransactionGroupBox.Controls.Add(this.accounttextBox);
+            this.ChannelTransactionGroupBox.Controls.Add(this.peerUritextBox);
+            this.ChannelTransactionGroupBox.Name = "ChannelTransactionGroupBox";
+            this.ChannelTransactionGroupBox.TabStop = false;
             // 
             // comboBox2
             // 
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2")});
             this.comboBox2.Name = "comboBox2";
             // 
             // founderUritextBox
@@ -177,12 +173,12 @@ namespace plugin_trinity
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // 转账button
+            // TransferButton
             // 
-            resources.ApplyResources(this.转账button, "转账button");
-            this.转账button.Name = "转账button";
-            this.转账button.UseVisualStyleBackColor = true;
-            this.转账button.Click += new System.EventHandler(this.转账button_Click);
+            resources.ApplyResources(this.TransferButton, "TransferButton");
+            this.TransferButton.Name = "TransferButton";
+            this.TransferButton.UseVisualStyleBackColor = true;
+            this.TransferButton.Click += new System.EventHandler(this.TransferButton_Click);
             // 
             // tabControl1
             // 
@@ -198,8 +194,8 @@ namespace plugin_trinity
             // 
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.可用通道列表groupBox);
-            this.tabPage1.Controls.Add(this.通道转账groupBox);
+            this.tabPage1.Controls.Add(this.ValidChannelListGroupBox);
+            this.tabPage1.Controls.Add(this.ChannelTransactionGroupBox);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -219,14 +215,8 @@ namespace plugin_trinity
             // comboBox1
             // 
             resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.DisplayMember = "TNC";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.ValueMember = "TNC";
             // 
             // label9
             // 
@@ -261,33 +251,33 @@ namespace plugin_trinity
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             // 
-            // 可用通道列表groupBox
+            // ValidChannelListGroupBox
             // 
-            resources.ApplyResources(this.可用通道列表groupBox, "可用通道列表groupBox");
-            this.可用通道列表groupBox.Controls.Add(this.通道列表listView);
-            this.可用通道列表groupBox.Controls.Add(this.创建通道button);
-            this.可用通道列表groupBox.Controls.Add(this.拆除通道button);
-            this.可用通道列表groupBox.Name = "可用通道列表groupBox";
-            this.可用通道列表groupBox.TabStop = false;
+            resources.ApplyResources(this.ValidChannelListGroupBox, "ValidChannelListGroupBox");
+            this.ValidChannelListGroupBox.Controls.Add(this.ChannelListListView);
+            this.ValidChannelListGroupBox.Controls.Add(this.CreateChannelButton);
+            this.ValidChannelListGroupBox.Controls.Add(this.SettleChannelButton);
+            this.ValidChannelListGroupBox.Name = "ValidChannelListGroupBox";
+            this.ValidChannelListGroupBox.TabStop = false;
             // 
-            // 通道列表listView
+            // ChannelListListView
             // 
-            resources.ApplyResources(this.通道列表listView, "通道列表listView");
-            this.通道列表listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            resources.ApplyResources(this.ChannelListListView, "ChannelListListView");
+            this.ChannelListListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader13,
             this.columnHeader14});
-            this.通道列表listView.ContextMenuStrip = this.channelStatue;
-            this.通道列表listView.FullRowSelect = true;
-            this.通道列表listView.GridLines = true;
-            this.通道列表listView.Name = "通道列表listView";
-            this.通道列表listView.UseCompatibleStateImageBehavior = false;
-            this.通道列表listView.View = System.Windows.Forms.View.Details;
-            this.通道列表listView.SelectedIndexChanged += new System.EventHandler(this.通道列表listView_SelectedIndexChanged);
-            this.通道列表listView.DoubleClick += new System.EventHandler(this.通道列表listView_DoubleClick);
+            this.ChannelListListView.ContextMenuStrip = this.channelStatue;
+            this.ChannelListListView.FullRowSelect = true;
+            this.ChannelListListView.GridLines = true;
+            this.ChannelListListView.Name = "ChannelListListView";
+            this.ChannelListListView.UseCompatibleStateImageBehavior = false;
+            this.ChannelListListView.View = System.Windows.Forms.View.Details;
+            this.ChannelListListView.SelectedIndexChanged += new System.EventHandler(this.ChannelListListView_SelectedIndexChanged);
+            this.ChannelListListView.DoubleClick += new System.EventHandler(this.ChannelListListView_DoubleClick);
             // 
             // columnHeader5
             // 
@@ -404,8 +394,8 @@ namespace plugin_trinity
             // 
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.查询类型comboBox);
-            this.groupBox4.Controls.Add(this.查询条件comboBox);
+            this.groupBox4.Controls.Add(this.QueryTypeComboBox);
+            this.groupBox4.Controls.Add(this.QueryConditionComboBox);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
@@ -415,22 +405,22 @@ namespace plugin_trinity
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // 查询类型comboBox
+            // QueryTypeComboBox
             // 
-            resources.ApplyResources(this.查询类型comboBox, "查询类型comboBox");
-            this.查询类型comboBox.FormattingEnabled = true;
-            this.查询类型comboBox.Items.AddRange(new object[] {
-            resources.GetString("查询类型comboBox.Items"),
-            resources.GetString("查询类型comboBox.Items1"),
-            resources.GetString("查询类型comboBox.Items2")});
-            this.查询类型comboBox.Name = "查询类型comboBox";
-            this.查询类型comboBox.SelectedIndexChanged += new System.EventHandler(this.查询类型comboBox_SelectedIndexChanged);
+            resources.ApplyResources(this.QueryTypeComboBox, "QueryTypeComboBox");
+            this.QueryTypeComboBox.FormattingEnabled = true;
+            this.QueryTypeComboBox.Items.AddRange(new object[] {
+            resources.GetString("QueryTypeComboBox.Items"),
+            resources.GetString("QueryTypeComboBox.Items1"),
+            resources.GetString("QueryTypeComboBox.Items2")});
+            this.QueryTypeComboBox.Name = "QueryTypeComboBox";
+            this.QueryTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.QueryTypeComboBox_SelectedIndexChanged);
             // 
-            // 查询条件comboBox
+            // QueryConditionComboBox
             // 
-            resources.ApplyResources(this.查询条件comboBox, "查询条件comboBox");
-            this.查询条件comboBox.FormattingEnabled = true;
-            this.查询条件comboBox.Name = "查询条件comboBox";
+            resources.ApplyResources(this.QueryConditionComboBox, "QueryConditionComboBox");
+            this.QueryConditionComboBox.FormattingEnabled = true;
+            this.QueryConditionComboBox.Name = "QueryConditionComboBox";
             // 
             // label5
             // 
@@ -508,21 +498,21 @@ namespace plugin_trinity
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
-            // Form_main
+            // FormMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form_main";
+            this.Name = "FormMain";
             this.Load += new System.EventHandler(this.Form_main_Load);
-            this.通道转账groupBox.ResumeLayout(false);
-            this.通道转账groupBox.PerformLayout();
+            this.ChannelTransactionGroupBox.ResumeLayout(false);
+            this.ChannelTransactionGroupBox.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.可用通道列表groupBox.ResumeLayout(false);
+            this.ValidChannelListGroupBox.ResumeLayout(false);
             this.channelStatue.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -542,9 +532,9 @@ namespace plugin_trinity
         private System.Windows.Forms.TextBox accounttextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button 创建通道button;
-        private System.Windows.Forms.Button 拆除通道button;
-        private System.Windows.Forms.GroupBox 通道转账groupBox;
+        private System.Windows.Forms.Button CreateChannelButton;
+        private System.Windows.Forms.Button SettleChannelButton;
+        private System.Windows.Forms.GroupBox ChannelTransactionGroupBox;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -553,10 +543,10 @@ namespace plugin_trinity
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Button 转账button;
-        private System.Windows.Forms.GroupBox 可用通道列表groupBox;
+        private System.Windows.Forms.Button TransferButton;
+        private System.Windows.Forms.GroupBox ValidChannelListGroupBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListView 通道列表listView;
+        private System.Windows.Forms.ListView ChannelListListView;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
@@ -564,8 +554,8 @@ namespace plugin_trinity
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox 查询类型comboBox;
-        private System.Windows.Forms.ComboBox 查询条件comboBox;
+        private System.Windows.Forms.ComboBox QueryTypeComboBox;
+        private System.Windows.Forms.ComboBox QueryConditionComboBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TabPage tabPage4;

@@ -34,6 +34,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akka, Version=1.3.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Akka.1.3.8\lib\netstandard1.6\Akka.dll</HintPath>
+    </Reference>
     <Reference Include="MessagePack, Version=1.7.3.4, Culture=neutral, PublicKeyToken=b4a0369545f0a1be, processorArchitecture=MSIL">
       <HintPath>..\packages\MessagePack.1.7.3.4\lib\net47\MessagePack.dll</HintPath>
     </Reference>
@@ -230,10 +234,16 @@
     <EmbeddedResource Include="FormCreateChannel.resx">
       <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateChannel.zh-CN.resx">
+      <DependentUpon>FormCreateChannel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateChannel.zh-Hans.resx">
       <DependentUpon>FormCreateChannel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CN.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.zh-Hans.resx">
@@ -258,8 +268,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="pluginFramework\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

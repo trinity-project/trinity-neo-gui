@@ -3,14 +3,22 @@ using System.Windows.Forms;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
 using Trinity.Exceptions;
 using Neo;
+using System.Collections.Generic;
 
 namespace plugin_trinity
 {
     public partial class FormCreateChannel : Form
     {
-        public FormCreateChannel()
+        private Dictionary<string, string> assetInfos;
+
+        public FormCreateChannel(Dictionary<string, string> assetLists)
         {
             InitializeComponent();
+            foreach (var item in assetLists)
+            {
+                AssetTypeComboBox.Items.Add(item.Key);
+            }
+            assetInfos = assetLists;
         }
 
         private void Form_create_Load(object sender, EventArgs e)
@@ -18,22 +26,17 @@ namespace plugin_trinity
             this.textBox2.Text = FormStartTrinity.getChannelUri();
         }
 
-        private void 取消button_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void 创建button_Click_1(object sender, EventArgs e)
+        private void CreateButton_Click(object sender, EventArgs e)
         {
             try
             {
                 string founderAddress = this.textBox2.Text;
                 string peerAddress = this.textBox1.Text;
-                string deposit = this.通道押金textBox.Text;
-                string type = this.资产类型comboBox.SelectedItem.ToString();
+                string deposit = this.DepositTextBox.Text;
+                string type = this.AssetTypeComboBox.SelectedItem.ToString();
 
                 // Trigger to create channel
-                this.CreateChannel(founderAddress, peerAddress, type, deposit);
+                this.CreateChannel(founderAddress, peerAddress, assetInfos[type], deposit);
             }
             catch (TrinityException trinityEx)
             {
@@ -55,5 +58,9 @@ namespace plugin_trinity
             registerChannelHndl.MakeTransaction();
         }
 
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

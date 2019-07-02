@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCreateChannel));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CancelButton = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.资产类型comboBox = new System.Windows.Forms.ComboBox();
-            this.取消button = new System.Windows.Forms.Button();
-            this.创建button = new System.Windows.Forms.Button();
-            this.通道押金textBox = new System.Windows.Forms.TextBox();
+            this.AssetTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.CreateButton = new System.Windows.Forms.Button();
+            this.DepositTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,21 +45,28 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.CancelButton);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.资产类型comboBox);
-            this.groupBox1.Controls.Add(this.取消button);
-            this.groupBox1.Controls.Add(this.创建button);
-            this.groupBox1.Controls.Add(this.通道押金textBox);
+            this.groupBox1.Controls.Add(this.AssetTypeComboBox);
+            this.groupBox1.Controls.Add(this.CreateButton);
+            this.groupBox1.Controls.Add(this.DepositTextBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // CancelButton
+            // 
+            resources.ApplyResources(this.CancelButton, "CancelButton");
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // textBox2
             // 
@@ -77,36 +84,24 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // 资产类型comboBox
+            // AssetTypeComboBox
             // 
-            this.资产类型comboBox.FormattingEnabled = true;
-            this.资产类型comboBox.Items.AddRange(new object[] {
-            resources.GetString("资产类型comboBox.Items"),
-            resources.GetString("资产类型comboBox.Items1"),
-            resources.GetString("资产类型comboBox.Items2")});
-            resources.ApplyResources(this.资产类型comboBox, "资产类型comboBox");
-            this.资产类型comboBox.Name = "资产类型comboBox";
+            resources.ApplyResources(this.AssetTypeComboBox, "AssetTypeComboBox");
+            this.AssetTypeComboBox.FormattingEnabled = true;
+            this.AssetTypeComboBox.Name = "AssetTypeComboBox";
             // 
-            // 取消button
+            // CreateButton
             // 
-            this.取消button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.取消button, "取消button");
-            this.取消button.Name = "取消button";
-            this.取消button.UseVisualStyleBackColor = true;
-            this.取消button.Click += new System.EventHandler(this.取消button_Click);
+            resources.ApplyResources(this.CreateButton, "CreateButton");
+            this.CreateButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.CreateButton.Name = "CreateButton";
+            this.CreateButton.UseVisualStyleBackColor = true;
+            this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
             // 
-            // 创建button
+            // DepositTextBox
             // 
-            this.创建button.DialogResult = System.Windows.Forms.DialogResult.OK;
-            resources.ApplyResources(this.创建button, "创建button");
-            this.创建button.Name = "创建button";
-            this.创建button.UseVisualStyleBackColor = true;
-            this.创建button.Click += new System.EventHandler(this.创建button_Click_1);
-            // 
-            // 通道押金textBox
-            // 
-            resources.ApplyResources(this.通道押金textBox, "通道押金textBox");
-            this.通道押金textBox.Name = "通道押金textBox";
+            resources.ApplyResources(this.DepositTextBox, "DepositTextBox");
+            this.DepositTextBox.Name = "DepositTextBox";
             // 
             // label3
             // 
@@ -123,12 +118,12 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // Form_create
+            // FormCreateChannel
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form_create";
+            this.Name = "FormCreateChannel";
             this.Load += new System.EventHandler(this.Form_create_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -139,15 +134,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button 取消button;
-        private System.Windows.Forms.Button 创建button;
-        private System.Windows.Forms.TextBox 通道押金textBox;
+        private System.Windows.Forms.Button CreateButton;
+        private System.Windows.Forms.TextBox DepositTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox 资产类型comboBox;
+        private System.Windows.Forms.ComboBox AssetTypeComboBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button CancelButton;
     }
 }
