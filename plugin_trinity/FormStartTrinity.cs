@@ -65,7 +65,8 @@ namespace plugin_trinity
                 {
                     return;
                 }
-                Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem, 
+                Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem,
+                                                      Plugin_trinity.api.NEP5Watched,
                                                       Plugin_trinity.api.CurrentWallet, 
                                                       accountPublicKey,
                                                       magic);

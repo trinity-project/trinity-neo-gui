@@ -26,7 +26,7 @@ namespace plugin_trinity
         private static EnumChannelState showChannelState = EnumChannelState.INIT;
         private Channel channel;
         private string transferChannelName;
-        private Dictionary<string, string> assetInfos = new Dictionary<string, string>();
+        private List<string> assetTypes;
 
         public FormMain()
         {
@@ -35,7 +35,7 @@ namespace plugin_trinity
 
         private void CreateChannelButton_Click(object sender, EventArgs e)
         {
-            using (FormCreateChannel formCreate = new FormCreateChannel(assetInfos))
+            using (FormCreateChannel formCreate = new FormCreateChannel(assetTypes))
             {
                 try
                 {
@@ -143,7 +143,7 @@ namespace plugin_trinity
                     {
                         /*Todo  transfer asset to special account*/
                         TransactionHandler.MakeTransaction(founderUri, peerUri, channelName,
-                            assetInfos[assetType], null, 0, Fixed8.Parse(transferAmount).GetData(), HashR);
+                            assetType, null, 0, Fixed8.Parse(transferAmount).GetData(), HashR);
                         //RsmcHandler rsmcHndl = new RsmcHandler(founderUri, peerUri, channelName,
                         //    assetType, null, 0, Fixed8.Parse(transferAmount).GetData());
                         //rsmcHndl.MakeTransaction();
@@ -351,7 +351,7 @@ namespace plugin_trinity
             getChannelList();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void PaymentCodeButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             try
@@ -376,69 +376,13 @@ namespace plugin_trinity
             this.toolStripStatusLabel1.Text = String.Format("{0} : {1}", Strings.monitorBlock, currentMonitordBlockHeight.ToString());
         }
 
-        public Dictionary<string, string> GetAllAssetType()
-        {
-            try
-            {
-                /* get neo/gas asset information */
-                using (Snapshot snapshot = Blockchain.Singleton.GetSnapshot())
-                {
-                    IEnumerable<Coin> coins = Plugin_trinity.api.CurrentWallet?.GetCoins().Where(p => !p.State.HasFlag(CoinState.Spent)) ?? Enumerable.Empty<Coin>();
-                    var assets = coins.GroupBy(p => p.Output.AssetId, (k, g) => new
-                    {
-                        Asset = snapshot.Assets.TryGet(k),
-                        Value = g.Sum(p => p.Output.Value),
-                        Claim = k.Equals(Blockchain.UtilityToken.Hash) ? Fixed8.Zero : Fixed8.Zero
-                    }).ToDictionary(p => p.Asset.AssetId);
-
-                    foreach (var asset in assets.Values)
-                    {
-
-                        string asset_name = asset.Asset.AssetType == AssetType.GoverningToken ? "NEO" :
-                                            asset.Asset.AssetType == AssetType.UtilityToken ? "NeoGas" :
-                                            asset.Asset.Name;
-
-                        string asset_id = asset.Asset.AssetId.ToString();
-
-                        assetInfos.Add(asset_name, asset_id);
-                    }
-                }
-
-                /* get nep-5 asset information */
-                if (Plugin_trinity.api.CurrentWallet != null)
-                {
-                    foreach (string s in Plugin_trinity.api.NEP5Watched)
-                    {
-                        UInt160 script_hash = UInt160.Parse(s);
-                        byte[] script;
-                        using (ScriptBuilder sb = new ScriptBuilder())
-                        {
-                            sb.Emit(OpCode.DEPTH, OpCode.PACK);
-                            sb.EmitAppCall(script_hash, "symbol");
-                            script = sb.ToArray();
-                        }
-                        ApplicationEngine engine = ApplicationEngine.Run(script);
-                        if (engine.State.HasFlag(VMState.FAULT)) continue;
-                        string nep5_name = engine.ResultStack.Pop().GetString();
-
-                        assetInfos.Add(nep5_name, script_hash.ToString());
-                    }
-                }
-                return assetInfos;
-            }
-            catch (Exception ex)
-            {
-                throw (ex);
-            }
-        }
-
         public void SetAssetTypeItems()
         {
-            GetAllAssetType();
-            foreach (var item in assetInfos)
+            assetTypes = Trinity.startTrinity.GetAssetType();
+            foreach (var item in assetTypes)
             {
-                comboBox1.Items.Add(item.Key);
-                comboBox2.Items.Add(item.Key);
+                comboBox1.Items.Add(item);
+                comboBox2.Items.Add(item);
             }
         }
     }

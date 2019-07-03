@@ -9,16 +9,13 @@ namespace plugin_trinity
 {
     public partial class FormCreateChannel : Form
     {
-        private Dictionary<string, string> assetInfos;
-
-        public FormCreateChannel(Dictionary<string, string> assetLists)
+        public FormCreateChannel(List<string> assetTypes)
         {
             InitializeComponent();
-            foreach (var item in assetLists)
+            foreach (var item in assetTypes)
             {
-                AssetTypeComboBox.Items.Add(item.Key);
+                AssetTypeComboBox.Items.Add(item);
             }
-            assetInfos = assetLists;
         }
 
         private void Form_create_Load(object sender, EventArgs e)
@@ -36,7 +33,7 @@ namespace plugin_trinity
                 string type = this.AssetTypeComboBox.SelectedItem.ToString();
 
                 // Trigger to create channel
-                this.CreateChannel(founderAddress, peerAddress, assetInfos[type], deposit);
+                this.CreateChannel(founderAddress, peerAddress, type, deposit);
             }
             catch (TrinityException trinityEx)
             {
