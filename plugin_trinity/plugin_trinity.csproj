@@ -240,9 +240,6 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.zh-CN.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.zh-Hans.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
