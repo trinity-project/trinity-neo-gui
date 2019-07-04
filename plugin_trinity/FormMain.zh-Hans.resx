@@ -337,4 +337,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>通道转账</value>
   </data>
+  <data name="PaymentCode.Text" xml:space="preserve">
+    <value>生产收款码</value>
+  </data>
+  <data name="TransferButton.Text" xml:space="preserve">
+    <value>转账</value>
+  </data>
 </root>
