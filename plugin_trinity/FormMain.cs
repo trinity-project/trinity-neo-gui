@@ -264,7 +264,7 @@ namespace plugin_trinity
                         channelItem.SubItems.Add(founderBalane);
                         channelItem.SubItems.Add(peerBalane);
                         channelItem.SubItems.Add(item.peer);
-                        channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap()));
+                        channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
                         channelItem.SubItems.Add(item.state.ToString());
                         this.ChannelListListView.Items.Add(channelItem);
                     }
@@ -279,7 +279,7 @@ namespace plugin_trinity
                             channelItem.SubItems.Add(founderBalane);
                             channelItem.SubItems.Add(peerBalane);
                             channelItem.SubItems.Add(item.peer);
-                            channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap()));
+                            channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
                             channelItem.SubItems.Add(item.state.ToString());
                             this.ChannelListListView.Items.Add(channelItem);
                         }
