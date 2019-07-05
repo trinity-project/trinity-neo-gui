@@ -29,9 +29,14 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Akka, Version=1.3.8.0, Culture=neutral, processorArchitecture=MSIL">
@@ -265,4 +270,25 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>@echo off
+set TargetFolder=neo-gui\$(OutDir)plugins
+
+cd $(SolutionDir)
+
+rem Create the target folder if not exist
+if not exist %25TargetFolder%25 (
+echo "Create Folder %25TargetFolder%25"
+md %25TargetFolder%25
+)
+
+rem Copy the plugin_trinity.dll to the target folder
+copy plugin_trinity\$(OutDir)plugin_trinity.dll %25TargetFolder%25
+copy plugin_trinity\$(OutDir)plugin_trinity.pdb %25TargetFolder%25
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
 </Project>

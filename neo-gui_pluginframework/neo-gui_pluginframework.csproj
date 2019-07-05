@@ -55,4 +55,20 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>@echo off
+set TargetFolder=neo-gui\$(OutDir)
+
+cd $(SolutionDir)
+
+rem Create the target folder if not exist
+if not exist %25TargetFolder%25 (
+echo "Create Folder %25TargetFolder%25"
+md %25TargetFolder%25
+)
+
+rem Copy the neo-gui_pluginframework.dll to the target folder
+copy neo-gui_pluginframework\$(OutDir)neo-gui_pluginframework.dll %25TargetFolder%25
+copy neo-gui_pluginframework\$(OutDir)neo-gui_pluginframework.pdb %25TargetFolder%25</PostBuildEvent>
+  </PropertyGroup>
 </Project>

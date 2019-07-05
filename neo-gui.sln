@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-gui", "neo-gui\neo-gui.csproj", "{CFC243F0-F4E3-4754-8E21-8BA17E1C1788}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584} = {BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}
+		{F3166EDF-72D3-4301-947F-F66C211AC2FB} = {F3166EDF-72D3-4301-947F-F66C211AC2FB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plugin_trinity", "plugin_trinity\plugin_trinity.csproj", "{BEDDCC14-F58F-4FC0-B33D-4EA7B3F17584}"
 	ProjectSection(ProjectDependencies) = postProject
