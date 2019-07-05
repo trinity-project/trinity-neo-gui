@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Strings = plugin_trinity.Properties.trinityString;
+using Trinity.Wallets;
 using Trinity.ChannelSet;
 using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
@@ -263,7 +264,7 @@ namespace plugin_trinity
                         channelItem.SubItems.Add(founderBalane);
                         channelItem.SubItems.Add(peerBalane);
                         channelItem.SubItems.Add(item.peer);
-                        channelItem.SubItems.Add(item.asset);
+                        channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap()));
                         channelItem.SubItems.Add(item.state.ToString());
                         this.ChannelListListView.Items.Add(channelItem);
                     }
@@ -278,7 +279,7 @@ namespace plugin_trinity
                             channelItem.SubItems.Add(founderBalane);
                             channelItem.SubItems.Add(peerBalane);
                             channelItem.SubItems.Add(item.peer);
-                            channelItem.SubItems.Add(item.asset);
+                            channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap()));
                             channelItem.SubItems.Add(item.state.ToString());
                             this.ChannelListListView.Items.Add(channelItem);
                         }
