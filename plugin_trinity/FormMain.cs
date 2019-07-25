@@ -19,6 +19,7 @@ using Neo.Ledger;
 using Neo.Persistence;
 using Neo.Wallets;
 using Neo.Network.P2P.Payloads;
+using System.Drawing;
 
 namespace plugin_trinity
 {
@@ -193,20 +194,29 @@ namespace plugin_trinity
         private void QueryTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             QueryConditionComboBox.Items.Clear();
+            QueryConditionComboBox.Text = "";
             switch (this.QueryTypeComboBox.SelectedIndex)
             {
                 case 0:
                     {
+                        QueryConditionComboBox2.Visible = false;
+                        labelInterval.Visible = false;
                         QueryConditionComboBox.Items.AddRange(new object[] {Strings.channelOpened,
-                            Strings.channelOpened});
+                            Strings.channelClosed});
+                        QueryConditionComboBox.Size = new Size(73, 32);
                         break;
                     }
                 case 1:
+                    QueryConditionComboBox2.Visible = false;
+                    labelInterval.Visible = false;
+                    QueryConditionComboBox.Size = new Size(210,32);
                     break;
                 case 2:
                     {
-                        QueryConditionComboBox.Items.AddRange(new object[] {" <= 100",
-                            "> 100"});
+                        //QueryConditionComboBox.Items.AddRange(new object[]{});
+                        QueryConditionComboBox.Size = new Size(73, 32);
+                        QueryConditionComboBox2.Visible = true;
+                        labelInterval.Visible = true;
                         break;
                     }
                 default:
@@ -219,7 +229,8 @@ namespace plugin_trinity
 
         private void QueryConditionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+
         }
 
         private void Form_main_Load(object sender, EventArgs e)

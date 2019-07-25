@@ -49,9 +49,8 @@
     <Reference Include="Neo">
       <HintPath>..\packages\Neo.2.9.0\lib\netstandard2.0\Neo.dll</HintPath>
     </Reference>
-    <Reference Include="neo-gui_pluginframework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\neo-gui\bin\Release\neo-gui_pluginframework.dll</HintPath>
+    <Reference Include="neo-gui_pluginframework">
+      <HintPath>..\neo-gui\bin\Debug\neo-gui_pluginframework.dll</HintPath>
     </Reference>
     <Reference Include="Neo.VM">
       <HintPath>..\packages\Neo.VM.2.3.1.1\lib\netstandard1.6\Neo.VM.dll</HintPath>
@@ -192,9 +191,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Trinity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\neo-gui\bin\Release\Trinity.dll</HintPath>
+    <Reference Include="Trinity">
+      <HintPath>..\neo-gui\bin\Debug\Trinity.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +243,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CN.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.zh-Hans.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -271,21 +273,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>@echo off
-set TargetFolder=neo-gui\$(OutDir)plugins
-
-cd $(SolutionDir)
-
-rem Create the target folder if not exist
-if not exist %25TargetFolder%25 (
-echo "Create Folder %25TargetFolder%25"
-md %25TargetFolder%25
-)
-
-rem Copy the plugin_trinity.dll to the target folder
-copy plugin_trinity\$(OutDir)plugin_trinity.dll %25TargetFolder%25
-copy plugin_trinity\$(OutDir)plugin_trinity.pdb %25TargetFolder%25
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>

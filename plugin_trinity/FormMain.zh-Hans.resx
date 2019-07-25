@@ -163,6 +163,9 @@
   <data name="label3.Text" xml:space="preserve">
     <value>资产类型</value>
   </data>
+  <data name="TransferButton.Text" xml:space="preserve">
+    <value>转账</value>
+  </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>转账交易</value>
   </data>
@@ -196,14 +199,8 @@
   <data name="label7.Text" xml:space="preserve">
     <value>收款数量</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>909, 40</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 40</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>生成收款码</value>
+  <data name="PaymentCode.Text" xml:space="preserve">
+    <value>生产收款码</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>161, 106</value>
@@ -285,11 +282,26 @@
   <data name="groupBox4.Text" xml:space="preserve">
     <value>通道查询</value>
   </data>
+  <data name="buttonQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1028, 48</value>
+  </data>
+  <data name="buttonQuery.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="labelInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 58</value>
+  </data>
+  <data name="QueryConditionComboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>760, 53</value>
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>查询类型</value>
+  </data>
+  <data name="QueryConditionComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 52</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
@@ -330,17 +342,7 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1186, 893</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>通道转账</value>
-  </data>
-  <data name="PaymentCode.Text" xml:space="preserve">
-    <value>生产收款码</value>
-  </data>
-  <data name="TransferButton.Text" xml:space="preserve">
-    <value>转账</value>
   </data>
 </root>

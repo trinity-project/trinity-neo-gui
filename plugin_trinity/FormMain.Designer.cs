@@ -75,6 +75,9 @@ namespace plugin_trinity
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonQuery = new System.Windows.Forms.Button();
+            this.labelInterval = new System.Windows.Forms.Label();
+            this.QueryConditionComboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.QueryTypeComboBox = new System.Windows.Forms.ComboBox();
             this.QueryConditionComboBox = new System.Windows.Forms.ComboBox();
@@ -393,12 +396,32 @@ namespace plugin_trinity
             // groupBox4
             // 
             resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Controls.Add(this.buttonQuery);
+            this.groupBox4.Controls.Add(this.labelInterval);
+            this.groupBox4.Controls.Add(this.QueryConditionComboBox2);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.QueryTypeComboBox);
             this.groupBox4.Controls.Add(this.QueryConditionComboBox);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // buttonQuery
+            // 
+            resources.ApplyResources(this.buttonQuery, "buttonQuery");
+            this.buttonQuery.Name = "buttonQuery";
+            this.buttonQuery.UseVisualStyleBackColor = true;
+            // 
+            // labelInterval
+            // 
+            resources.ApplyResources(this.labelInterval, "labelInterval");
+            this.labelInterval.Name = "labelInterval";
+            // 
+            // QueryConditionComboBox2
+            // 
+            resources.ApplyResources(this.QueryConditionComboBox2, "QueryConditionComboBox2");
+            this.QueryConditionComboBox2.FormattingEnabled = true;
+            this.QueryConditionComboBox2.Name = "QueryConditionComboBox2";
             // 
             // label4
             // 
@@ -587,5 +610,8 @@ namespace plugin_trinity
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label labelInterval;
+        private System.Windows.Forms.ComboBox QueryConditionComboBox2;
+        private System.Windows.Forms.Button buttonQuery;
     }
 }
