@@ -237,6 +237,8 @@ namespace plugin_trinity
             this.Settled.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             this.Settling.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             SetAssetTypeItems();
+
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
         private int getChannelNumber()
@@ -245,7 +247,7 @@ namespace plugin_trinity
             return channelList.Count;
         }
 
-        private void getChannelList()
+        public void getChannelList()
         {
             List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
             this.ChannelListListView.Items.Clear();
@@ -292,7 +294,7 @@ namespace plugin_trinity
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            getChannelList();
+            //getChannelList();
         }
 
          private void ToolStripMenuItem_Click(object sender, EventArgs e)

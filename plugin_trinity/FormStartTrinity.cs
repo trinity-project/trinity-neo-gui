@@ -10,6 +10,7 @@ using Trinity.TrinityDB.Definitions;
 using System.Collections.Generic;
 
 using Trinity.Wallets.TransferHandler.ControlHandler;
+using Trinity;
 
 namespace plugin_trinity
 {
@@ -60,25 +61,29 @@ namespace plugin_trinity
             }
             try
             {
+                var formMain = new FormMain();
+
                 string magic = getMagic();
                 if (magic == null)
                 {
                     return;
                 }
+
                 Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem,
                                                       Plugin_trinity.api.NEP5Watched,
                                                       Plugin_trinity.api.CurrentWallet, 
                                                       accountPublicKey,
-                                                      magic);
+                                                      magic,
+                                                      formMain.getChannelList);
 
                 // Trigger RegisterKeepAlive message to gateway
                 this.RegisterToGateway();
 
                 // Trigger SyncWalletData message to gateway
                 this.NotifyWalletInfoToGateway(accountPublicKey, magic);
-                
-                var formMain = new FormMain();
+
                 formMain.ShowDialog();
+
                 Close();
             }
             catch (Exception ex)
