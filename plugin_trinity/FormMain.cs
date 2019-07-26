@@ -302,11 +302,6 @@ namespace plugin_trinity
             }
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            //getChannelList();
-        }
-
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem tsMenumItem = sender as ToolStripMenuItem;
