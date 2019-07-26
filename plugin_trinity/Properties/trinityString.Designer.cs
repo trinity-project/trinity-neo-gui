@@ -133,6 +133,24 @@ namespace plugin_trinity.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Please input correct query range 的本地化字符串。
+        /// </summary>
+        internal static string invalidChannelQueryRange {
+            get {
+                return ResourceManager.GetString("invalidChannelQueryRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Please input valid query value 的本地化字符串。
+        /// </summary>
+        internal static string invalidChannelQueryValue {
+            get {
+                return ResourceManager.GetString("invalidChannelQueryValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Please choice valid query condition 的本地化字符串。
         /// </summary>
         internal static string invalidQueryCondition {

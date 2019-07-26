@@ -88,6 +88,7 @@ namespace plugin_trinity
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -411,6 +412,7 @@ namespace plugin_trinity
             resources.ApplyResources(this.buttonQuery, "buttonQuery");
             this.buttonQuery.Name = "buttonQuery";
             this.buttonQuery.UseVisualStyleBackColor = true;
+            this.buttonQuery.Click += new System.EventHandler(this.ButtonQuery_Click);
             // 
             // labelInterval
             // 
@@ -460,16 +462,14 @@ namespace plugin_trinity
             // listView2
             // 
             resources.ApplyResources(this.listView2, "listView2");
-            this.listView2.AllowColumnReorder = true;
-            this.listView2.AllowDrop = true;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
             this.columnHeader10,
             this.columnHeader11,
-            this.columnHeader12});
+            this.columnHeader12,
+            this.columnHeader15});
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
             this.listView2.Name = "listView2";
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -489,6 +489,10 @@ namespace plugin_trinity
             // columnHeader12
             // 
             resources.ApplyResources(this.columnHeader12, "columnHeader12");
+            // 
+            // columnHeader15
+            // 
+            resources.ApplyResources(this.columnHeader15, "columnHeader15");
             // 
             // tabPage4
             // 
@@ -613,5 +617,6 @@ namespace plugin_trinity
         private System.Windows.Forms.Label labelInterval;
         private System.Windows.Forms.ComboBox QueryConditionComboBox2;
         private System.Windows.Forms.Button buttonQuery;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
     }
 }

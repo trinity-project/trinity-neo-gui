@@ -144,6 +144,9 @@
   <data name="Settling.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 36</value>
   </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Transaction Time</value>
+  </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Transfer Amount</value>
   </data>
@@ -156,17 +159,14 @@
   <data name="columnHeader6.Width" type="System.Int32, mscorlib">
     <value>198</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>ChannelTransactionGroupBox</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 24</value>
+  <data name="&gt;&gt;Opening.Name" xml:space="preserve">
+    <value>Opening</value>
   </data>
   <data name="&gt;&gt;ChannelTransactionGroupBox.Name" xml:space="preserve">
     <value>ChannelTransactionGroupBox</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1203, 902</value>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -191,9 +191,6 @@
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;Opening.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="columnHeader1.Width" type="System.Int32, mscorlib">
     <value>223</value>
@@ -231,6 +228,9 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 866</value>
   </data>
@@ -240,8 +240,8 @@
   <data name="&gt;&gt;columnHeader7.Name" xml:space="preserve">
     <value>columnHeader7</value>
   </data>
-  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
-    <value>171</value>
+  <data name="&gt;&gt;Opening.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -282,23 +282,20 @@
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>Transaction Amount</value>
   </data>
-  <data name="columnHeader10.Text" xml:space="preserve">
-    <value>Peer Account</value>
-  </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 53</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 36</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1150, 797</value>
+  <data name="&gt;&gt;Settled.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;timer2.Name" xml:space="preserve">
     <value>timer2</value>
@@ -306,11 +303,14 @@
   <data name="SettleChannelButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
   </data>
+  <data name="&gt;&gt;ChannelListListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Channel Transaction</value>
   </data>
-  <data name="&gt;&gt;QueryTypeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
+    <value>192</value>
   </data>
   <data name="&gt;&gt;listView1.Name" xml:space="preserve">
     <value>listView1</value>
@@ -318,8 +318,8 @@
   <data name="listView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;founderUritextBox.Name" xml:space="preserve">
-    <value>founderUritextBox</value>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Channel Alias</value>
   </data>
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -332,9 +332,6 @@
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="ValidChannelListGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -384,9 +381,6 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
   <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -413,6 +407,12 @@
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 24</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;TransferButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TransferButton.Name" xml:space="preserve">
     <value>TransferButton</value>
@@ -441,8 +441,8 @@
   <data name="ValidChannelListGroupBox.Text" xml:space="preserve">
     <value>Available Channels</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 24</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 24</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -450,14 +450,17 @@
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
   </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>Peer Balance</value>
+  <data name="&gt;&gt;columnHeader9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 103</value>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
     <value>textBox2</value>
@@ -465,14 +468,17 @@
   <data name="&gt;&gt;columnHeader10.Name" xml:space="preserve">
     <value>columnHeader10</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
   <data name="&gt;&gt;Settling.Name" xml:space="preserve">
     <value>Settling</value>
   </data>
   <data name="&gt;&gt;QueryConditionComboBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;founderUritextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaymentCode.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -519,17 +525,14 @@
   <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChannelTransactionGroupBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1128, 614</value>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>38, 106</value>
@@ -543,6 +546,9 @@
   <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="&gt;&gt;columnHeader15.Name" xml:space="preserve">
+    <value>columnHeader15</value>
+  </data>
   <data name="&gt;&gt;QueryConditionComboBox2.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
@@ -552,20 +558,20 @@
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="Settling.Text" xml:space="preserve">
     <value>Settling</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
-    <value>columnHeader2</value>
   </data>
   <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PaymentCode.Location" type="System.Drawing.Point, System.Drawing">
     <value>886, 40</value>
+  </data>
+  <data name="QueryTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Query Type</value>
@@ -585,8 +591,8 @@
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>ChannelTransactionGroupBox</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
   </data>
   <data name="&gt;&gt;CreateChannelButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -606,9 +612,6 @@
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;columnHeader9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 24</value>
   </data>
@@ -627,35 +630,23 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="SettleChannelButton.Text" xml:space="preserve">
     <value>-</value>
   </data>
   <data name="founderUritextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 48</value>
   </data>
-  <data name="&gt;&gt;founderUritextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Opening.Name" xml:space="preserve">
-    <value>Opening</value>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="ChannelListListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 48</value>
   </data>
-  <data name="labelInterval.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="SettleChannelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="QueryTypeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="QueryTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 32</value>
@@ -687,14 +678,14 @@
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 39</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>854, 35</value>
   </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Channel Alias</value>
+  <data name="labelInterval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Peer Account</value>
@@ -708,8 +699,8 @@
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 24</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>ChannelTransactionGroupBox</value>
+  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -717,14 +708,17 @@
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 250</value>
   </data>
-  <data name="ValidChannelListGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="peerUritextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 39</value>
   </data>
   <data name="&gt;&gt;ChannelListListView.Name" xml:space="preserve">
     <value>ChannelListListView</value>
+  </data>
+  <data name="TransferButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 42</value>
   </data>
   <data name="columnHeader5.Text" xml:space="preserve">
     <value>Channel Name</value>
@@ -735,14 +729,17 @@
   <data name="&gt;&gt;PaymentCode.Name" xml:space="preserve">
     <value>PaymentCode</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;columnHeader13.Name" xml:space="preserve">
     <value>columnHeader13</value>
   </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="columnHeader15.Width" type="System.Int32, mscorlib">
+    <value>188</value>
   </data>
-  <data name="ChannelTransactionGroupBox.Text" xml:space="preserve">
-    <value>Channel Transfer</value>
+  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
+    <value>200</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Query Condition</value>
@@ -750,17 +747,14 @@
   <data name="&gt;&gt;labelInterval.Name" xml:space="preserve">
     <value>labelInterval</value>
   </data>
-  <data name="&gt;&gt;labelInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Channel Management</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;PaymentCode.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;columnHeader8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;columnHeader12.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -774,20 +768,20 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 902</value>
+  </data>
   <data name="&gt;&gt;Opened.Name" xml:space="preserve">
     <value>Opened</value>
   </data>
   <data name="CreateChannelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 50</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;SettleChannelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Settled.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="ValidChannelListGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 440</value>
@@ -800,9 +794,6 @@
   </data>
   <data name="QueryConditionComboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 32</value>
-  </data>
-  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -849,9 +840,6 @@
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Transfer Transaction</value>
   </data>
-  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Asset Type</value>
   </data>
@@ -873,8 +861,8 @@
   <data name="&gt;&gt;Settled.Name" xml:space="preserve">
     <value>Settled</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
+    <value>columnHeader2</value>
   </data>
   <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -892,7 +880,7 @@
     <value>textBox1</value>
   </data>
   <data name="columnHeader9.Text" xml:space="preserve">
-    <value>Channel Alias</value>
+    <value>Channel Name</value>
   </data>
   <data name="buttonQuery.Text" xml:space="preserve">
     <value>Query</value>
@@ -906,6 +894,9 @@
   <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
+  <data name="&gt;&gt;QueryTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -915,17 +906,17 @@
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="TransferButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 42</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 24</value>
   </data>
-  <data name="Opening.Text" xml:space="preserve">
-    <value>Opening</value>
+  <data name="Opened.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 36</value>
   </data>
   <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="listView2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>171</value>
   </data>
   <data name="&gt;&gt;listView2.Name" xml:space="preserve">
     <value>listView2</value>
@@ -941,9 +932,6 @@
   </data>
   <data name="ChannelListListView.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="listView2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;columnHeader11.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -968,6 +956,9 @@
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>ChannelTransactionGroupBox</value>
   </data>
   <data name="QueryConditionComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 32</value>
@@ -996,8 +987,8 @@
   <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Transaction Time</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMain</value>
   </data>
   <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
     <value>toolStripStatusLabel1</value>
@@ -1014,11 +1005,14 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Payment Code</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;channelStatue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TransferButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Peer Account</value>
   </data>
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>557, 159</value>
@@ -1035,17 +1029,11 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;columnHeader8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;buttonQuery.Name" xml:space="preserve">
     <value>buttonQuery</value>
@@ -1055,9 +1043,6 @@
   </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 31</value>
-  </data>
-  <data name="ValidChannelListGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 24</value>
@@ -1090,14 +1075,17 @@
   <data name="&gt;&gt;CreateChannelButton.Name" xml:space="preserve">
     <value>CreateChannelButton</value>
   </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 103</value>
   </data>
   <data name="buttonQuery.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="Opening.Text" xml:space="preserve">
+    <value>Opening</value>
   </data>
   <data name="columnHeader14.Width" type="System.Int32, mscorlib">
     <value>192</value>
@@ -1123,11 +1111,11 @@
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
   </data>
-  <data name="peerUritextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
-    <value>192</value>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ChannelTransactionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 20</value>
@@ -1144,9 +1132,6 @@
   <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 39</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormMain</value>
-  </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -1156,9 +1141,6 @@
   <data name="&gt;&gt;columnHeader14.Name" xml:space="preserve">
     <value>columnHeader14</value>
   </data>
-  <data name="buttonQuery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1030, 46</value>
-  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1167,9 +1149,6 @@
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 39</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
-    <value>columnHeader1</value>
   </data>
   <data name="columnHeader13.Width" type="System.Int32, mscorlib">
     <value>138</value>
@@ -1216,8 +1195,8 @@
   <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="accounttextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 24</value>
@@ -1246,8 +1225,8 @@
   <data name="&gt;&gt;columnHeader10.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Opened.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 36</value>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
   </data>
   <data name="toolStripStatusLabel1.Text" xml:space="preserve">
     <value>toolStripStatusLabel1</value>
@@ -1261,11 +1240,8 @@
   <data name="CreateChannelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 284</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Transfer Record</value>
+  <data name="buttonQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1030, 46</value>
   </data>
   <data name="labelInterval.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1276,29 +1252,38 @@
   <data name="ChannelTransactionGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;columnHeader12.Name" xml:space="preserve">
-    <value>columnHeader12</value>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="buttonQuery.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;SettleChannelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Transfer Record</value>
   </data>
   <data name="SettleChannelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 284</value>
   </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>ChannelTransactionGroupBox</value>
+  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 614</value>
+  </data>
+  <data name="accounttextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="QueryTypeComboBox.Items2" xml:space="preserve">
     <value>通道余额</value>
   </data>
-  <data name="&gt;&gt;ChannelListListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;peerUritextBox.Parent" xml:space="preserve">
+    <value>ChannelTransactionGroupBox</value>
   </data>
   <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1306,11 +1291,17 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>189</value>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;Opened.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Peer Balance</value>
   </data>
   <data name="&gt;&gt;QueryConditionComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1320,9 +1311,6 @@
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Payment Code</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1203, 36</value>
   </data>
   <data name="columnHeader12.Text" xml:space="preserve">
     <value>Channel Balance</value>
@@ -1345,8 +1333,8 @@
   <data name="&gt;&gt;QueryConditionComboBox.Name" xml:space="preserve">
     <value>QueryConditionComboBox</value>
   </data>
-  <data name="&gt;&gt;channelStatue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ValidChannelListGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;peerUritextBox.Name" xml:space="preserve">
     <value>peerUritextBox</value>
@@ -1384,8 +1372,11 @@
   <data name="&gt;&gt;ValidChannelListGroupBox.Name" xml:space="preserve">
     <value>ValidChannelListGroupBox</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;columnHeader12.Name" xml:space="preserve">
+    <value>columnHeader12</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1150, 797</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1411,6 +1402,12 @@
   <data name="peerUritextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>853, 35</value>
   </data>
+  <data name="&gt;&gt;founderUritextBox.Name" xml:space="preserve">
+    <value>founderUritextBox</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
   <data name="channelStatue.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 184</value>
   </data>
@@ -1423,23 +1420,29 @@
   <data name="&gt;&gt;ChannelTransactionGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="columnHeader15.Text" xml:space="preserve">
+    <value>Asset Type</value>
+  </data>
+  <data name="&gt;&gt;ChannelTransactionGroupBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="columnHeader4.Width" type="System.Int32, mscorlib">
     <value>298</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelInterval.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
   </data>
   <data name="&gt;&gt;QueryTypeComboBox.Name" xml:space="preserve">
     <value>QueryTypeComboBox</value>
   </data>
   <data name="labelInterval.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TransferButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1456,8 +1459,8 @@
   <data name="&gt;&gt;columnHeader11.Name" xml:space="preserve">
     <value>columnHeader11</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="ChannelTransactionGroupBox.Text" xml:space="preserve">
+    <value>Channel Transfer</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1465,14 +1468,20 @@
   <data name="&gt;&gt;founderUritextBox.Parent" xml:space="preserve">
     <value>ChannelTransactionGroupBox</value>
   </data>
+  <data name="&gt;&gt;columnHeader15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;labelInterval.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>ChannelTransactionGroupBox</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="&gt;&gt;peerUritextBox.Parent" xml:space="preserve">
-    <value>ChannelTransactionGroupBox</value>
+  <data name="ValidChannelListGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="columnHeader7.Width" type="System.Int32, mscorlib">
     <value>156</value>
@@ -1496,18 +1505,18 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh-CN</value>
+    <value>zh-Hans</value>
   </metadata>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>61</value>
   </metadata>
   <metadata name="channelStatue.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>165, 17</value>
   </metadata>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>404, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>61</value>
   </metadata>
 </root>

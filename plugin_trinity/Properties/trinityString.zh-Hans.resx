@@ -156,4 +156,10 @@
   <data name="monitorBlock" xml:space="preserve">
     <value>监控块高</value>
   </data>
+  <data name="invalidChannelQueryRange" xml:space="preserve">
+    <value>请输入正确的查询范围</value>
+  </data>
+  <data name="invalidChannelQueryValue" xml:space="preserve">
+    <value>请输入有效的数值</value>
+  </data>
 </root>

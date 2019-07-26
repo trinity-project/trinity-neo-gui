@@ -169,6 +169,51 @@
   <data name="tabPage1.Text" xml:space="preserve">
     <value>转账交易</value>
   </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>转账记录</value>
+  </data>
+  <data name="buttonQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1028, 48</value>
+  </data>
+  <data name="buttonQuery.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="labelInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 58</value>
+  </data>
+  <data name="QueryConditionComboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>760, 53</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>查询类型</value>
+  </data>
+  <data name="QueryTypeComboBox.Items1" xml:space="preserve">
+    <value>通道名称</value>
+  </data>
+  <data name="QueryConditionComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 52</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>查询条件</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>通道查询</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>通道信息</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>通道管理</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>节点管理</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 263</value>
   </data>
@@ -248,9 +293,6 @@
   <data name="columnHeader14.Width" type="System.Int32, mscorlib">
     <value>147</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>转账记录</value>
-  </data>
   <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
@@ -276,44 +318,8 @@
   <data name="columnHeader4.Text" xml:space="preserve">
     <value>资产类型</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>通道管理</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>通道查询</value>
-  </data>
-  <data name="buttonQuery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1028, 48</value>
-  </data>
-  <data name="buttonQuery.Text" xml:space="preserve">
-    <value>查询</value>
-  </data>
-  <data name="labelInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>709, 58</value>
-  </data>
-  <data name="QueryConditionComboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>760, 53</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 24</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>查询类型</value>
-  </data>
-  <data name="QueryConditionComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 52</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 24</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>查询条件</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>通道信息</value>
-  </data>
   <data name="columnHeader9.Text" xml:space="preserve">
-    <value>通道别名</value>
+    <value>通道名称</value>
   </data>
   <data name="columnHeader10.Text" xml:space="preserve">
     <value>对端地址</value>
@@ -324,8 +330,8 @@
   <data name="columnHeader12.Text" xml:space="preserve">
     <value>通道余额</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>节点管理</value>
+  <data name="columnHeader15.Text" xml:space="preserve">
+    <value>资产类型</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 871</value>

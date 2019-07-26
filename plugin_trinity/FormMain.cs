@@ -55,7 +55,7 @@ namespace plugin_trinity
                         */
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -127,7 +127,7 @@ namespace plugin_trinity
                     transferAmount = info[3];
                 }
                 else
-                { 
+                {
                     if (string.IsNullOrEmpty(transferAmount))
                     {
                         MessageBox.Show(Strings.invalidTransferParameters);
@@ -209,7 +209,7 @@ namespace plugin_trinity
                 case 1:
                     QueryConditionComboBox2.Visible = false;
                     labelInterval.Visible = false;
-                    QueryConditionComboBox.Size = new Size(210,32);
+                    QueryConditionComboBox.Size = new Size(210, 32);
                     break;
                 case 2:
                     {
@@ -229,7 +229,6 @@ namespace plugin_trinity
 
         private void QueryConditionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
 
         }
 
@@ -308,40 +307,40 @@ namespace plugin_trinity
             //getChannelList();
         }
 
-         private void ToolStripMenuItem_Click(object sender, EventArgs e)
-         {
-              ToolStripMenuItem tsMenumItem = sender as ToolStripMenuItem;
-              if (tsMenumItem.Checked)
-              {
-                  return;//已经选中则返回
-              }
-              else
-              {
+        private void ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem tsMenumItem = sender as ToolStripMenuItem;
+            if (tsMenumItem.Checked)
+            {
+                return;//已经选中则返回
+            }
+            else
+            {
                 //清除勾选的右键菜单项
                 ClearCheckState(channelStatue);
                 //勾选鼠标选中的右键菜单项
-                  tsMenumItem.Checked = true;
-              }
-              //设置ListView列表显示样式
-              SetDisplayStyle(tsMenumItem.Text);
-         }
+                tsMenumItem.Checked = true;
+            }
+            //设置ListView列表显示样式
+            SetDisplayStyle(tsMenumItem.Text);
+        }
 
-          private void ClearCheckState(ContextMenuStrip cms)
-          {
-              ToolStripMenuItem tsMenumItemTemp;
-              for (int i = 0; i<cms.Items.Count; i++)
-              {
-                  if (!(cms.Items[i] is ToolStripMenuItem))
-                  {
-                      continue;
-                  }
-                  tsMenumItemTemp = cms.Items[i] as ToolStripMenuItem;
-                  if (tsMenumItemTemp.Checked)
-                  {
-                      tsMenumItemTemp.Checked = false;
-                  }
-              }
-          }
+        private void ClearCheckState(ContextMenuStrip cms)
+        {
+            ToolStripMenuItem tsMenumItemTemp;
+            for (int i = 0; i < cms.Items.Count; i++)
+            {
+                if (!(cms.Items[i] is ToolStripMenuItem))
+                {
+                    continue;
+                }
+                tsMenumItemTemp = cms.Items[i] as ToolStripMenuItem;
+                if (tsMenumItemTemp.Checked)
+                {
+                    tsMenumItemTemp.Checked = false;
+                }
+            }
+        }
         private void SetDisplayStyle(string name)
         {
             switch (name)
@@ -398,6 +397,109 @@ namespace plugin_trinity
                 comboBox1.Items.Add(item);
                 comboBox2.Items.Add(item);
             }
+        }
+
+        private void ButtonQuery_Click(object sender, EventArgs e)
+        {
+            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+            this.listView2.Items.Clear();
+
+            this.listView2.BeginUpdate();
+            switch (this.QueryTypeComboBox.SelectedIndex)
+            {
+                case 0:
+                    {                       
+                        if (this.QueryConditionComboBox.SelectedIndex == 0)
+                        {
+                            foreach (var item in channelList)
+                            {
+                                if (item.state.ToString() == EnumChannelState.OPENED.ToString())
+                                {
+                                    string founderBalane = new Fixed8(item.balance).ToString();
+                                    ListViewItem channelItem = new ListViewItem(item.channel);
+                                    channelItem.SubItems.Add(item.peer);
+                                    channelItem.SubItems.Add(item.state.ToString());
+                                    channelItem.SubItems.Add(founderBalane);
+                                    channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));                                  
+                                    this.listView2.Items.Add(channelItem);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            foreach (var item in channelList)
+                            {
+                                if (item.state.ToString() == EnumChannelState.SETTLED.ToString())
+                                {
+                                    string founderBalane = new Fixed8(item.balance).ToString();
+                                    ListViewItem channelItem = new ListViewItem(item.channel);
+                                    channelItem.SubItems.Add(item.peer);
+                                    channelItem.SubItems.Add(item.state.ToString());
+                                    channelItem.SubItems.Add(founderBalane);
+                                    channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
+                                    this.listView2.Items.Add(channelItem);
+                                }
+                            }
+                        }
+                        break;
+                    }
+                case 1:
+                    {
+                        foreach (var item in channelList)
+                        {
+                            if (item.channel.Equals(this.QueryConditionComboBox.Text))
+                            {
+                                string founderBalane = new Fixed8(item.balance).ToString();
+                                ListViewItem channelItem = new ListViewItem(item.channel);
+                                channelItem.SubItems.Add(item.peer);
+                                channelItem.SubItems.Add(item.state.ToString());
+                                channelItem.SubItems.Add(founderBalane);
+                                channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
+                                this.listView2.Items.Add(channelItem);
+                            }
+                        }
+                        break;
+                    }
+                case 2:
+                    {
+                        long scopeStared = 0;
+                        long scopeEneded = 0;
+                        try
+                        {
+                            scopeStared = Fixed8.Parse(this.QueryConditionComboBox.Text).GetData();
+                            scopeEneded = Fixed8.Parse(this.QueryConditionComboBox2.Text).GetData();
+                        }
+                        catch
+                        {
+                            MessageBox.Show(Strings.invalidChannelQueryValue);
+                            break;
+                        }
+
+                        if (scopeStared > scopeEneded)
+                        {
+                            MessageBox.Show(Strings.invalidChannelQueryRange);
+                            break;
+                        }
+
+                        foreach (var item in channelList)
+                        {
+                            long selfBalance = item.balance;
+                            if ((selfBalance >= scopeStared) && (selfBalance <= scopeEneded))
+                            {
+                                string founderBalane = new Fixed8(item.balance).ToString();
+                                ListViewItem channelItem = new ListViewItem(item.channel);
+                                channelItem.SubItems.Add(item.peer);
+                                channelItem.SubItems.Add(item.state.ToString());
+                                channelItem.SubItems.Add(founderBalane);
+                                channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
+                                this.listView2.Items.Add(channelItem);
+                            }
+                        }
+                        break;
+                    }          
+            }
+            this.listView2.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            this.listView2.EndUpdate();
         }
     }
 }
