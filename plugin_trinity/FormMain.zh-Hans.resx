@@ -273,6 +273,18 @@
         bWVudAEAAAAHdmFsdWVfXwAIAgAAAAAAAAAKBgUAAAAObGlzdFZpZXdHcm91cDEL
 </value>
   </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>交易记录</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>通道名称</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>交易记录过滤</value>
+  </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>转账记录</value>
   </data>

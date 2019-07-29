@@ -61,13 +61,13 @@ namespace plugin_trinity
             }
             try
             {
-                var formMain = new FormMain();
-
                 string magic = getMagic();
                 if (magic == null)
                 {
                     return;
                 }
+
+                var formMain = new FormMain(magic);
 
                 Trinity.startTrinity.trinityConfigure(Plugin_trinity.api.NeoSystem,
                                                       Plugin_trinity.api.NEP5Watched,

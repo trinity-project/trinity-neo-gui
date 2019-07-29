@@ -20,6 +20,7 @@ using Neo.Persistence;
 using Neo.Wallets;
 using Neo.Network.P2P.Payloads;
 using System.Drawing;
+using Trinity.Wallets.Templates.Definitions;
 
 namespace plugin_trinity
 {
@@ -29,10 +30,12 @@ namespace plugin_trinity
         private Channel channel;
         private string transferChannelName;
         private List<string> assetTypes;
+        private string currentMagic;
 
-        public FormMain()
+        public FormMain(string magic)
         {
             InitializeComponent();
+            currentMagic = magic;
         }
 
         private void CreateChannelButton_Click(object sender, EventArgs e)
@@ -259,46 +262,56 @@ namespace plugin_trinity
 
         public void getChannelList()
         {
-            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
-            this.ChannelListListView.Items.Clear();
-
-            if (channelList.Count > 0)
+            try
             {
-                this.ChannelListListView.BeginUpdate();
-                foreach (ChannelTableContent item in channelList)
+                List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+                this.ChannelListListView.Items.Clear();
+
+                if (channelList.Count > 0)
                 {
-                    if (showChannelState.ToString().Equals(EnumChannelState.INIT.ToString()))
+                    this.ChannelListListView.BeginUpdate();
+                    foreach (ChannelTableContent item in channelList)
                     {
-                        string founderBalane = new Fixed8(item.balance).ToString();
-                        string peerBalane = new Fixed8(item.peerBalance).ToString();
-
-                        ListViewItem channelItem = new ListViewItem(item.channel);
-                        channelItem.SubItems.Add(founderBalane);
-                        channelItem.SubItems.Add(peerBalane);
-                        channelItem.SubItems.Add(item.peer);
-                        channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
-                        channelItem.SubItems.Add(item.state.ToString());
-                        this.ChannelListListView.Items.Add(channelItem);
-                    }
-                    else
-                    {
-                        if (item.state.Equals(showChannelState.ToString()))
+                        if (item.magic.Equals(currentMagic))
                         {
-                            string founderBalane = new Fixed8(item.balance).ToString();
-                            string peerBalane = new Fixed8(item.peerBalance).ToString();
+                            if (showChannelState.ToString().Equals(EnumChannelState.INIT.ToString()))
+                            {
+                                string founderBalane = new Fixed8(item.balance).ToString();
+                                string peerBalane = new Fixed8(item.peerBalance).ToString();
 
-                            ListViewItem channelItem = new ListViewItem(item.channel);
-                            channelItem.SubItems.Add(founderBalane);
-                            channelItem.SubItems.Add(peerBalane);
-                            channelItem.SubItems.Add(item.peer);
-                            channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
-                            channelItem.SubItems.Add(item.state.ToString());
-                            this.ChannelListListView.Items.Add(channelItem);
+                                ListViewItem channelItem = new ListViewItem(item.channel);
+                                channelItem.SubItems.Add(founderBalane);
+                                channelItem.SubItems.Add(peerBalane);
+                                channelItem.SubItems.Add(item.peer);
+                                channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
+                                channelItem.SubItems.Add(item.state.ToString());
+                                this.ChannelListListView.Items.Add(channelItem);
+                            }
+                            else
+                            {
+                                if (item.state.Equals(showChannelState.ToString()))
+                                {
+                                    string founderBalane = new Fixed8(item.balance).ToString();
+                                    string peerBalane = new Fixed8(item.peerBalance).ToString();
+
+                                    ListViewItem channelItem = new ListViewItem(item.channel);
+                                    channelItem.SubItems.Add(founderBalane);
+                                    channelItem.SubItems.Add(peerBalane);
+                                    channelItem.SubItems.Add(item.peer);
+                                    channelItem.SubItems.Add(item.asset.ToAssetType(Trinity.startTrinity.GetAssetMap(), false));
+                                    channelItem.SubItems.Add(item.state.ToString());
+                                    this.ChannelListListView.Items.Add(channelItem);
+                                }
+                            }
                         }
                     }
+                    this.ChannelListListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                    this.ChannelListListView.EndUpdate();
                 }
-                this.ChannelListListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-                this.ChannelListListView.EndUpdate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -495,6 +508,89 @@ namespace plugin_trinity
             }
             this.listView2.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             this.listView2.EndUpdate();
+        }
+
+        // get all transaction information and show it under listview, the funciton will trigger when there is transaction updated
+        public void getTransactionList()
+        {
+            try
+            {
+                List<TransactionTabelContent> transactionList = channel.GetTransactionList<TransactionTabelContent>();
+                this.listView1.Items.Clear();
+
+                if (transactionList.Count > 0)
+                {
+                    this.ChannelListListView.BeginUpdate();
+                    if (recordFilterComboBox.SelectedItem.ToString() == "All")
+                    {
+                        foreach (TransactionTabelContent item in transactionList)
+                        {
+                            if (item.state.Equals(EnumTransactionState.confirmed.ToString()))
+                            {
+                                string payment = new Fixed8(item.payment).ToString();
+                                string localBalance = new Fixed8(item.balance).ToString();
+
+                                ListViewItem channelItem = new ListViewItem(item.timestamp);
+                                channelItem.SubItems.Add(item.channel);
+                                channelItem.SubItems.Add(payment);
+                                channelItem.SubItems.Add(localBalance);
+                                this.listView1.Items.Add(channelItem);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (TransactionTabelContent item in transactionList)
+                        {
+                            if ((item.state.Equals(EnumTransactionState.confirmed.ToString()))
+                                && (item.channel.Equals(recordFilterComboBox.SelectedItem.ToString())))
+                            {
+                                string payment = new Fixed8(item.payment).ToString();
+                                string localBalance = new Fixed8(item.balance).ToString();
+
+                                ListViewItem channelItem = new ListViewItem(item.timestamp);
+                                channelItem.SubItems.Add(item.channel);
+                                channelItem.SubItems.Add(payment);
+                                channelItem.SubItems.Add(localBalance);
+                                this.listView1.Items.Add(channelItem);
+                            }
+                        }
+                    }
+                    this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                    this.listView1.EndUpdate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public List<string> getChannelNameList()
+        {
+            List<string> channelNameList = new List<string>();
+
+            List<ChannelTableContent> channelList = channel.GetChannelListOfThisWallet();
+            foreach(ChannelTableContent item in channelList)
+            {
+                channelNameList.Add(item.channel);
+            }
+            channelNameList.Add("All");
+            return channelNameList;
+        }
+
+        private void recordFilterComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getTransactionList();
+        }
+        private void recordFilterComboBox_Click(object sender, EventArgs e)
+        {
+            List<string> channelLists = getChannelNameList();
+            recordFilterComboBox.Items.Clear();
+            foreach (string item in channelLists)
+            {
+                recordFilterComboBox.Items.Add(item);
+            }
         }
     }
 }

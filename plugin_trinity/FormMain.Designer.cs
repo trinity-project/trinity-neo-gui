@@ -68,11 +68,15 @@ namespace plugin_trinity
             this.Settled = new System.Windows.Forms.ToolStripMenuItem();
             this.Settling = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.recordFilterComboBox = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.buttonQuery = new System.Windows.Forms.Button();
@@ -100,6 +104,8 @@ namespace plugin_trinity
             this.ValidChannelListGroupBox.SuspendLayout();
             this.channelStatue.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -142,6 +148,7 @@ namespace plugin_trinity
             // 
             // ChannelTransactionGroupBox
             // 
+            resources.ApplyResources(this.ChannelTransactionGroupBox, "ChannelTransactionGroupBox");
             this.ChannelTransactionGroupBox.Controls.Add(this.comboBox2);
             this.ChannelTransactionGroupBox.Controls.Add(this.founderUritextBox);
             this.ChannelTransactionGroupBox.Controls.Add(this.label6);
@@ -151,14 +158,13 @@ namespace plugin_trinity
             this.ChannelTransactionGroupBox.Controls.Add(this.label2);
             this.ChannelTransactionGroupBox.Controls.Add(this.accounttextBox);
             this.ChannelTransactionGroupBox.Controls.Add(this.peerUritextBox);
-            resources.ApplyResources(this.ChannelTransactionGroupBox, "ChannelTransactionGroupBox");
             this.ChannelTransactionGroupBox.Name = "ChannelTransactionGroupBox";
             this.ChannelTransactionGroupBox.TabStop = false;
             // 
             // comboBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Name = "comboBox2";
             // 
             // founderUritextBox
@@ -185,25 +191,26 @@ namespace plugin_trinity
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.ValidChannelListGroupBox);
             this.tabPage1.Controls.Add(this.ChannelTransactionGroupBox);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -211,14 +218,13 @@ namespace plugin_trinity
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.PaymentCode);
             this.groupBox1.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Name = "comboBox1";
             // 
             // label9
@@ -256,15 +262,16 @@ namespace plugin_trinity
             // 
             // ValidChannelListGroupBox
             // 
+            resources.ApplyResources(this.ValidChannelListGroupBox, "ValidChannelListGroupBox");
             this.ValidChannelListGroupBox.Controls.Add(this.ChannelListListView);
             this.ValidChannelListGroupBox.Controls.Add(this.CreateChannelButton);
             this.ValidChannelListGroupBox.Controls.Add(this.SettleChannelButton);
-            resources.ApplyResources(this.ValidChannelListGroupBox, "ValidChannelListGroupBox");
             this.ValidChannelListGroupBox.Name = "ValidChannelListGroupBox";
             this.ValidChannelListGroupBox.TabStop = false;
             // 
             // ChannelListListView
             // 
+            resources.ApplyResources(this.ChannelListListView, "ChannelListListView");
             this.ChannelListListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
@@ -275,7 +282,6 @@ namespace plugin_trinity
             this.ChannelListListView.ContextMenuStrip = this.channelStatue;
             this.ChannelListListView.FullRowSelect = true;
             this.ChannelListListView.GridLines = true;
-            resources.ApplyResources(this.ChannelListListView, "ChannelListListView");
             this.ChannelListListView.Name = "ChannelListListView";
             this.ChannelListListView.UseCompatibleStateImageBehavior = false;
             this.ChannelListListView.View = System.Windows.Forms.View.Details;
@@ -308,6 +314,7 @@ namespace plugin_trinity
             // 
             // channelStatue
             // 
+            resources.ApplyResources(this.channelStatue, "channelStatue");
             this.channelStatue.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.channelStatue.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.All,
@@ -316,56 +323,62 @@ namespace plugin_trinity
             this.Settled,
             this.Settling});
             this.channelStatue.Name = "channelStatue";
-            resources.ApplyResources(this.channelStatue, "channelStatue");
             // 
             // All
             // 
-            this.All.Name = "All";
             resources.ApplyResources(this.All, "All");
+            this.All.Name = "All";
             // 
             // Opened
             // 
-            this.Opened.Name = "Opened";
             resources.ApplyResources(this.Opened, "Opened");
+            this.Opened.Name = "Opened";
             // 
             // Opening
             // 
-            this.Opening.Name = "Opening";
             resources.ApplyResources(this.Opening, "Opening");
+            this.Opening.Name = "Opening";
             // 
             // Settled
             // 
-            this.Settled.Name = "Settled";
             resources.ApplyResources(this.Settled, "Settled");
+            this.Settled.Name = "Settled";
             // 
             // Settling
             // 
-            this.Settling.Name = "Settling";
             resources.ApplyResources(this.Settling, "Settling");
+            this.Settling.Name = "Settling";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listView1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox5
+            // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Controls.Add(this.listView1);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
             // listView1
             // 
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             ((System.Windows.Forms.ListViewGroup)(resources.GetObject("listView1.Groups")))});
-            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listView1.HideSelection = false;
             this.listView1.Name = "listView1";
             this.listView1.ShowGroups = false;
+            this.listView1.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
@@ -385,16 +398,38 @@ namespace plugin_trinity
             // 
             resources.ApplyResources(this.columnHeader4, "columnHeader4");
             // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.recordFilterComboBox);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // recordFilterComboBox
+            // 
+            resources.ApplyResources(this.recordFilterComboBox, "recordFilterComboBox");
+            this.recordFilterComboBox.FormattingEnabled = true;
+            this.recordFilterComboBox.Name = "recordFilterComboBox";
+            this.recordFilterComboBox.SelectedIndexChanged += new System.EventHandler(this.recordFilterComboBox_SelectedIndexChanged);
+            this.recordFilterComboBox.Click += new System.EventHandler(this.recordFilterComboBox_Click);
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.groupBox3);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.buttonQuery);
             this.groupBox4.Controls.Add(this.labelInterval);
             this.groupBox4.Controls.Add(this.QueryConditionComboBox2);
@@ -402,7 +437,6 @@ namespace plugin_trinity
             this.groupBox4.Controls.Add(this.QueryTypeComboBox);
             this.groupBox4.Controls.Add(this.QueryConditionComboBox);
             this.groupBox4.Controls.Add(this.label5);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -420,8 +454,8 @@ namespace plugin_trinity
             // 
             // QueryConditionComboBox2
             // 
-            this.QueryConditionComboBox2.FormattingEnabled = true;
             resources.ApplyResources(this.QueryConditionComboBox2, "QueryConditionComboBox2");
+            this.QueryConditionComboBox2.FormattingEnabled = true;
             this.QueryConditionComboBox2.Name = "QueryConditionComboBox2";
             // 
             // label4
@@ -431,19 +465,19 @@ namespace plugin_trinity
             // 
             // QueryTypeComboBox
             // 
+            resources.ApplyResources(this.QueryTypeComboBox, "QueryTypeComboBox");
             this.QueryTypeComboBox.FormattingEnabled = true;
             this.QueryTypeComboBox.Items.AddRange(new object[] {
             resources.GetString("QueryTypeComboBox.Items"),
             resources.GetString("QueryTypeComboBox.Items1"),
             resources.GetString("QueryTypeComboBox.Items2")});
-            resources.ApplyResources(this.QueryTypeComboBox, "QueryTypeComboBox");
             this.QueryTypeComboBox.Name = "QueryTypeComboBox";
             this.QueryTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.QueryTypeComboBox_SelectedIndexChanged);
             // 
             // QueryConditionComboBox
             // 
-            this.QueryConditionComboBox.FormattingEnabled = true;
             resources.ApplyResources(this.QueryConditionComboBox, "QueryConditionComboBox");
+            this.QueryConditionComboBox.FormattingEnabled = true;
             this.QueryConditionComboBox.Name = "QueryConditionComboBox";
             // 
             // label5
@@ -453,13 +487,14 @@ namespace plugin_trinity
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listView2);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.listView2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // listView2
             // 
+            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
             this.columnHeader10,
@@ -468,7 +503,6 @@ namespace plugin_trinity
             this.columnHeader15});
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
-            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.Name = "listView2";
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -501,16 +535,16 @@ namespace plugin_trinity
             // 
             // statusStrip1
             // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             // 
             // timer2
             // 
@@ -535,6 +569,9 @@ namespace plugin_trinity
             this.ValidChannelListGroupBox.ResumeLayout(false);
             this.channelStatue.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -558,11 +595,6 @@ namespace plugin_trinity
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button TransferButton;
         private System.Windows.Forms.GroupBox ValidChannelListGroupBox;
         private System.Windows.Forms.Label label3;
@@ -610,5 +642,14 @@ namespace plugin_trinity
         private System.Windows.Forms.ComboBox QueryConditionComboBox2;
         private System.Windows.Forms.Button buttonQuery;
         private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox recordFilterComboBox;
+        private System.Windows.Forms.Label label10;
     }
 }
