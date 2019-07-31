@@ -520,7 +520,7 @@ namespace plugin_trinity
 
                 if (transactionList.Count > 0)
                 {
-                    this.ChannelListListView.BeginUpdate();
+                    this.listView1.BeginUpdate();
                     if (recordFilterComboBox.SelectedItem.ToString() == "All")
                     {
                         foreach (TransactionTabelContent item in transactionList)
@@ -533,7 +533,7 @@ namespace plugin_trinity
                                 ListViewItem channelItem = new ListViewItem(item.timestamp);
                                 channelItem.SubItems.Add(item.channel);
                                 channelItem.SubItems.Add(payment);
-                                channelItem.SubItems.Add(localBalance);
+                                //channelItem.SubItems.Add(localBalance);
                                 this.listView1.Items.Add(channelItem);
                             }
                         }
@@ -551,7 +551,7 @@ namespace plugin_trinity
                                 ListViewItem channelItem = new ListViewItem(item.timestamp);
                                 channelItem.SubItems.Add(item.channel);
                                 channelItem.SubItems.Add(payment);
-                                channelItem.SubItems.Add(localBalance);
+                                //channelItem.SubItems.Add(localBalance);
                                 this.listView1.Items.Add(channelItem);
                             }
                         }

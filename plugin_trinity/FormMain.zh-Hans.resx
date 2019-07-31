@@ -260,9 +260,6 @@
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>交易数量</value>
   </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>资产类型</value>
-  </data>
   <data name="listView1.Groups" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
