@@ -265,8 +265,20 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>@echo off
+set TargetFolder=neo-gui\$(OutDir)plugins
+
+cd $(SolutionDir)
+
+rem Create the target folder if not exist
+if not exist %25TargetFolder%25 (
+echo "Create Folder %25TargetFolder%25"
+md %25TargetFolder%25
+)
+
+rem Copy the plugin_trinity.dll to the target folder
+copy plugin_trinity\$(OutDir)plugin_trinity.dll %25TargetFolder%25
+copy plugin_trinity\$(OutDir)plugin_trinity.pdb %25TargetFolder%25</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
