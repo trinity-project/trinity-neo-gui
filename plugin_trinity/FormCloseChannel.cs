@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using Trinity.TrinityDB.Definitions;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
 using Trinity.Exceptions;
+using Neo.Ledger;
+using Strings = plugin_trinity.Properties.trinityString;
 
 namespace plugin_trinity
 {
@@ -50,6 +52,14 @@ namespace plugin_trinity
              */
             try
             {
+                if ((asset.Equals("NEO")) || (asset.Equals("NeoGas")))
+                {
+                    if (Plugin_trinity.api.CurrentWallet.WalletHeight < Blockchain.Singleton.HeaderHeight)
+                    {
+                        MessageBox.Show(Strings.InvalidBlockHeight);
+                        return;
+                    }
+                }
                 this.CloseChannel(founderUri, peerUri, channelName, asset);
             }
             catch (TrinityException trinityEx)

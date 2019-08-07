@@ -4,6 +4,8 @@ using Trinity.Wallets.TransferHandler.TransactionHandler;
 using Trinity.Exceptions;
 using Neo;
 using System.Collections.Generic;
+using Neo.Ledger;
+using Strings = plugin_trinity.Properties.trinityString;
 
 namespace plugin_trinity
 {
@@ -31,6 +33,15 @@ namespace plugin_trinity
                 string peerAddress = this.textBox1.Text;
                 string deposit = this.DepositTextBox.Text;
                 string type = this.AssetTypeComboBox.SelectedItem.ToString();
+
+                if ((type.Equals("NEO")) || (type.Equals("NeoGas")))
+                {
+                    if (Plugin_trinity.api.CurrentWallet.WalletHeight < Blockchain.Singleton.HeaderHeight)
+                    {
+                        MessageBox.Show(Strings.InvalidBlockHeight);
+                        return;
+                    }
+                }
 
                 // Trigger to create channel
                 this.CreateChannel(founderAddress, peerAddress, type, deposit);

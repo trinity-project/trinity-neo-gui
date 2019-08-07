@@ -162,4 +162,7 @@
   <data name="invalidChannelQueryValue" xml:space="preserve">
     <value>Please input valid query value</value>
   </data>
+  <data name="InvalidBlockHeight" xml:space="preserve">
+    <value>Current wallet block height is not synchronized</value>
+  </data>
 </root>
