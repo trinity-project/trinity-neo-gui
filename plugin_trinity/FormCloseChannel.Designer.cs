@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCloseChannel));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.取消button = new System.Windows.Forms.Button();
             this.快拆通道button = new System.Windows.Forms.Button();
             this.对端余额textBox = new System.Windows.Forms.TextBox();
@@ -46,6 +47,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.取消button);
             this.groupBox1.Controls.Add(this.快拆通道button);
             this.groupBox1.Controls.Add(this.对端余额textBox);
@@ -59,6 +61,13 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // 取消button
             // 
@@ -119,12 +128,12 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // Form_close
+            // FormCloseChannel
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form_close";
+            this.Name = "FormCloseChannel";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -144,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button 取消button;
+        private System.Windows.Forms.Button button1;
     }
 }

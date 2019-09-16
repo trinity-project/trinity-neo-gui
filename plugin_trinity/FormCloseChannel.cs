@@ -81,6 +81,32 @@ namespace plugin_trinity
             SettleHandler settleHndl = new SettleHandler(uri, peerUri, channel, asset, null);
             settleHndl.MakeTransaction();
         }
-        
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if ((asset.Equals("NEO")) || (asset.Equals("NeoGas")))
+                {
+                    if (Plugin_trinity.api.CurrentWallet.WalletHeight < Blockchain.Singleton.HeaderHeight)
+                    {
+                        MessageBox.Show(Strings.InvalidBlockHeight);
+                        return;
+                    }
+                }
+                this.ForcedCloseChannel(founderUri, peerUri, channelName, asset);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+        private void ForcedCloseChannel(string uri, string peerUri, string channel, string asset)
+        {
+            //Todo: Forced close channel
+            //SettleHandler settleHndl = new SettleHandler(uri, peerUri, channel, asset, null);
+            //settleHndl.MakeTransaction();
+        }
     }
 }
