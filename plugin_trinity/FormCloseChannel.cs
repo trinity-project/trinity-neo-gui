@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trinity.TrinityDB.Definitions;
 using Trinity.Wallets.TransferHandler.TransactionHandler;
+using Trinity.Wallets.Event;
 using Trinity.Exceptions;
 using Neo.Ledger;
 using Strings = plugin_trinity.Properties.trinityString;
@@ -105,8 +106,8 @@ namespace plugin_trinity
         private void ForcedCloseChannel(string uri, string peerUri, string channel, string asset)
         {
             //Todo: Forced close channel
-            //SettleHandler settleHndl = new SettleHandler(uri, peerUri, channel, asset, null);
-            //settleHndl.MakeTransaction();
+            CloseChannelEvent closeChannelEventHndl = new CloseChannelEvent(channel, uri);
+            closeChannelEventHndl.ForceClosingChannel();
         }
     }
 }
